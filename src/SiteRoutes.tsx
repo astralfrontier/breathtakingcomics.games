@@ -3,17 +3,17 @@ import Navbar from "./Navbar";
 
 import RulesLayout from "./rules/RulesLayout";
 
-import Hero from "./heroes/Hero";
-import Heroes from "./heroes/Heroes";
 import HeroesLayout from "./heroes/HeroesLayout";
 import EicEdition from "./rules/eic-edition.mdx";
 import MelvinEdition from "./rules/melvin-edition.mdx";
-import Support from "./support/Support";
-import Supports from "./support/Supports";
 import SupportsLayout from "./support/SupportsLayout";
-import Villain from "./villains/Villain";
-import Villains from "./villains/Villains";
 import VillainsLayout from "./villains/VillainsLayout";
+
+import HeroData from "./heroes/HeroData";
+import SupportData from "./support/SupportData";
+import VillainData from "./villains/VillainData";
+import AssetList from "./AssetList";
+import AssetView from "./AssetView";
 
 function HelloWorld() {
   return (
@@ -32,16 +32,25 @@ function SiteRoutes() {
       <Routes>
         <Route index element={<HelloWorld />} />
         <Route path="heroes" element={<HeroesLayout />}>
-          <Route index element={<Heroes />} />
-          <Route path=":hero" element={<Hero />} />
+          <Route
+            index
+            element={<AssetList assets={HeroData} prefix="heroes" />}
+          />
+          <Route path=":asset" element={<AssetView assets={HeroData} />} />
         </Route>
         <Route path="villains" element={<VillainsLayout />}>
-          <Route index element={<Villains />} />
-          <Route path=":villain" element={<Villain />} />
+          <Route
+            index
+            element={<AssetList assets={VillainData} prefix="villains" />}
+          />
+          <Route path=":asset" element={<AssetView assets={VillainData} />} />
         </Route>
         <Route path="support" element={<SupportsLayout />}>
-          <Route index element={<Supports />} />
-          <Route path=":support" element={<Support />} />
+          <Route
+            index
+            element={<AssetList assets={SupportData} prefix="support" />}
+          />
+          <Route path=":asset" element={<AssetView assets={SupportData} />} />
         </Route>
         <Route path="rules" element={<RulesLayout />}>
           <Route path="eic-edition" element={<EicEdition />} />
