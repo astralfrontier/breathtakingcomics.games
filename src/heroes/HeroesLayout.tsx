@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
 import Navbar from "../Navbar";
 
-function RulesLayout() {
+function HeroesLayout() {
   return (
     <>
       <Navbar />
@@ -12,4 +12,4 @@ function RulesLayout() {
   );
 }
 
-export default RulesLayout;
+export default HeroesLayout;
