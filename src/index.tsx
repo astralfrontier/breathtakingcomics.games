@@ -1,13 +1,14 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router";
-import App from "./App.tsx";
+import SiteRoutes from "./SiteRoutes.tsx";
 import "./index.scss";
 
 createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </StrictMode>
+  import.meta.env.DEV ? (
+    <StrictMode>
+      <SiteRoutes />
+    </StrictMode>
+  ) : (
+    <SiteRoutes />
+  )
 );
