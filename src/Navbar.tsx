@@ -20,6 +20,12 @@ function Navbar() {
             <li>
               <NavLink to="/heroes">Heroes</NavLink>
             </li>
+            <li>
+              <NavLink to="/villains">Villains</NavLink>
+            </li>
+            <li>
+              <NavLink to="/support">Supporting Cast</NavLink>
+            </li>
           </ul>
         </nav>
       </header>
