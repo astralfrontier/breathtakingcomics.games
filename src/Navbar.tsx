@@ -18,6 +18,9 @@ function Navbar() {
               <NavLink to="/rules/melvin-edition">Melvin Edition</NavLink>
             </li>
             <li>
+              <NavLink to="/rules/traits">Traits</NavLink>
+            </li>
+            <li>
               <NavLink to="/heroes">Heroes</NavLink>
             </li>
             <li>

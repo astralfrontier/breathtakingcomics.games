@@ -14,6 +14,7 @@ import HeroData from "./heroes/HeroData";
 import Home from "./Home";
 import SupportData from "./support/SupportData";
 import VillainData from "./villains/VillainData";
+import SampleTraits from "./rules/SampleTraits";
 
 function SiteRoutes() {
   return (
@@ -44,6 +45,7 @@ function SiteRoutes() {
         <Route path="rules" element={<RulesLayout />}>
           <Route path="eic-edition" element={<EicEdition />} />
           <Route path="melvin-edition" element={<MelvinEdition />} />
+          <Route path="traits" element={<SampleTraits />} />
         </Route>
       </Routes>
     </BrowserRouter>
