@@ -17,98 +17,79 @@ function RandomCharacterTool() {
   );
 
   const onPositionCallback = useCallback(
-    () => setPosition(randomTraitByType("position", position)),
+    (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+      setPosition(randomTraitByType("position", position));
+      e.stopPropagation();
+    },
     [position]
   );
   const onPastCallback = useCallback(
-    () => setPast(randomTraitByType("past", past)),
+    (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+      setPast(randomTraitByType("past", past));
+      e.stopPropagation();
+    },
     [past]
   );
   const onPersonalityCallback = useCallback(
-    () => setPersonality(randomTraitByType("personality", personality)),
+    (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+      setPersonality(randomTraitByType("personality", personality));
+      e.stopPropagation();
+    },
     [personality]
   );
   const onPowersCallback = useCallback(
-    () => setPowers(randomTraitByType("powers", powers)),
+    (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+      setPowers(randomTraitByType("powers", powers));
+      e.stopPropagation();
+    },
     [powers]
   );
   const onProblemsCallback = useCallback(
-    () => setProblems(randomTraitByType("problems", problems)),
+    (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+      setProblems(randomTraitByType("problems", problems));
+      e.stopPropagation();
+    },
     [problems]
   );
 
   return (
     <article>
       <p>
-        Traits are randomly chosen. Click on a trait to select a new random
-        value.
+        Here's a collection of randomly-chosen traits. Click on the button to
+        select a new trait. Look at the combination of traits to see what kind
+        of character you got.
       </p>
       <div className="grid">
-        <div>
-          <p>
-            <span className={styles.trait} onClick={onPositionCallback}>
-              &#x1F504;
-            </span>
-            <strong>Position</strong>
-            <br />
-            {position.name}
-          </p>
-          <p>
-            <small>{position.description}</small>
-          </p>
-        </div>
-        <div>
-          <p>
-            <span className={styles.trait} onClick={onPastCallback}>
-              &#x1F504;
-            </span>
-            <strong>Past</strong>
-            <br />
-            {past.name}
-          </p>
-          <p>
-            <small>{past.description}</small>
-          </p>
-        </div>
-        <div>
-          <p>
-            <span className={styles.trait} onClick={onPersonalityCallback}>
-              &#x1F504;
-            </span>
-            <strong>Personality</strong>
-            <br />
-            {personality.name}
-          </p>
-          <p>
-            <small>{personality.description}</small>
-          </p>
-        </div>
-        <div>
-          <p>
-            <span className={styles.trait} onClick={onPowersCallback}>
-              &#x1F504;
-            </span>
-            <strong>Powers</strong>
-            <br />
-            {powers.name}
-          </p>
-          <p>
-            <small>{powers.description}</small>
-          </p>
-        </div>
-        <div>
-          <p>
-            <span className={styles.trait} onClick={onProblemsCallback}>
-              &#x1F504;
-            </span>
-            <strong>Problems</strong>
-            <br />
-            {problems.name}
-          </p>
-          <p>
-            <small>{problems.description}</small>
-          </p>
-        </div>
+        {[
+          { name: "Position", value: position, onClick: onPositionCallback },
+          { name: "Past", value: past, onClick: onPastCallback },
+          {
+            name: "Personality",
+            value: personality,
+            onClick: onPersonalityCallback,
+          },
+          { name: "Powers", value: powers, onClick: onPowersCallback },
+          { name: "Problems", value: problems, onClick: onProblemsCallback },
+        ].map((trait) => (
+          <>
+            <div>
+              <div>
+                <button className={styles.trait} onClick={trait.onClick}>
+                  &#8635;
+                </button>
+              </div>
+              <div>
+                <strong>{trait.name}</strong>
+                <br />
+                {trait.value.name}
+              </div>
+
+              <p>
+                <small>{trait.value.description}</small>
+              </p>
+            </div>
+          </>
+        ))}
       </div>
     </article>
   );
