@@ -3,13 +3,13 @@ import type {
   BreathtakingAssetGroup,
   BreathtakingAssetPackage,
 } from "../AssetTypes";
-import Radiance from "./radiance.mdx";
+import Fractal, { metadata as fractalBio } from "./the-fractal.mdx";
 
 const heroAssets: BreathtakingAsset[] = [
   {
-    name: "Radiance",
-    slug: "radiance",
-    element: <Radiance />,
+    name: fractalBio.name,
+    slug: fractalBio.slug,
+    element: <Fractal />,
   },
 ];
 
