@@ -3,12 +3,18 @@ import type {
   BreathtakingAssetGroup,
   BreathtakingAssetPackage,
 } from "../AssetTypes";
-import Stitches from "./stitches.mdx";
+import OaklandOgre, { metadata as oaklandOgreBio } from "./oakland-ogre.mdx";
+import Stitches, { metadata as stitchesBio } from "./stitches.mdx";
 
 const villainAssets: BreathtakingAsset[] = [
   {
-    name: "Stitches",
-    slug: "stitches",
+    name: oaklandOgreBio.name,
+    slug: oaklandOgreBio.slug,
+    element: <OaklandOgre />,
+  },
+  {
+    name: stitchesBio.name,
+    slug: stitchesBio.slug,
     element: <Stitches />,
   },
 ];
