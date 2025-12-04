@@ -3,13 +3,13 @@ import type {
   BreathtakingAssetGroup,
   BreathtakingAssetPackage,
 } from "../AssetTypes";
-import Madhesive from "./madhesive.mdx";
+import Stitches from "./stitches.mdx";
 
 const villainAssets: BreathtakingAsset[] = [
   {
-    name: "Madhesive",
-    slug: "madhesive",
-    element: <Madhesive />,
+    name: "Stitches",
+    slug: "stitches",
+    element: <Stitches />,
   },
 ];
 
