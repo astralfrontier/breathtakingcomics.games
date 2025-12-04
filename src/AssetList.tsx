@@ -4,8 +4,6 @@ import type {
   BreathtakingAssetGroup,
   BreathtakingAssetPackage,
 } from "./AssetTypes";
-import { groupBy } from "ramda";
-import { useMemo } from "react";
 
 interface AssetListProps {
   prefix: string;
@@ -13,51 +11,52 @@ interface AssetListProps {
   children?: React.ReactNode;
 }
 
-// Only return the asset's group if it exists and also exists in the list of groups
-const assetIsInGroups = (groups: BreathtakingAssetGroup[]) => {
-  const groupSlugs = groups.map((group) => group.slug);
-  return (asset: BreathtakingAsset): string => {
-    if (!asset.group) {
-      return "";
-    } else if (!groupSlugs.includes(asset.group)) {
-      return "";
-    } else {
-      return asset.group;
-    }
-  };
-};
+interface AssetListByGroupProps {
+  prefix: string;
+  group: BreathtakingAssetGroup | undefined;
+  assets: BreathtakingAsset[];
+}
 
-const NULL_GROUP: BreathtakingAssetGroup = {
-  slug: "",
-  name: "",
-  description: "",
-};
+function AssetListByGroup(props: AssetListByGroupProps) {
+  const { prefix, group, assets } = props;
+  const isInGroup = (asset: BreathtakingAsset) =>
+    group ? asset.groups.includes(group.slug) : asset.groups.length == 0;
+  const groupedAssets = assets.filter(isInGroup);
+
+  return (
+    <>
+      {group && <h1>{group.name}</h1>}
+      {group && <p>{group.description}</p>}
+      {groupedAssets && (
+        <ul>
+          {groupedAssets.map((asset) => (
+            <li>
+              <Link to={`/${prefix}/${asset.slug}`}>{asset.name}</Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </>
+  );
+}
 
 function AssetList(props: AssetListProps) {
   const { prefix, assetPackage, children } = props;
 
-  const groupedAssets = useMemo(
-    () => groupBy(assetIsInGroups(assetPackage.groups), assetPackage.assets),
-    [assetPackage.assets, assetPackage.groups]
-  );
-
   return (
     <>
       {children}
-      {[NULL_GROUP, ...assetPackage.groups].map((group) => (
-        <>
-          {group.name && <h1>{group.name}</h1>}
-          {group.description && <p>{group.description}</p>}
-          {groupedAssets[group.slug] && (
-            <ul>
-              {groupedAssets[group.slug]?.map((asset) => (
-                <li>
-                  <Link to={`/${prefix}/${asset.slug}`}>{asset.name}</Link>
-                </li>
-              ))}
-            </ul>
-          )}
-        </>
+      <AssetListByGroup
+        prefix={prefix}
+        group={undefined}
+        assets={assetPackage.assets}
+      />
+      {assetPackage.groups.map((group) => (
+        <AssetListByGroup
+          prefix={prefix}
+          group={group}
+          assets={assetPackage.assets}
+        />
       ))}
     </>
   );

@@ -1,7 +1,7 @@
 export interface BreathtakingAsset {
   name: string;
   slug: string;
-  group?: string;
+  groups: string[];
   element: React.ReactNode;
 }
 

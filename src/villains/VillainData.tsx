@@ -10,11 +10,13 @@ const villainAssets: BreathtakingAsset[] = [
   {
     name: oaklandOgreBio.name,
     slug: oaklandOgreBio.slug,
+    groups: [],
     element: <OaklandOgre />,
   },
   {
     name: stitchesBio.name,
     slug: stitchesBio.slug,
+    groups: [],
     element: <Stitches />,
   },
 ];

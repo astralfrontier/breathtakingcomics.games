@@ -9,6 +9,7 @@ const heroAssets: BreathtakingAsset[] = [
   {
     name: fractalBio.name,
     slug: fractalBio.slug,
+    groups: [],
     element: <Fractal />,
   },
 ];
