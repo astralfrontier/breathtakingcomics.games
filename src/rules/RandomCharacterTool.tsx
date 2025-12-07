@@ -59,7 +59,7 @@ function RandomCharacterTool() {
         select a new trait. Look at the combination of traits to see what kind
         of character you got.
       </p>
-      <div className="grid">
+      <div>
         {[
           { name: "Position", value: position, onClick: onPositionCallback },
           { name: "Past", value: past, onClick: onPastCallback },
@@ -72,21 +72,22 @@ function RandomCharacterTool() {
           { name: "Problems", value: problems, onClick: onProblemsCallback },
         ].map((trait) => (
           <>
-            <div>
-              <div>
+            <div className={styles.traitblock}>
+              <div className={styles.traitbutton}>
                 <button className={styles.trait} onClick={trait.onClick}>
                   &#8635;
                 </button>
               </div>
-              <div>
+              <div className={styles.traitname}>
                 <strong>{trait.name}</strong>
                 <br />
                 {trait.value.name}
               </div>
-
-              <p>
-                <small>{trait.value.description}</small>
-              </p>
+              <div className={styles.traitdescription}>
+                <p>
+                  <small>{trait.value.description}</small>
+                </p>
+              </div>
             </div>
           </>
         ))}
