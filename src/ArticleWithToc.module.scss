@@ -20,6 +20,7 @@ $toc-breakpoint: 768px;
   // Make sticky scrollable
   max-height: 100vh;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 @media (max-width: $toc-breakpoint) {

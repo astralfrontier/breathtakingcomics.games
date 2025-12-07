@@ -4,7 +4,7 @@ import styles from "./Navbar.module.scss";
 import { useCallback, useState } from "react";
 
 function Navbar() {
-  const [visible, setVisible] = useState<boolean>(true);
+  const [visible, setVisible] = useState<boolean>(false);
 
   const toggleVisible = useCallback(
     () => setVisible((isVisible) => !isVisible),
@@ -16,8 +16,8 @@ function Navbar() {
       <header className="container">
         <nav className={styles.responsive}>
           <ul>
-            <li className={styles.burger} onClick={toggleVisible}>
-              &#8801;
+            <li className={styles.burger}>
+              <button onClick={toggleVisible}>&#8801;</button>
             </li>
             <li>
               <NavLink to="/">
