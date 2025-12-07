@@ -1,20 +1,23 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 
-import RulesLayout from "./rules/RulesLayout";
+import Home from "./Home";
 
+import ArticleWithToc from "./ArticleWithToc";
+import AssetList from "./AssetList";
+import AssetView from "./AssetView";
+
+import RulesLayout from "./rules/RulesLayout";
 import HeroesLayout from "./heroes/HeroesLayout";
-import EicEdition from "./rules/eic-edition.mdx";
-import MelvinEdition from "./rules/melvin-edition.mdx";
 import SupportsLayout from "./support/SupportsLayout";
 import VillainsLayout from "./villains/VillainsLayout";
 
-import AssetList from "./AssetList";
-import AssetView from "./AssetView";
+import EicEdition, { toc as eicToc } from "./rules/eic-edition.mdx";
+import MelvinEdition from "./rules/melvin-edition.mdx";
+import SampleTraits from "./rules/SampleTraits";
+
 import HeroData from "./heroes/HeroData";
-import Home from "./Home";
 import SupportData from "./support/SupportData";
 import VillainData from "./villains/VillainData";
-import SampleTraits from "./rules/SampleTraits";
 import { VillainListView } from "./villains/VillainListView";
 
 function SiteRoutes() {
@@ -59,7 +62,10 @@ function SiteRoutes() {
           />
         </Route>
         <Route path="rules" element={<RulesLayout />}>
-          <Route path="eic-edition" element={<EicEdition />} />
+          <Route
+            path="eic-edition"
+            element={<ArticleWithToc article={<EicEdition />} toc={eicToc} />}
+          />
           <Route path="melvin-edition" element={<MelvinEdition />} />
           <Route path="traits" element={<SampleTraits />} />
         </Route>

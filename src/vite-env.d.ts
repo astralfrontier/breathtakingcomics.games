@@ -9,4 +9,6 @@ declare module "*.mdx" {
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   export const metadata: any;
+
+  export const toc: TocItem[];
 }
