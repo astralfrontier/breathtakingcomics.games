@@ -15,6 +15,7 @@ import Home from "./Home";
 import SupportData from "./support/SupportData";
 import VillainData from "./villains/VillainData";
 import SampleTraits from "./rules/SampleTraits";
+import { VillainListView } from "./villains/VillainListView";
 
 function SiteRoutes() {
   return (
@@ -34,7 +35,13 @@ function SiteRoutes() {
         <Route path="villains" element={<VillainsLayout />}>
           <Route
             index
-            element={<AssetList assetPackage={VillainData} prefix="villains" />}
+            element={
+              <AssetList
+                assetPackage={VillainData}
+                prefix="villains"
+                view={VillainListView}
+              />
+            }
           />
           <Route
             path=":asset"
