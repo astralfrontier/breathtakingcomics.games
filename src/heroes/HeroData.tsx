@@ -3,7 +3,7 @@ import type {
   BreathtakingAssetGroup,
   BreathtakingAssetPackage,
 } from "../AssetTypes";
-import Fractal, { metadata as fractalBio } from "./the-fractal.mdx";
+import Fractal, { frontmatter as fractalBio } from "./the-fractal.mdx";
 
 const heroAssets: BreathtakingAsset[] = [
   {

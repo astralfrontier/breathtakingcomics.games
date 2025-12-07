@@ -3,8 +3,8 @@ import type {
   BreathtakingAssetGroup,
   BreathtakingAssetPackage,
 } from "../AssetTypes";
-import OaklandOgre, { metadata as oaklandOgreBio } from "./oakland-ogre.mdx";
-import Stitches, { metadata as stitchesBio } from "./stitches.mdx";
+import OaklandOgre, { frontmatter as oaklandOgreBio } from "./oakland-ogre.mdx";
+import Stitches, { frontmatter as stitchesBio } from "./stitches.mdx";
 
 const villainAssets: BreathtakingAsset[] = [
   {

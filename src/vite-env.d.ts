@@ -10,5 +10,10 @@ declare module "*.mdx" {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   export const metadata: any;
 
+  // Provided by remark-mdx-frontmatter
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  export const frontmatter: { [key: string]: any };
+
+  // Provided by rehype-mdx-toc
   export const toc: TocItem[];
 }
