@@ -1,10 +1,14 @@
-.articlewithtoc {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 12rem 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "toc article";
+$toc-breakpoint: 768px;
+
+@media (min-width: $toc-breakpoint) {
+  .articlewithtoc {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr 12rem;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "article toc";
+  }
 }
 
 .toc {
@@ -16,6 +20,12 @@
   // Make sticky scrollable
   max-height: 100vh;
   overflow-y: auto;
+}
+
+@media (max-width: $toc-breakpoint) {
+  .toc {
+    display: none;
+  }
 }
 
 .article {
