@@ -29,9 +29,9 @@ const assetIsInGroups = (groups: BreathtakingAssetGroup[]) => {
   const groupSlugs = groups.map((group) => group.slug);
   return (asset: BreathtakingAsset): string => {
     if (!asset.group) {
-      return "";
+      return NULL_GROUP.slug;
     } else if (!groupSlugs.includes(asset.group)) {
-      return "";
+      return NULL_GROUP.slug;
     } else {
       return asset.group;
     }
@@ -41,5 +41,8 @@ const assetIsInGroups = (groups: BreathtakingAssetGroup[]) => {
 export function groupedAssets(
   assetPackage: BreathtakingAssetPackage
 ): Record<string, BreathtakingAsset[]> {
-  return groupBy(assetIsInGroups(assetPackage.groups), assetPackage.assets);
+  return groupBy(
+    assetIsInGroups(assetPackage.groups),
+    assetPackage.assets
+  ) as Record<string, BreathtakingAsset[]>;
 }
