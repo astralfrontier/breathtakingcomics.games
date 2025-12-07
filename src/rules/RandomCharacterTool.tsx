@@ -55,9 +55,9 @@ function RandomCharacterTool() {
   return (
     <article>
       <p>
-        Here's a collection of randomly-chosen traits. Click on the button to
-        select a new trait. Look at the combination of traits to see what kind
-        of character you got.
+        Here's a collection of randomly-chosen traits and hooks. Click on the
+        button to select a new trait. Look at the combination of traits to see
+        what kind of character you got.
       </p>
       <div>
         {[
@@ -84,9 +84,14 @@ function RandomCharacterTool() {
                 {trait.value.name}
               </div>
               <div className={styles.traitdescription}>
-                <p>
-                  <small>{trait.value.description}</small>
-                </p>
+                <small>
+                  <p>{trait.value.description}</p>
+                  <ul>
+                    {trait.value.hooks.map((hook) => (
+                      <li>{hook}</li>
+                    ))}
+                  </ul>
+                </small>
               </div>
             </div>
           </>
