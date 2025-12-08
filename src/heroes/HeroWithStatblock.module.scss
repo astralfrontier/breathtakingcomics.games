@@ -1,0 +1,12 @@
+$stat-breakpoint: 768px;
+
+.statblock {
+  position: sticky;
+  // Needed to make sticky work
+  top: 0;
+  align-self: start;
+  // Make sticky scrollable
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
