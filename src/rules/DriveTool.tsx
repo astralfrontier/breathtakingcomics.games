@@ -2,12 +2,21 @@ import { useCallback, useState } from "react";
 import { randomElement } from "../traits";
 
 interface DriveState {
+  name: string;
   statusIsGreen: boolean;
   struck: boolean;
   excuse: string;
 }
 
-const DRIVE_TEXT = "Bus Full of Civilians";
+const DRIVES = [
+  "Bus Full of Civilians",
+  "Fractured Dam",
+  "Rampaging Monster",
+  "Building on Fire",
+  "Collapsing Bridge",
+  "Invading Aliens",
+  "Trapped Scientists",
+];
 
 const INITIAL_EXCUSE = "New scene";
 const EXCUSES = [
@@ -18,12 +27,16 @@ const EXCUSES = [
   "Hero and villain powers synergized somehow",
 ];
 
-function remainingExcuses(excuse: string): string[] {
-  return EXCUSES.filter((item) => item != excuse);
+function randomUnusedElement(
+  elements: string[],
+  currentElement: string
+): string {
+  return randomElement(elements.filter((element) => element != currentElement));
 }
 
 function DriveTool() {
   const [driveState, setDriveState] = useState<DriveState>({
+    name: randomUnusedElement(DRIVES, ""),
     statusIsGreen: false,
     struck: false,
     excuse: INITIAL_EXCUSE,
@@ -34,7 +47,7 @@ function DriveTool() {
       setDriveState((driveState) => ({
         ...driveState,
         statusIsGreen: false,
-        excuse: randomElement(remainingExcuses(driveState.excuse)),
+        excuse: randomUnusedElement(EXCUSES, driveState.excuse),
       })),
     []
   );
@@ -43,7 +56,7 @@ function DriveTool() {
       setDriveState((driveState) => ({
         ...driveState,
         statusIsGreen: true,
-        excuse: randomElement(remainingExcuses(driveState.excuse)),
+        excuse: randomUnusedElement(EXCUSES, driveState.excuse),
       })),
     []
   );
@@ -57,7 +70,8 @@ function DriveTool() {
   );
   const resetDrive = useCallback(
     () =>
-      setDriveState(() => ({
+      setDriveState((driveState) => ({
+        name: randomUnusedElement(DRIVES, driveState.name),
         statusIsGreen: false,
         struck: false,
         excuse: INITIAL_EXCUSE,
@@ -68,35 +82,37 @@ function DriveTool() {
   return (
     <article>
       <p>
-        {driveState.statusIsGreen ? <>&#x1F7E2;</> : <>&#x1F534;</>}
+        {driveState.statusIsGreen ? (
+          <>GREEN (&#x1F7E2;)</>
+        ) : (
+          <>RED (&#x1F534;)</>
+        )}{" "}
         <strong>
-          {driveState.struck ? <del>{DRIVE_TEXT}</del> : DRIVE_TEXT}
+          {driveState.struck ? <del>{driveState.name}</del> : driveState.name}
         </strong>
         <br />
         <small>Current status: {driveState.excuse}</small>
       </p>
-      <div className={"grid"}>
-        <div>
-          <button
-            onClick={setRed}
-            disabled={!driveState.statusIsGreen || driveState.struck}
-          >
-            Flip to Red
-          </button>
-          <button
-            onClick={setGreen}
-            disabled={driveState.statusIsGreen || driveState.struck}
-          >
-            Flip to Green
-          </button>
-          <button onClick={strikeDrive} disabled={driveState.struck}>
-            Strike Drive
-          </button>
-          <button className="secondary" onClick={resetDrive}>
-            Reset
-          </button>
-        </div>
-      </div>
+      <p>
+        <button
+          onClick={setRed}
+          disabled={!driveState.statusIsGreen || driveState.struck}
+        >
+          Flip Red
+        </button>{" "}
+        <button
+          onClick={setGreen}
+          disabled={driveState.statusIsGreen || driveState.struck}
+        >
+          Flip Green
+        </button>{" "}
+        <button onClick={strikeDrive} disabled={driveState.struck}>
+          Strike
+        </button>{" "}
+        <button className="secondary" onClick={resetDrive}>
+          Reset
+        </button>
+      </p>
     </article>
   );
 }
