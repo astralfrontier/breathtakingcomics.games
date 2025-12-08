@@ -7,9 +7,7 @@ import AssetList from "./AssetList";
 import AssetView from "./AssetView";
 
 import RulesLayout from "./rules/RulesLayout";
-import HeroesLayout from "./heroes/HeroesLayout";
-import SupportsLayout from "./support/SupportsLayout";
-import VillainsLayout from "./villains/VillainsLayout";
+import AssetLayout from "./AssetLayout";
 
 import EicEdition, { toc as eicToc } from "./rules/eic-edition.mdx";
 import MelvinEdition from "./rules/melvin-edition.mdx";
@@ -18,14 +16,13 @@ import SampleTraits from "./rules/SampleTraits";
 import HeroData from "./heroes/HeroData";
 import SupportData from "./support/SupportData";
 import VillainData from "./villains/VillainData";
-import { VillainListView } from "./villains/VillainListView";
 
 function SiteRoutes() {
   return (
     <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="heroes" element={<HeroesLayout />}>
+        <Route path="heroes" element={<AssetLayout />}>
           <Route
             index
             element={<AssetList assetPackage={HeroData} prefix="heroes" />}
@@ -35,23 +32,17 @@ function SiteRoutes() {
             element={<AssetView assetPackage={HeroData} />}
           />
         </Route>
-        <Route path="villains" element={<VillainsLayout />}>
+        <Route path="villains" element={<AssetLayout />}>
           <Route
             index
-            element={
-              <AssetList
-                assetPackage={VillainData}
-                prefix="villains"
-                view={VillainListView}
-              />
-            }
+            element={<AssetList assetPackage={VillainData} prefix="villains" />}
           />
           <Route
             path=":asset"
             element={<AssetView assetPackage={VillainData} />}
           />
         </Route>
-        <Route path="support" element={<SupportsLayout />}>
+        <Route path="support" element={<AssetLayout />}>
           <Route
             index
             element={<AssetList assetPackage={SupportData} prefix="support" />}

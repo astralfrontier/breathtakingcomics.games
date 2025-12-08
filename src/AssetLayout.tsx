@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
-import Navbar from "../Navbar";
+import Navbar from "./Navbar";
 
-function HeroesLayout() {
+function AssetLayout() {
   return (
     <>
       <Navbar />
@@ -12,4 +12,4 @@ function HeroesLayout() {
   );
 }
 
-export default HeroesLayout;
+export default AssetLayout;
