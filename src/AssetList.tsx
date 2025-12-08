@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import type { BreathtakingAsset, BreathtakingAssetPackage } from "./assets";
+import type { BreathtakingAsset } from "./assets";
 
 import slugify from "slugify";
 
@@ -12,7 +12,7 @@ export interface AssetListViewProps {
 
 interface AssetListProps {
   prefix: string;
-  assetPackage: BreathtakingAssetPackage;
+  assets: BreathtakingAsset[];
   children?: React.ReactNode;
   view?: React.FC<AssetListViewProps>;
 }
@@ -43,12 +43,12 @@ function DefaultAssetListView(props: AssetListViewProps) {
 }
 
 function AssetList(props: AssetListProps) {
-  const { prefix, assetPackage, view, children } = props;
+  const { prefix, assets, view, children } = props;
 
   return (
     <>
       {children}
-      {(view || DefaultAssetListView)({ prefix, assets: assetPackage.assets })}
+      {(view || DefaultAssetListView)({ prefix, assets })}
     </>
   );
 }

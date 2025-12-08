@@ -2,20 +2,20 @@ import { useParams } from "react-router";
 import CcBy from "./CcBy";
 
 import slugify from "slugify";
-import type { BreathtakingAssetPackage } from "./assets";
+import type { BreathtakingAsset } from "./assets";
 
 const slug = (value: string) => slugify(value, { lower: true });
 
 interface AssetViewProps {
-  assetPackage: BreathtakingAssetPackage;
+  assets: BreathtakingAsset[];
 }
 
 function AssetView(props: AssetViewProps) {
-  const { assetPackage } = props;
+  const { assets } = props;
   const { asset } = useParams();
   const assetSlugFromUrl = asset?.toLowerCase() ?? "";
 
-  const foundAsset = assetPackage.assets.find(
+  const foundAsset = assets.find(
     (asset) => slug(asset.metadata.name) == assetSlugFromUrl
   );
 

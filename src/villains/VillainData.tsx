@@ -1,8 +1,4 @@
-import type {
-  BreathtakingAsset,
-  BreathtakingAssetGroup,
-  BreathtakingAssetPackage,
-} from "../assets";
+import type { BreathtakingAsset } from "../assets";
 import OaklandOgre, {
   frontmatter as oaklandOgreMetadata,
 } from "./oakland-ogre.mdx";
@@ -19,11 +15,4 @@ const villainAssets: BreathtakingAsset[] = [
   },
 ];
 
-const villainGroups: BreathtakingAssetGroup[] = [];
-
-const villainPackage = {
-  assets: villainAssets,
-  groups: villainGroups,
-};
-
-export default villainPackage as BreathtakingAssetPackage;
+export default villainAssets;

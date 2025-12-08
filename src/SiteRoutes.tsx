@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import Home from "./Home";
 
 import ArticleWithToc from "./ArticleWithToc";
-import AssetList from "./AssetList";
 import AssetView from "./AssetView";
 
 import RulesLayout from "./rules/RulesLayout";
@@ -12,6 +11,10 @@ import AssetLayout from "./AssetLayout";
 import EicEdition, { toc as eicToc } from "./rules/eic-edition.mdx";
 import MelvinEdition from "./rules/melvin-edition.mdx";
 import SampleTraits from "./rules/SampleTraits";
+
+import Heroes from "./heroes/heroes.mdx";
+import Villains from "./villains/villains.mdx";
+import Support from "./support/support.mdx";
 
 import HeroData from "./heroes/HeroData";
 import SupportData from "./support/SupportData";
@@ -23,34 +26,16 @@ function SiteRoutes() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="heroes" element={<AssetLayout />}>
-          <Route
-            index
-            element={<AssetList assetPackage={HeroData} prefix="heroes" />}
-          />
-          <Route
-            path=":asset"
-            element={<AssetView assetPackage={HeroData} />}
-          />
+          <Route index element={<Heroes />} />
+          <Route path=":asset" element={<AssetView assets={HeroData} />} />
         </Route>
         <Route path="villains" element={<AssetLayout />}>
-          <Route
-            index
-            element={<AssetList assetPackage={VillainData} prefix="villains" />}
-          />
-          <Route
-            path=":asset"
-            element={<AssetView assetPackage={VillainData} />}
-          />
+          <Route index element={<Villains />} />
+          <Route path=":asset" element={<AssetView assets={VillainData} />} />
         </Route>
         <Route path="support" element={<AssetLayout />}>
-          <Route
-            index
-            element={<AssetList assetPackage={SupportData} prefix="support" />}
-          />
-          <Route
-            path=":asset"
-            element={<AssetView assetPackage={SupportData} />}
-          />
+          <Route index element={<Support />} />
+          <Route path=":asset" element={<AssetView assets={SupportData} />} />
         </Route>
         <Route path="rules" element={<RulesLayout />}>
           <Route

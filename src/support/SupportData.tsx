@@ -1,8 +1,4 @@
-import type {
-  BreathtakingAsset,
-  BreathtakingAssetGroup,
-  BreathtakingAssetPackage,
-} from "../assets";
+import type { BreathtakingAsset } from "../assets";
 import Action, { frontmatter as actionMetadata } from "./action.mdx";
 import CaptainBurger, {
   frontmatter as captainBurgerMetadata,
@@ -45,11 +41,4 @@ const supportAssets: BreathtakingAsset[] = [
   },
 ];
 
-const supportGroups: BreathtakingAssetGroup[] = [];
-
-const supportPackage = {
-  assets: supportAssets,
-  groups: supportGroups,
-};
-
-export default supportPackage as BreathtakingAssetPackage;
+export default supportAssets;
