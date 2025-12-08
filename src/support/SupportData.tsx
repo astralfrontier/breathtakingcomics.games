@@ -1,3 +1,4 @@
+import ArticleWithToc from "../ArticleWithToc";
 import type { BreathtakingAsset } from "../assets";
 import Action, { frontmatter as actionMetadata } from "./action.mdx";
 import CaptainBurger, {
@@ -12,7 +13,10 @@ import UniversalConsulting, {
 import Wavelength, {
   frontmatter as wavelengthMetadata,
 } from "./wavelength.mdx";
-import ZetaCity, { frontmatter as zetaCityMetadata } from "./zeta-city.mdx";
+import ZetaCity, {
+  frontmatter as zetaCityMetadata,
+  toc as zetaCityToc,
+} from "./zeta-city.mdx";
 
 const supportAssets: BreathtakingAsset[] = [
   {
@@ -36,7 +40,7 @@ const supportAssets: BreathtakingAsset[] = [
     metadata: wavelengthMetadata,
   },
   {
-    element: <ZetaCity />,
+    element: <ArticleWithToc article={<ZetaCity />} toc={zetaCityToc} />,
     metadata: zetaCityMetadata,
   },
 ];
