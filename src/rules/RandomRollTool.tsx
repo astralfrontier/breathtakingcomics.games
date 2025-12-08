@@ -33,32 +33,33 @@ function RandomRollTool() {
         {roll == 0 && <p>Click on a die to roll it</p>}
         {roll > 0 && (
           <>
-            <strong>Result:</strong> {roll}
+            <strong>You rolled:</strong> {roll} &mdash;{" "}
           </>
         )}
         {roll >= 1 && roll <= 2 && (
-          <p>
-            <strong>1-2</strong>: one Drive flips to Red - explain what went
+          <>
+            On <strong>1-2</strong>, one Drive flips to Red - explain what went
             wrong!
-          </p>
+          </>
         )}
         {roll >= 3 && roll <= 4 && (
-          <p>
-            <strong>3-4</strong>: one Drive flips to Red, another Drive flips to
-            Green - mixed success
-          </p>
+          <>
+            On <strong>3-4</strong>, one Drive flips to Red, another Drive flips
+            to Green - mixed success
+          </>
         )}
         {roll >= 5 && roll <= 9 && (
-          <p>
-            <strong>5-9</strong>: one Drive flips to Green - success!
-          </p>
+          <>
+            On <strong>5-9</strong>, one Drive flips to Green - success!
+          </>
         )}
         {roll >= 10 && (
-          <p>
-            <strong>10+</strong>: two Drives flip to Green - great success!
-          </p>
+          <>
+            On <strong>10+</strong>, two Drives flip to Green - great success!
+          </>
         )}
       </p>
+      <p>After rolling, reduce the Trait die by one size, to a minimum of d4</p>
     </article>
   );
 }
