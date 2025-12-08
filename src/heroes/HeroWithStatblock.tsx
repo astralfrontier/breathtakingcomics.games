@@ -39,6 +39,32 @@ export default function HeroWithStatblock(
       <div className={styles.hero}>{hero}</div>
       <div className={styles.statblock}>
         <article>
+          <p>
+            {frontmatter.pitch && (
+              <>
+                <strong>Pitch</strong>: {frontmatter.pitch}
+                <br />
+              </>
+            )}
+            {frontmatter.inspiration && (
+              <>
+                <strong>Inspiration</strong>: {frontmatter.inspiration}
+                <br />
+              </>
+            )}
+            {frontmatter.motivation && (
+              <>
+                <strong>Motivation</strong>: {frontmatter.motivation}
+                <br />
+              </>
+            )}
+            {frontmatter.tier && (
+              <>
+                <strong>Tier</strong>: {frontmatter.tier}
+                <br />
+              </>
+            )}
+          </p>
           <TraitBlock name="Position" trait={frontmatter.traits.position} />
           <TraitBlock name="Past" trait={frontmatter.traits.past} />
           <TraitBlock
