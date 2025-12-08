@@ -1,6 +1,10 @@
 import { useParams } from "react-router";
-import type { BreathtakingAssetPackage } from "./AssetTypes";
 import CcBy from "./CcBy";
+
+import slugify from "slugify";
+import type { BreathtakingAssetPackage } from "./assets";
+
+const slug = (value: string) => slugify(value, { lower: true });
 
 interface AssetViewProps {
   assetPackage: BreathtakingAssetPackage;
@@ -9,10 +13,10 @@ interface AssetViewProps {
 function AssetView(props: AssetViewProps) {
   const { assetPackage } = props;
   const { asset } = useParams();
-  const assetLc = asset?.toLowerCase() ?? "";
+  const assetSlugFromUrl = asset?.toLowerCase() ?? "";
 
   const foundAsset = assetPackage.assets.find(
-    (assetData) => assetData.slug.toLowerCase() == assetLc
+    (asset) => slug(asset.metadata.name) == assetSlugFromUrl
   );
 
   if (!foundAsset) {

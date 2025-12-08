@@ -2,22 +2,20 @@ import type {
   BreathtakingAsset,
   BreathtakingAssetGroup,
   BreathtakingAssetPackage,
-} from "../AssetTypes";
-import OaklandOgre, { frontmatter as oaklandOgreBio } from "./oakland-ogre.mdx";
-import Stitches, { frontmatter as stitchesBio } from "./stitches.mdx";
+} from "../assets";
+import OaklandOgre, {
+  frontmatter as oaklandOgreMetadata,
+} from "./oakland-ogre.mdx";
+import Stitches, { frontmatter as stitchesMetadata } from "./stitches.mdx";
 
 const villainAssets: BreathtakingAsset[] = [
   {
-    name: oaklandOgreBio.name,
-    slug: oaklandOgreBio.slug,
-    groups: [],
     element: <OaklandOgre />,
+    metadata: oaklandOgreMetadata,
   },
   {
-    name: stitchesBio.name,
-    slug: stitchesBio.slug,
-    groups: [],
     element: <Stitches />,
+    metadata: stitchesMetadata,
   },
 ];
 

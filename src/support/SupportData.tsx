@@ -2,71 +2,50 @@ import type {
   BreathtakingAsset,
   BreathtakingAssetGroup,
   BreathtakingAssetPackage,
-} from "../AssetTypes";
-
-import Action from "./action.mdx";
-import CaptainBurger from "./captain-burger.mdx";
-import ClarionHeights from "./clarion-heights.mdx";
-import UniversalConsulting from "./universal-consulting.mdx";
-import Wavelength from "./wavelength.mdx";
-import ZetaCity from "./zeta-city.mdx";
-
-const SETTINGS_GROUP = "settings";
-const ORGANIZATIONS_GROUP = "organizations";
+} from "../assets";
+import Action, { frontmatter as actionMetadata } from "./action.mdx";
+import CaptainBurger, {
+  frontmatter as captainBurgerMetadata,
+} from "./captain-burger.mdx";
+import ClarionHeights, {
+  frontmatter as clarionHeightsMetadata,
+} from "./clarion-heights.mdx";
+import UniversalConsulting, {
+  frontmatter as universalConsultingMetadata,
+} from "./universal-consulting.mdx";
+import Wavelength, {
+  frontmatter as wavelengthMetadata,
+} from "./wavelength.mdx";
+import ZetaCity, { frontmatter as zetaCityMetadata } from "./zeta-city.mdx";
 
 const supportAssets: BreathtakingAsset[] = [
   {
-    name: "A.C.T.I.O.N.",
-    slug: "action",
-    groups: [ORGANIZATIONS_GROUP],
     element: <Action />,
+    metadata: actionMetadata,
   },
   {
-    name: "Captain Burger",
-    slug: "captain-burger",
-    groups: [],
     element: <CaptainBurger />,
+    metadata: captainBurgerMetadata,
   },
   {
-    name: "Clarion Heights Academy and Miller Mountain Corrections",
-    slug: "clarion-heights",
-    groups: [SETTINGS_GROUP],
     element: <ClarionHeights />,
+    metadata: clarionHeightsMetadata,
   },
   {
-    name: "Universal Consulting",
-    slug: "universal-consulting",
-    groups: [ORGANIZATIONS_GROUP],
     element: <UniversalConsulting />,
+    metadata: universalConsultingMetadata,
   },
   {
-    name: "Wavelength",
-    slug: "wavelength",
-    groups: [ORGANIZATIONS_GROUP],
     element: <Wavelength />,
+    metadata: wavelengthMetadata,
   },
   {
-    name: "Zeta City",
-    slug: "zeta-city",
-    groups: [SETTINGS_GROUP],
     element: <ZetaCity />,
+    metadata: zetaCityMetadata,
   },
 ];
 
-const supportGroups: BreathtakingAssetGroup[] = [
-  {
-    name: "Organizations",
-    slug: ORGANIZATIONS_GROUP,
-    description:
-      "Teams, groups, or factions that can make appearances, independent of the overall setting.",
-  },
-  {
-    name: "Settings",
-    slug: SETTINGS_GROUP,
-    description:
-      "Places, times, or situations where you can set a story arc, or an entire game.",
-  },
-];
+const supportGroups: BreathtakingAssetGroup[] = [];
 
 const supportPackage = {
   assets: supportAssets,
