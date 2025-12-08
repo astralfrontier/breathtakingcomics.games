@@ -1,6 +1,9 @@
 import type { BreathtakingAsset } from "../assets";
 
 import Handmaid, { frontmatter as handmaidMetadata } from "./handmaid.mdx";
+import Malodoress, {
+  frontmatter as malodoressMetadata,
+} from "./malodoress.mdx";
 import MrBig, { frontmatter as mrBigMetadata } from "./mr-big.mdx";
 import OaklandOgre, {
   frontmatter as oaklandOgreMetadata,
@@ -11,6 +14,10 @@ const villainAssets: BreathtakingAsset[] = [
   {
     element: <Handmaid />,
     metadata: handmaidMetadata,
+  },
+  {
+    element: <Malodoress />,
+    metadata: malodoressMetadata,
   },
   {
     element: <MrBig />,
