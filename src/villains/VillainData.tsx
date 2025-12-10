@@ -8,6 +8,7 @@ import MrBig, { frontmatter as mrBigMetadata } from "./mr-big.mdx";
 import OaklandOgre, {
   frontmatter as oaklandOgreMetadata,
 } from "./oakland-ogre.mdx";
+import SeaCzar, { frontmatter as seaCzarMetadata } from "./sea-czar.mdx";
 import Stitches, { frontmatter as stitchesMetadata } from "./stitches.mdx";
 
 const villainAssets: BreathtakingAsset[] = [
@@ -26,6 +27,10 @@ const villainAssets: BreathtakingAsset[] = [
   {
     element: <OaklandOgre />,
     metadata: oaklandOgreMetadata,
+  },
+  {
+    element: <SeaCzar />,
+    metadata: seaCzarMetadata,
   },
   {
     element: <Stitches />,
