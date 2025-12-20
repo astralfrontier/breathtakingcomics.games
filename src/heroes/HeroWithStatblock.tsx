@@ -14,10 +14,10 @@ interface TraitBlockProps {
 
 function TraitBlock(props: TraitBlockProps) {
   const { name, trait } = props;
-  const { value, die, hooks } = trait;
+  const { value, hooks } = trait;
   return (
     <section>
-      <strong>{name}</strong>: {value} {die && <>({die})</>}
+      <strong>{name}</strong>: {value}
       <small>
         <ul>
           {hooks.map((hook: string) => (
