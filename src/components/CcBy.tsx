@@ -7,12 +7,12 @@ export default function CcBy() {
       <img
         src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
         alt=""
-        style={{ maxWidth: "1em", maxHeight: "1em", marginLeft: ".2em;" }}
+        style={{ maxWidth: "1em", maxHeight: "1em", marginLeft: ".2em" }}
       />
       <img
         src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
         alt=""
-        style={{ maxWidth: "1em", maxHeight: "1em", marginLeft: ".2em;" }}
+        style={{ maxWidth: "1em", maxHeight: "1em", marginLeft: ".2em" }}
       />
     </article>
   );
