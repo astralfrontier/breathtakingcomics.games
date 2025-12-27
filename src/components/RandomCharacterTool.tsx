@@ -1,28 +1,5 @@
 import { useCallback, useState } from "react";
-// TODO: import
-// import { randomTraitByType, type TraitData } from "../traits";
-
-interface TraitData {
-  type: string;
-  name: string;
-  examples: string[];
-  catchphrase: string;
-  description: string;
-  hooks: string[];
-  drives: string[];
-}
-
-function randomTraitByType(traitType: string, previousValue?: TraitData): TraitData {
-  return {
-  type: traitType,
-  name: "TODO NAME",
-  examples: [],
-  catchphrase: "TODO CATCHPHRASE",
-  description: "TODO DESCRIPTION",
-  hooks: [],
-  drives: []
-}
-}
+import { randomTraitByType, type TraitData } from "@/traits";
 
 import styles from "./RandomCharacterTool.module.scss";
 

@@ -1,6 +1,5 @@
 import { useCallback, useState } from "react";
-// TODO import
-// import { randomElement } from "../traits";
+import { randomElement } from "@/traits";
 
 interface DriveState {
   name: string;
@@ -8,16 +7,6 @@ interface DriveState {
   struck: boolean;
   excuse: string;
 }
-
-// TODO remove once traits import is working
-function randomValue(maxValue: number) {
-  return Math.floor(Math.random() * maxValue);
-}
-
-function randomElement<T>(elements: T[]): T {
-  return elements[randomValue(elements.length)];
-}
-
 
 const DRIVES = [
   "Bus Full of Civilians",

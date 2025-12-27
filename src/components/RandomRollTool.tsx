@@ -1,10 +1,5 @@
 import { useCallback, useState } from "react";
-// TODO fix
-// import { randomValue } from "../traits";
-
-function randomValue(maxValue: number) {
-  return Math.floor(Math.random() * maxValue);
-}
+import { randomValue } from "../traits";
 
 function RandomRollTool() {
   const [roll, setRoll] = useState<number>(randomValue(6) + 1);
