@@ -2,6 +2,7 @@ import traitDataRaw from "./traits.yaml";
 
 export interface TraitData {
   type: string;
+  id: string;
   name: string;
   examples: string[];
   catchphrase: string;

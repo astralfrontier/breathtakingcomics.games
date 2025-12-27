@@ -1,4 +1,5 @@
 - type: past
+  id: anomaly
   name: The Anomaly
   examples:
     - '**Firestorm** is the product of sabotage on an experimental lab apparatus'
@@ -27,6 +28,7 @@
     - Someone wants to capture and study you
     - A villain somehow gained your powers too
 - type: past
+  id: big-shot
   name: The Big Shot
   examples:
     - '**Green Arrow** is a millionaire playboy who moonlights as a vigilante'
@@ -51,6 +53,7 @@
     - The seat of your public life (e.g. a courthouse) is under attack
     - A rival in your public life wants to undermine you as a hero
 - type: past
+  id: mantle
   name: The Mantle
   examples:
     - >-
@@ -77,6 +80,7 @@
     - Someone wields a weakness or counter for the Mantle as a whole
     - The Mantle's HQ or base is under attack
 - type: past
+  id: penitent
   name: The Penitent
   examples:
     - >-
@@ -105,6 +109,7 @@
     - You must clean up up a mess you once caused
     - Someone tempts you to return to evil, or with an offer of atonement
 - type: past
+  id: seeker
   name: The Seeker
   examples:
     - >-
@@ -134,6 +139,7 @@
     - A rival wants to test themselves against you
     - Someone failed to achieve what you did, and took a darker path to power
 - type: past
+  id: visitor
   name: The Visitor
   examples:
     - >-
@@ -162,6 +168,7 @@
     - Some unique tech or phenomenon from your home is causing trouble
     - You may never see home again - or you may be exiled there
 - type: personality
+  id: arrogant
   name: Arrogant
   examples:
     - >-
@@ -188,6 +195,7 @@
     - Something challenges the source of your confidence
     - Some power or circumstance negates your perceived advantages
 - type: personality
+  id: brooding
   name: Brooding
   examples:
     - >-
@@ -215,6 +223,7 @@
     - You lost someone's trust and now they're out to hurt you
     - Your secrets are at risk of being exposed
 - type: personality
+  id: dependable
   name: Dependable
   examples:
     - '**Black Widow** is calm, collected, and capable in any situation'
@@ -238,6 +247,7 @@
     - An agent of chaos is messing with people
     - You want to reassure someone that it can all work out
 - type: personality
+  id: nerdy
   name: Nerdy
   examples:
     - '**Spider-Man** in all his incarnations is a huge science nerd'
@@ -260,6 +270,7 @@
     - Chasing your obsession caused a problem you're trying to make right
     - Someone else's own obsession is responsible for a problem
 - type: personality
+  id: snarky
   name: Snarky
   examples:
     - '**Deadpool** is famously known as ''the merc with a mouth'''
@@ -283,6 +294,7 @@
       down a notch
     - You're struggling to make a connection with someone important to you
 - type: personality
+  id: upbeat
   name: Upbeat
   examples:
     - >-
@@ -308,6 +320,7 @@
     - An enemy wants to convince you that life sucks
     - You need to keep someone's spirits up
 - type: position
+  id: backup
   name: The Backup
   examples:
     - >-
@@ -335,6 +348,7 @@
       help each of them stay focused
     - Sabotage or bad luck interferes with the tema's normal operation
 - type: position
+  id: director
   name: The Director
   examples:
     - >-
@@ -361,6 +375,7 @@
       action
     - The team is being discredited or sabotaged
 - type: position
+  id: heart
   name: The Heart
   examples:
     - >-
@@ -389,6 +404,7 @@
     - A villain is leading a reign of terror
     - Something is artificially provoking fear or rage in people
 - type: position
+  id: muscle
   name: The Muscle
   examples:
     - '**The Hulk** is the strongest there is'
@@ -413,6 +429,7 @@
       Ordinary people are being given powers, weapons, or other enhancements
       which make them dangerous
 - type: position
+  id: renegade
   name: The Renegade
   examples:
     - >-
@@ -437,6 +454,7 @@
     - A former hero rebelled against authority and is now causing harm
     - A leader or institution is corrupt and must be exposed
 - type: position
+  id: rookie
   name: The Rookie
   examples:
     - '**Impulse** is a junior speedster with a peculiar upbringing'
@@ -466,6 +484,7 @@
       A group of renegade anti-heroes want to show the world a new way to do
       things
 - type: powers
+  id: best-at-something
   name: Best At Something
   examples:
     - >-
@@ -486,6 +505,7 @@
     - The source of your excellence is imperiled
     - There's always someone better
 - type: powers
+  id: controls-a-medium
   name: Controls A Medium
   examples:
     - Heroes **Fire** and **Ice** are masters of their respective elements
@@ -509,6 +529,7 @@
     - Someone else challenges your mastery of your medium
     - Your medium is being used to endanger people
 - type: powers
+  id: is-mighty
   name: Is Mighty
   examples:
     - '**Shazam** has the power of heroes and gods of legend'
@@ -533,6 +554,7 @@
     - Someone here wants to test your strength
     - A villain knows the secret to make you vulnerable
 - type: powers
+  id: has-a-unique-physique
   name: Has a Unique Physique
   examples:
     - '**Beast Boy** can transform himself into numerous animal shapes'
@@ -560,6 +582,7 @@
       Someone thinks your power is useless or dangerous, and you want to prove
       them wrong
 - type: powers
+  id: uses-gimmicks
   name: Uses Gimmicks
   examples:
     - >-
@@ -586,6 +609,7 @@
     - A villain with the same - or an opposed - gimmick challenges you
     - There's a problem only one of your gimmicks can solve
 - type: powers
+  id: wields-weirdness
   name: Wields Weirdness
   examples:
     - '**Doctor Strange** is a master of the occult'
@@ -606,6 +630,7 @@
     - Something related to your power has gone out of control
     - A corruption is affecting the source of your power
 - type: problems
+  id: haunted
   name: Haunted
   examples:
     - >-
@@ -633,6 +658,7 @@
       Someone is embracing the thing, which will go on to hurt them or others
       unless stopped
 - type: problems
+  id: isolated
   name: Isolated
   examples:
     - >-
@@ -658,6 +684,7 @@
     - The team must split up and work as individuals
     - The team's image is on the line
 - type: problems
+  id: needy
   name: Needy
   examples:
     - '**Johnny Storm** of the Fantastic Four is a thrill-seeker and womanizer'
@@ -681,6 +708,7 @@
     - Someone baits you with what you crave
     - A teammate disapproves of your behavior
 - type: problems
+  id: pushed
   name: Pushed
   examples:
     - >-
@@ -708,6 +736,7 @@
       that would exhaust you
     - You want to protect someone else from going down your path
 - type: problems
+  id: selfless
   name: Selfless
   examples:
     - >-
@@ -733,6 +762,7 @@
     - There's lots of vulnerable people who need defending
     - You're lured into a trap requiring self-sacrifice
 - type: problems
+  id: torn
   name: Torn
   examples:
     - >-
