@@ -1,11 +1,13 @@
 ---
 import '@/styles/SiteLayout.scss'
+
+const { title = "Breathtaking Comics" } = Astro.props.frontmatter;
 ---
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Breathtaking Comics</title>
+    <title>{title}</title>
   </head>
   <body>
     <article>
