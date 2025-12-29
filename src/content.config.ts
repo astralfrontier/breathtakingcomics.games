@@ -1,9 +1,9 @@
 import { defineCollection } from 'astro:content';
-import { file } from 'astro/loaders';
+import { file, glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 const traits = defineCollection({
-  loader: file("src/traits/traits.yaml"),
+  loader: file("./src/traits/traits.yaml"),
   schema: z.object({
     type: z.enum(['past', 'position', 'personality', 'powers', 'problems']),
     name: z.string(),
@@ -15,4 +15,21 @@ const traits = defineCollection({
   })
 });
 
-export const collections = { traits };
+const world = defineCollection({
+  loader: glob({pattern: "**/*.md", base: "./src/world"}),
+  schema: z.object({
+    name: z.string(),
+    path: z.string(),
+    description: z.string().optional(),
+    pitch: z.string().optional(), // For heroes & villains
+    inspiration: z.string().optional(),
+    motivation: z.string().optional(),
+    origin: z.string().optional(),
+    role: z.string().optional(),
+    abilities: z.string().optional(),
+    struggles: z.string().optional(),
+    tier: z.string().optional()
+  })
+})
+
+export const collections = { traits, world };

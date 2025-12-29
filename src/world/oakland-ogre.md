@@ -1,0 +1,78 @@
+---
+name: The Oakland Ogre
+path: villains
+description: A two-bit thug trying to be a 5-dollar villain
+tier: Street
+motivation: To be welcomed into the big leagues
+origin: Mutation
+role: Dim Muscle
+abilities: Super-strength, super-durability, armored exterior
+struggles: Gets no respect
+---
+
+# The Oakland Ogre
+
+Timmy Valentine always wanted to be a bad guy.
+The kids in his neighborhood talked big, and but they only laughed when he talked like them.
+As he grew older, he heard stories about people engaging in street races, or robbing liquor stores, and he wanted to be a cool rebel like them.
+In trying, he got sent to juvenile detention a few times, and his parents always bailed him out.
+They'd lecture him, but it never stuck.
+
+When the mutation struck, and he became big and strong and ugly, it was like God answering his prayers.
+He'd finally be the tough, badass rebel he'd always dreamed of being.
+At no time did it occur to him to try to be a hero.
+Those guys are boring!
+He took the name "the Ogre", only to learn there were like a dozen Ogres already in the villain world.
+Okay, fine, he could qualify it with his neighborhood.
+Local pride, right?
+
+The thing is, he doesn't have what it takes.
+He doesn't have the desperation or creativity you develop when growing up is hard.
+He doesn't know who he is, he only knows the other people he wants to be.
+So he'll do small, unimaginative jobs like legbreaking and loan sharking for the Mob,
+intimidation and arson for greedy real-estate tycoons, and simple henching for established supervillains.
+He doesn't want money or revenge.
+He wants what his strength alone can't give him: to be _noticed_.
+
+# Drives (for heroes)
+
+- Stop the Oakland Ogre's current heist
+- Get the Oakland Ogre to divulge his current boss's scheme
+- Keep the Oakland Ogre from destroying something important by accident
+
+# Moves
+
+- Smash something!
+- Make a boast you can't back up
+- Try something bold and screw it up destructively
+
+# Variations
+
+## Competence
+
+- Timmy can't be the villain he aspires to be.
+  But what if he notices that fact, and starts consciously building on his actual strengths?
+  If he's treated as a joke for too long, by too many people, he might hide behind that persona while he improves his villain game.
+  And then they'll all see, oh yes…
+- On the other hand, Timmy can be not only small-time, but comically inept.
+  His plans to rob a bank go south when he arrives at a bingo parlor instead.
+  His armored car heist failed when the cars just smashed through him and kept driving.
+  He might not be a real danger, but he can be a persistently annoying speed-bump to their attempts to save the city.
+
+## Power Level
+
+- Timmy Valentine could be weaker, or lack powers entirely.
+  Maybe he's just got a football player's muscular build,
+  and he'd do anything to get a mutagen or experimental treatment or something that would give him actual superpowers.
+- He could also be stronger, either naturally or artificially.
+  A seriously tough Ogre is still the Oakland Ogre, and he won't do much with it
+  except accidentally break things (and perhaps ruin a scheme in the process).
+
+## Leaders and Followers
+
+- Timmy might have his own group of henchmen.
+  They might be hangers-on trying to be tough like him, newcomers to town who don't know he's basically a nobody,
+  or professional goons just trying to do a job and get paid.
+- What if Timmy actually catches a villain's eye?
+  They might use him as an expendable decoy for an important operation with empty promises.
+  The heroes might need to save the Oakland Ogre from himself.

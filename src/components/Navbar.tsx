@@ -34,13 +34,7 @@ function Navbar() {
               <a href="/rules/traits">Traits</a>
             </li>
             <li>
-              <a href="/heroes">Heroes</a>
-            </li>
-            <li>
-              <a href="/villains">Villains</a>
-            </li>
-            <li>
-              <a href="/support">Supporting Cast</a>
+              <a href="/world">The Breathtaking World</a>
             </li>
           </ul>
         </nav>
