@@ -1,0 +1,34 @@
+$toc-breakpoint: 768px;
+
+@media (min-width: $toc-breakpoint) {
+  .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr 12rem;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "article toc";
+  }
+}
+
+.gridtoc {
+  grid-area: toc;
+  position: sticky;
+  // Needed to make sticky work
+  top: 0;
+  align-self: start;
+  // Make sticky scrollable
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@media (max-width: $toc-breakpoint) {
+  .gridtoc {
+    display: none;
+  }
+}
+
+.gridarticle {
+  grid-area: article;
+}

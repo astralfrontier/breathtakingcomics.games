@@ -2,10 +2,13 @@
 layout: "@/layouts/SiteLayout.astro"
 title: EIC Edition Rules
 ---
+import TocWrapper from "@/components/TocWrapper"
 import RandomCharacterTool from "@/components/RandomCharacterTool"
 import RandomRollTool from "@/components/RandomRollTool"
 import DriveTool from "@/components/DriveTool"
 import CcBy from "@/components/CcBy"
+
+<TocWrapper toc={toc}>
 
 Attention all staff of Breathtaking Comics! This is your Editor in Chief, so listen up!
 
@@ -709,5 +712,7 @@ The Drive notes should look like this:
 - Hero Impressing Teammate (GREEN) - no change
 
 Rinse and repeat, until about half the total Drives are struck.
+
+</TocWrapper>
 
 <CcBy />

@@ -3,7 +3,8 @@ import yaml from '@rollup/plugin-yaml';
 import { defineConfig } from 'astro/config';
 
 import mdx from '@astrojs/mdx';
-
+import rehypeMdxToc from "rehype-mdx-toc";
+import rehypeSlug from "rehype-slug";
 import react from '@astrojs/react';
 
 import playformCompress from '@playform/compress';
@@ -12,7 +13,9 @@ import compressor from 'astro-compressor';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [mdx(), react(), playformCompress(), compressor()],
+  integrations: [mdx({
+    rehypePlugins: [rehypeSlug, rehypeMdxToc]
+  }), react(), playformCompress(), compressor()],
   vite: {
     plugins: [yaml()]
   }
