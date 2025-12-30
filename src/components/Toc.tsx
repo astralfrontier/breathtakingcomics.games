@@ -12,7 +12,7 @@ export default function Toc(props: TocProps) {
       <nav>
         <ul>
           {toc.map((tocItem: TocItem) => (
-            <li>
+            <li key={tocItem.id}>
               <a href={tocItem.href}>
                 {tocItem.depth > 1 ? (
                   <small>{tocItem.value}</small>
