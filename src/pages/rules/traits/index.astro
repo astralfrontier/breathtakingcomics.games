@@ -4,7 +4,6 @@ import SiteLayout from "@/layouts/SiteLayout.astro"
 import TocWrapper from "@/components/TocWrapper"
 import { groupBy, prop } from "ramda"
 import traitData from "@/traits"
-import CcBy from "@/components/CcBy"
 const groupedTraits = groupBy(prop("type"), traitData)
 const types = [""]
 
@@ -38,7 +37,7 @@ function buildTocFromTraits(): TocItem[] {
   return elements;
 }
 ---
-<SiteLayout frontmatter={{"title": "Sample Traits"}}>
+<SiteLayout frontmatter={{"title": "Sample Traits", description: "A list of sample traits for Breathtaking Comics hero characters"}}>
   <p>
     All of the traits here are examples. You can create your own original
     traits, or adapt the ones you find here.
@@ -78,6 +77,4 @@ function buildTocFromTraits(): TocItem[] {
       )
     )}
   </TocWrapper>
-
-  <CcBy />
 </SiteLayout>

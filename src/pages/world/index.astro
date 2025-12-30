@@ -1,5 +1,4 @@
 ---
-import CcBy from "@/components/CcBy";
 import WorldList from "@/components/WorldList.astro";
 import SiteLayout from "@/layouts/SiteLayout.astro";
 import { getCollection } from "astro:content";
@@ -18,7 +17,7 @@ const settings = await getCollection("world", ({ data }) =>
 );
 ---
 
-<SiteLayout frontmatter={{ title: "The Breathtaking World" }}>
+<SiteLayout frontmatter={{ title: "The Breathtaking World", description: "People, places, and groups you can use in your own Breathtaking Comics or other superhero games" }}>
   <h1>Heroes</h1>
   <WorldList elements={heroes} />
 
@@ -35,6 +34,4 @@ const settings = await getCollection("world", ({ data }) =>
 
   <h1>Settings</h1>
   <WorldList elements={settings} />
-
-  <CcBy />
 </SiteLayout>
