@@ -19,10 +19,12 @@ const { title = "No Title", description = "No Description", license = "cc-by-40"
 
 let image = undefined
 let image_alt = undefined
-const entry = (await getEntry("art", art_id || ''))
-if (entry) {
-  image = entry.data.url
-  image_alt = `${entry.data.name} by ${entry.data.credit}`
+if (art_id) {
+  const entry = (await getEntry("art", art_id || ''))
+  if (entry) {
+    image = entry.data.url
+    image_alt = `${entry.data.name} by ${entry.data.credit}`
+  }
 }
 ---
 <html lang="en">
