@@ -15,6 +15,11 @@ const traits = defineCollection({
   })
 });
 
+const traitShape = z.object({
+  value: z.string(),
+  hooks: z.array(z.string())
+})
+
 const world = defineCollection({
   loader: glob({pattern: "**/*.md", base: "./src/world"}),
   schema: z.object({
@@ -28,7 +33,14 @@ const world = defineCollection({
     role: z.string().optional(),
     abilities: z.string().optional(),
     struggles: z.string().optional(),
-    tier: z.string().optional()
+    tier: z.string().optional(),
+    traits: z.object({
+      position: traitShape,
+      past: traitShape,
+      personality: traitShape,
+      powers: traitShape,
+      problems: traitShape,
+    }).optional()
   })
 })
 
