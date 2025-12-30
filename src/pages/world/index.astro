@@ -3,18 +3,26 @@ import WorldList from "@/components/WorldList.astro";
 import SiteLayout from "@/layouts/SiteLayout.astro";
 import { getCollection } from "astro:content";
 
-const heroes = await getCollection("world", ({ data }) =>
-  data.path.startsWith("heroes"),
-);
-const villains = await getCollection("world", ({ data }) =>
-  data.path.startsWith("villains"),
-);
-const organizations = await getCollection("world", ({ data }) =>
-  data.path.startsWith("organizations"),
-);
-const settings = await getCollection("world", ({ data }) =>
-  data.path.startsWith("settings"),
-);
+async function worldByPath(pathName: string) {
+  const collection = await getCollection("world", ({ data }) => data.path.startsWith(pathName));
+  // Sort elements by name, skipping "the" as a prefix
+  return collection.sort((a, b) => {
+    const na = a.data.name.toLowerCase().replace(/^the +/, '');
+    const nb = b.data.name.toLowerCase().replace(/^the +/, '');
+    if (na < nb) {
+      return -1;
+    }
+    if (na > nb) {
+      return 1;
+    }
+    return 0;
+  })
+}
+
+const heroes = await worldByPath("heroes");
+const villains = await worldByPath("villains");
+const organizations = await worldByPath("organizations");
+const settings = await worldByPath("settings");
 ---
 
 <SiteLayout frontmatter={{ title: "The Breathtaking World", description: "People, places, and groups you can use in your own Breathtaking Comics or other superhero games" }}>
