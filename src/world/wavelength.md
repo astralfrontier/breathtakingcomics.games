@@ -1,7 +1,7 @@
 ---
 name: Wavelength
 path: organizations
-description: An Internet forum dedicated to superhero conspiracy theories.
+description: An Internet forum dedicated to superhero conspiracy theories
 ---
 
 # Wavelength
@@ -33,3 +33,9 @@ What they are doing now ranges from harmless (research into using geothermal ene
 to dangerous (crossbreeding powered superhumans with hypothetical reptoid races).
 
 **Historical events**: everything from Stonehenge and the Egyptian pyramids to the sinking of the Spanish Armada has been attributed to superhumans.
+
+# Drives (for heroes)
+
+- Research a superhuman mystery on the forums
+- Track down a prolific poster whose expertise can help the current situation
+- Deal with the fallout of somebody posting about the heroes (whether it's true or false)

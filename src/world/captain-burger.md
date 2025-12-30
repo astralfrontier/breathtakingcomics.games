@@ -1,7 +1,7 @@
 ---
 name: Captain Burger
 path: organizations
-description: A typical hangout for heroes of all kinds.
+description: A typical hangout for heroes of all kinds
 ---
 
 # Captain Burger
@@ -20,3 +20,9 @@ Captain Burger is for...
 
 - Heroes who want a place to hang out and unwind between missions
 - Heroes with secret identities who need a part-time job
+
+# Drives (for heroes)
+
+- Keep Captain Burger from being destroyed by the current crisis
+- Meet friends at Captain Burger and relax
+- Survive your first Captain Burger experience

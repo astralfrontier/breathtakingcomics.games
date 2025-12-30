@@ -19,3 +19,9 @@ A.C.T.I.O.N. is for...
 - Globe-trotting espionage scenarios
 - Dirty deeds done for the greater good
 - Stories about loyalty, betrayal, and secrets
+
+# Drives (for heroes)
+
+- A.C.T.I.O.N. agents have an interest in some high-tech dingus which may clash with what the heroes want
+- A villain in A.C.T.I.O.N. custody escaped, and the agency asks for help
+- The agency has answers to the heroes' problem, but their aid won't come cheap

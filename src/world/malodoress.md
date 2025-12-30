@@ -2,7 +2,7 @@
 name: Malodoress
 path: villains
 tier: City
-description: Evil gaseous Captain Planet
+description: An evil gaseous Captain Planet
 inspiration: The Mist, Inque, Hexxus
 motivation: Poison the world with delicious chemicals
 origin: Varies
