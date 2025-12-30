@@ -7,7 +7,7 @@ const art = defineCollection({
   schema: z.object({
     name: z.string(),
     credit: z.string(),
-    url: z.string() // We can't use Zod's url() helper with path-only URLs
+    url: z.string().url()
   })
 })
 
