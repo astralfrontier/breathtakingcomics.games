@@ -1,0 +1,34 @@
+---
+type License = 'cc-by-40' | undefined;
+interface Frontmatter {
+  title?: string;
+  description?: string;
+  license?: License;
+}
+interface Props {
+  frontmatter: Frontmatter;
+}
+
+import CcBy from '@/components/CcBy';
+import Navbar from '@/components/Navbar';
+import '@/styles/SiteLayout.scss'
+
+const { title = "No Title", description = "No Description", license = "cc-by-40" } = Astro.props.frontmatter;
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content={description}>
+    <title>{title} | Breathtaking Comics</title>
+  </head>
+  <body>
+    <Navbar />
+    <main class="container">
+      <slot />
+    </main>
+    <footer class="container">
+      {license == 'cc-by-40' && <CcBy />}
+    </footer>
+  </body>
+</html>

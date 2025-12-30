@@ -1,0 +1,14 @@
+---
+const elements = Astro.props.elements
+---
+{elements.map((entry: { id: any; data: { name: string, description?: string | undefined } }) => 
+<p>
+  <strong>
+    <a href={`/world/${entry.id}`}>
+      {entry.data.name}
+    </a>
+  </strong><br />
+  {entry.data.description || 'No description'}
+</p>
+    
+)}

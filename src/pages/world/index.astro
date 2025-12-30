@@ -1,0 +1,37 @@
+---
+import WorldList from "@/components/WorldList.astro";
+import SiteLayout from "@/layouts/SiteLayout.astro";
+import { getCollection } from "astro:content";
+
+const heroes = await getCollection("world", ({ data }) =>
+  data.path.startsWith("heroes"),
+);
+const villains = await getCollection("world", ({ data }) =>
+  data.path.startsWith("villains"),
+);
+const organizations = await getCollection("world", ({ data }) =>
+  data.path.startsWith("organizations"),
+);
+const settings = await getCollection("world", ({ data }) =>
+  data.path.startsWith("settings"),
+);
+---
+
+<SiteLayout frontmatter={{ title: "The Breathtaking World", description: "People, places, and groups you can use in your own Breathtaking Comics or other superhero games" }}>
+  <h1>Heroes</h1>
+  <WorldList elements={heroes} />
+
+  <div class="grid">
+    <div>
+      <h1>Villains</h1>
+      <WorldList elements={villains} />
+    </div>
+    <div>
+      <h1>Organizations</h1>
+      <WorldList elements={organizations} />
+    </div>
+  </div>
+
+  <h1>Settings</h1>
+  <WorldList elements={settings} />
+</SiteLayout>
