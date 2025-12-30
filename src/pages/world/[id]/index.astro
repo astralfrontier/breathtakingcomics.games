@@ -21,7 +21,15 @@ if (!entry) {
   throw new Error(`Could not find item '${id}' in world collection`)
 }
 
-const { Content, headings } = await render(entry);
+let artEntries = []
+if (entry.data.art) {
+  artEntries = await getCollection("art", (art) => entry.data.art!.includes(art.id))
+} else {
+  const prefix = `${id}/`
+  artEntries = await getCollection("art", (art) => art.id.startsWith(prefix))
+}
+
+const { Content } = await render(entry);
 ---
 <SiteLayout frontmatter={{"title": entry.data.name, "description": entry.data.description}}>
   <div class="grid">
@@ -40,4 +48,12 @@ const { Content, headings } = await render(entry);
       </div>
     }
   </div>
+  <pre>
+    {JSON.stringify(artEntries, null, 2)}
+  </pre>
+  {artEntries.length > 0 &&
+    <div class="grid">
+      {artEntries.map(artEntry => <Art id={artEntry.id} />)}
+    </div>
+  }
 </SiteLayout>

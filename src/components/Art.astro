@@ -2,7 +2,7 @@
 import { getEntry, render } from 'astro:content';
 import styles from "./Art.module.scss";
 
-const { id } = Astro.params;
+const { id } = Astro.props;
 const entry = (await getEntry("art", id || ''))
 ---
 {entry &&

@@ -35,6 +35,7 @@ const world = defineCollection({
     name: z.string(),
     path: z.string(),
     description: z.string().optional(),
+    art: z.array(z.string()).optional(),
     pitch: z.string().optional(), // For heroes & villains
     inspiration: z.string().optional(),
     motivation: z.string().optional(),
