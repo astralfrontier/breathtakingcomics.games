@@ -1,0 +1,14 @@
+---
+import { getEntry, render } from 'astro:content';
+import styles from "./Art.module.scss";
+
+const { id } = Astro.params;
+const entry = (await getEntry("art", id || ''))
+---
+{entry &&
+<div class={styles.art}>
+  <img src={entry.data.url} alt={`${entry.data.name} by ${entry.data.credit}`} />
+  <br />
+  <strong>{entry.data.name}</strong> by <strong>{entry.data.credit}</strong>
+</div>
+}
