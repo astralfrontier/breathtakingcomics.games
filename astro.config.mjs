@@ -15,6 +15,7 @@ import purgecss from 'astro-purgecss';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://breathtakingcomics.games',
   integrations: [mdx({
     rehypePlugins: [rehypeSlug, rehypeMdxToc]
   }), react(), purgecss(), playformCompress(), compressor()],
