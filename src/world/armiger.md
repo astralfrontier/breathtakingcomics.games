@@ -50,14 +50,14 @@ They don't recruit, though - the sword chooses its wielders.
 A year ago, William Eddison was a student with average grades, much ambition, but no direction.
 He had a crush on Shirley Skinner, but doubted he'd have a chance.
 When demons attacked her one day after school, he instinctively threw himself into defending her.
-At that moment, the sword presented itself to him. With its power, he prevailed.
+At that moment, the sword presented itself to him. With its power, he won his first sword fight.
 
 The sword was new to him, but not her.
 She introduced him to her father, Edric Skinner, himself a former Grail Knight.
 Though the old man thoroughly disapproved of young Eddison, he had to train him in swordplay and tactics.
 Shirley took on the role of William's physical trainer, seeing to his exercise and diet.
 She's quite critical of him, but every so often William gets the feeling there might be more.
-He fights demons with the courage of a knight.
+He battles evil with the courage of a knight.
 Will he show that same courage in matters of the heart?
 
 # Drives
@@ -99,7 +99,8 @@ Will he show that same courage in matters of the heart?
 - The sword is the physical manifestation of a universal cosmic truth. It cannot be broken or taken away by mortal forces.
 - A worthy wielder can teleport the sword to themselves, or themselves to the sword, at will.
 - The sword is a tool of rulership. It gives a worthy wielder the power to uphold justice and fight evil.
-- The sword can bend fate or manipulate reality. The wielder must simply demonstrate the courage to face a challenge, and the sword does the rest.
+- The sword can bend fate or manipulate reality to even the playing field between wielders and their enemies,
+  but the wielder's courage and skill is still needed to prevail.
 - The sword's powers are not under the wielder's full control, but learning more about what the sword represents will unlock new powers or more control.
 
 > "I'm not carrying the real Excalibur. This sword here is more like a shadow, or echo, or reflection of the true sword.
