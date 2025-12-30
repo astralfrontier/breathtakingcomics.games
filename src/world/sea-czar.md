@@ -12,7 +12,7 @@ struggles: Hatred for land-dwellers and their wasteful ways
 dialogue:
   - "Your surface world lives or dies at my pleasure."
   - "Whole classes - whole phyla - of life exist underwater, that none of you have dared glimpse! And they harken to my command!"
-  - "Nothing is lost forever in the depths of the sea. It simply comes to me."
+  - "Nothing is really lost in the depths of the sea. It all comes, inevitably, to me."
   - "Curious, how narrow the gap between dehydration and drowning."
 ---
 
@@ -37,6 +37,7 @@ and other abilities make him physically formidable even without his other resour
 Sea-Czar seems to prefer intimidation to conquest.
 He wants the surface to avoid dumping chemicals into the oceans,
 and wants to harshly regulate fishing, shipping, and other human pursuits on and in the ocean.
+He rules his preferred empire, and sees his actions as punishing interlopers in his domain.
 
 Don't underestimate what such a person is capable of.
 Nuclear submarines lost at sea may have given him access to nuclear weapons,
