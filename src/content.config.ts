@@ -2,6 +2,15 @@ import { defineCollection } from 'astro:content';
 import { file, glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
+const art = defineCollection({
+  loader: file("./src/art.yaml"),
+  schema: z.object({
+    name: z.string(),
+    credit: z.string(),
+    url: z.string() // We can't use Zod's url() helper with path-only URLs
+  })
+})
+
 const traits = defineCollection({
   loader: file("./src/traits/traits.yaml"),
   schema: z.object({
@@ -44,4 +53,4 @@ const world = defineCollection({
   })
 })
 
-export const collections = { traits, world };
+export const collections = { art, traits, world };

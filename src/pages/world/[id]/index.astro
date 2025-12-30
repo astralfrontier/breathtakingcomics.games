@@ -3,6 +3,7 @@ import { getCollection, getEntry, render } from 'astro:content';
 import SiteLayout from "@/layouts/SiteLayout.astro"
 import HeroStats from "@/components/HeroStats"
 import VillainStats from "@/components/VillainStats"
+import Art from '@/components/Art.astro';
 
 export async function getStaticPaths() {
   const entries = await getCollection("world");
@@ -25,6 +26,7 @@ const { Content, headings } = await render(entry);
 <SiteLayout frontmatter={{"title": entry.data.name, "description": entry.data.description}}>
   <div class="grid">
     <div>
+      <Art id={entry.id} />
       <Content />
     </div>
     {entry.data.path.startsWith("heroes") &&
