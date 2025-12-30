@@ -8,7 +8,12 @@ motivation: To terrorize the surface world
 origin: Super-Scientific Genetic Engineering
 role: Conqueror
 abilities: Mind Control (Sea Life), Atlantean Archaeotech
-struggles: A thirst for conquest
+struggles: Hatred for land-dwellers and their wasteful ways
+dialogue:
+  - "Your surface world lives or dies at my pleasure."
+  - "Whole classes - whole phyla - of life exist underwater, that none of you have dared glimpse! And they harken to my command!"
+  - "Nothing is lost forever in the depths of the sea. It simply comes to me."
+  - "Curious, how narrow the gap between dehydration and drowning."
 ---
 
 # Sea-Czar

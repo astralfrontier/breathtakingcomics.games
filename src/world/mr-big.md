@@ -3,12 +3,17 @@ name: Mr. Big
 path: villains
 description: Size-shifting Grand Old Man of Villainy
 tier: National
-inspiration: None
+inspiration: Hank Pym in his "Dr. Pym" persona
 motivation: To live life however he sees fit
-origin: Unknown
+origin: Mutation
 role: Veteran Villain
 abilities: Growing or shrinking
-struggles: Unknown
+struggles: Going against the government
+dialogue:
+  - "Go Big or Go Home."
+  - "You'd be on my side if you knew what these people did."
+  - "Anyone with power turns villain sooner or later. Most of them got elected."
+  - "Hey - it's over. Let's all chill out and go home."
 ---
 
 # Mr. Big

@@ -8,7 +8,13 @@ motivation: Poison the world with delicious chemicals
 origin: Varies
 role: Controller
 abilities: Gaseous body, chemical control
-struggles: Unknown
+struggles: Vulnerability to unexpected chemical interactions
+dialogue:
+  - "Oh, hero. I'm embarrassed for you. That really stunk."
+  - "Haven't you heard? The future's in the cloud!"
+  - "Rot! Rot and decay! Ahahaha!"
+  - "Actually, multiblock styrene/isoprene copolymers is brilliant as a foundation for this industrial process."
+
 ---
 
 # Malodoress

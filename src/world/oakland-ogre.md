@@ -8,6 +8,11 @@ origin: Mutation
 role: Dim Muscle
 abilities: Super-strength, super-durability, armored exterior
 struggles: Gets no respect
+dialogue:
+  - "Hey! You're facin' ME - da Oakland Ogre!"
+  - "Dis is whatcha call grab-an-smash burglary. I grab ya, then I smash ya!"
+  - "I never could get into da Oakland A's. I never got above C plus in school."
+  - "How did ya beat the Ogre? It's stupefyin'!"
 ---
 
 # The Oakland Ogre

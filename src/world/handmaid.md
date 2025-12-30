@@ -9,6 +9,11 @@ origin: Unknown
 role: Low-level high-tech henchperson
 abilities: Inventing robot hands
 struggles: Being useful beyond her niche
+dialogue:
+  - "I'm just doing this heist to 'punch up' my résumé. Haha, get it?"
+  - "Yes, these are my actual robots. They aren't hand-me-downs."
+  - "Good job, kids! Fist bump!"
+  - "Hey, what do you heroes think of my costume? Does it stand out? Be honest."
 ---
 
 # Handmaid

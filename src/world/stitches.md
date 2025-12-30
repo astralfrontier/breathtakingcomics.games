@@ -9,6 +9,11 @@ origin: Uncertain
 role: Agent of Chaos
 abilities: Contact telepathy, skill duplication
 struggles: Cacophony of stolen souls
+dialogue:
+  - "You'll see, hero, you'll see how little sense it all makes! We'll show you!"
+  - "We could vivisect you or we could compose a sonnet about your nose. So many possibilities..."
+  - "We'll destroy everything you ever--! Oh, is that a petunia? My god, what lovely petals."
+  - "We're not feeling... myself today. Help? Die. It'd help me if you died? Hmm. Yes."
 ---
 
 # Stitches
