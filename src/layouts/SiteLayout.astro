@@ -3,23 +3,38 @@ type License = 'cc-by-40' | undefined;
 interface Frontmatter {
   title?: string;
   description?: string;
+  art_id?: string;
   license?: License;
 }
 interface Props {
   frontmatter: Frontmatter;
 }
 
+import { getEntry } from 'astro:content';
 import CcBy from '@/components/CcBy';
 import Navbar from '@/components/Navbar';
 import '@/styles/SiteLayout.scss'
 
-const { title = "No Title", description = "No Description", license = "cc-by-40" } = Astro.props.frontmatter;
+const { title = "No Title", description = "No Description", license = "cc-by-40", art_id } = Astro.props.frontmatter;
+
+let image = undefined
+let image_alt = undefined
+const entry = (await getEntry("art", art_id || ''))
+if (entry) {
+  image = entry.data.url
+  image_alt = `${entry.data.name} by ${entry.data.credit}`
+}
 ---
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content={description}>
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={description}>
+    <meta property="og:site_name" content="Breathtaking Comics">
+    {image != undefined && <meta property="og:image" content={image}>}
+    {image_alt != undefined && <meta property="og:image:alt" content={image_alt}>}
     <title>{title} | Breathtaking Comics</title>
   </head>
   <body>

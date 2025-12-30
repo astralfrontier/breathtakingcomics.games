@@ -31,7 +31,7 @@ if (entry.data.art) {
 
 const { Content } = await render(entry);
 ---
-<SiteLayout frontmatter={{"title": entry.data.name, "description": entry.data.description}}>
+<SiteLayout frontmatter={{"title": entry.data.name, "description": entry.data.description, "art_id": entry.id}}>
   <div class="grid">
     <div>
       <Art id={entry.id} />
