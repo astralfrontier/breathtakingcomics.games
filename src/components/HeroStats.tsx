@@ -35,9 +35,9 @@ export default function HeroStats(props: HeroStatsProps) {
     <div className={styles.statblock}>
       <article>
         <p>
-          {frontmatter.pitch && (
+          {frontmatter.description && (
             <>
-              <strong>Pitch</strong>: {frontmatter.pitch}
+              <strong>Pitch</strong>: {frontmatter.description}
               <br />
             </>
           )}

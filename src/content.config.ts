@@ -35,8 +35,6 @@ const world = defineCollection({
     name: z.string(),
     path: z.string(),
     description: z.string().optional(),
-    art: z.array(z.string()).optional(),
-    pitch: z.string().optional(), // For heroes & villains
     inspiration: z.string().optional(),
     motivation: z.string().optional(),
     origin: z.string().optional(),
@@ -50,7 +48,8 @@ const world = defineCollection({
       personality: traitShape,
       powers: traitShape,
       problems: traitShape,
-    }).optional()
+    }).optional(),
+    dialogue: z.array(z.string()).optional()
   })
 })
 

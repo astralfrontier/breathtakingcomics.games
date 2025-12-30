@@ -37,6 +37,11 @@ export default function VillainStats(props: VillainStatsProps) {
             </>
           )}
         </p>
+        {frontmatter.dialogue && (
+          <blockquote>
+          {frontmatter.dialogue.map((quip: string) => <p key={quip}>"{quip}"</p>)}
+          </blockquote>
+        )}
       </article>
     </div>
   );
