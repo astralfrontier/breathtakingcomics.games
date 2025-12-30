@@ -11,11 +11,13 @@ import playformCompress from '@playform/compress';
 
 import compressor from 'astro-compressor';
 
+import purgecss from 'astro-purgecss';
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [mdx({
     rehypePlugins: [rehypeSlug, rehypeMdxToc]
-  }), react(), playformCompress(), compressor()],
+  }), react(), purgecss(), playformCompress(), compressor()],
   vite: {
     plugins: [yaml()]
   }
