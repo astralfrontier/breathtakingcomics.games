@@ -1,12 +1,12 @@
 - id: armiger
   name: Weekend Training
   credit: insomn_art
-  url: https://breathtakingcomics.games/art/weekend_training.png
+  url: ./assets/art/weekend_training.png
 - id: armiger/grail_knights
   name: Grail Knights
   credit: insomn_art
-  url: https://breathtakingcomics.games/art/grail_knights.png
+  url: ./assets/art/grail_knights.png
 - id: armiger/jaycee
   name: Jaycee
   credit: insomn_art
-  url: https://breathtakingcomics.games/art/jaycee.png
+  url: ./assets/art/jaycee.png

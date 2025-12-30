@@ -4,10 +4,10 @@ import { z } from 'astro/zod';
 
 const art = defineCollection({
   loader: file("./src/art.yaml"),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     name: z.string(),
     credit: z.string(),
-    url: z.string().url()
+    url: image()
   })
 })
 

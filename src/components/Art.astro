@@ -1,5 +1,6 @@
 ---
-import { getEntry, render } from 'astro:content';
+import { Image } from "astro:assets";
+import { getEntry } from 'astro:content';
 import styles from "./Art.module.scss";
 
 const { id } = Astro.props;
@@ -7,7 +8,7 @@ const entry = (await getEntry("art", id || ''))
 ---
 {entry &&
 <div class={styles.art}>
-  <img src={entry.data.url} alt={`${entry.data.name} by ${entry.data.credit}`} />
+  <Image src={entry.data.url} alt={`${entry.data.name} by ${entry.data.credit}`} />
   <br />
   <strong>{entry.data.name}</strong> by <strong>{entry.data.credit}</strong>
 </div>
