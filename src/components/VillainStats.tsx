@@ -1,3 +1,4 @@
+import FrontmatterBlock from "@/components/FrontmatterBlock.tsx"
 import styles from "./VillainStats.module.scss";
 
 interface VillainStatsProps {
@@ -12,30 +13,10 @@ export default function VillainStats(props: VillainStatsProps) {
     <div className={styles.statblock}>
       <article>
         <p>
-          {frontmatter.description && (
-            <>
-              <strong>Pitch</strong>: {frontmatter.description}
-              <br />
-            </>
-          )}
-          {frontmatter.inspiration && (
-            <>
-              <strong>Inspiration</strong>: {frontmatter.inspiration}
-              <br />
-            </>
-          )}
-          {frontmatter.motivation && (
-            <>
-              <strong>Motivation</strong>: {frontmatter.motivation}
-              <br />
-            </>
-          )}
-          {frontmatter.tier && (
-            <>
-              <strong>Tier</strong>: {frontmatter.tier}
-              <br />
-            </>
-          )}
+          <FrontmatterBlock label="Pitch" value={frontmatter.description} />
+          <FrontmatterBlock label="Tier" value={frontmatter.tier} />
+          <FrontmatterBlock label="Inspiration" value={frontmatter.inspiration} />
+          <FrontmatterBlock label="Motivation" value={frontmatter.motivation} />
         </p>
         {frontmatter.dialogue && (
           <blockquote>

@@ -1,3 +1,5 @@
+import FrontmatterBlock from "@/components/FrontmatterBlock.tsx"
+
 import styles from "./HeroStats.module.scss";
 
 interface HeroStatsProps {
@@ -35,30 +37,10 @@ export default function HeroStats(props: HeroStatsProps) {
     <div className={styles.statblock}>
       <article>
         <p>
-          {frontmatter.description && (
-            <>
-              <strong>Pitch</strong>: {frontmatter.description}
-              <br />
-            </>
-          )}
-          {frontmatter.inspiration && (
-            <>
-              <strong>Inspiration</strong>: {frontmatter.inspiration}
-              <br />
-            </>
-          )}
-          {frontmatter.motivation && (
-            <>
-              <strong>Motivation</strong>: {frontmatter.motivation}
-              <br />
-            </>
-          )}
-          {frontmatter.tier && (
-            <>
-              <strong>Tier</strong>: {frontmatter.tier}
-              <br />
-            </>
-          )}
+          <FrontmatterBlock label="Pitch" value={frontmatter.description} />
+          <FrontmatterBlock label="Tier" value={frontmatter.tier} />
+          <FrontmatterBlock label="Inspiration" value={frontmatter.inspiration} />
+          <FrontmatterBlock label="Motivation" value={frontmatter.motivation} />
         </p>
         <TraitBlock name="Position" trait={frontmatter.traits.position} />
         <TraitBlock name="Past" trait={frontmatter.traits.past} />
