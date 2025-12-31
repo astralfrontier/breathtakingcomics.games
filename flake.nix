@@ -31,7 +31,10 @@
         };
         devShell = pkgs.mkShell {
           name = packagename;
-          packages = builddeps;
+          packages = builddeps ++ [pkgs.zsh];
+          shellHook = ''
+            exec zsh
+          '';
         };
       }
     );
