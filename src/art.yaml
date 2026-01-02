@@ -10,3 +10,15 @@
   name: Jaycee
   credit: insomn_art
   url: ./assets/art/jaycee.png
+- id: negamarmot
+  name: The Negamarmot
+  credit: insomn_art
+  url: ./assets/art/negamarmot.png
+- id: negamarmot/original
+  name: The Negamarmot (Original)
+  credit: insomn_art
+  url: ./assets/art/negamarmot-original.png
+- id: negamarmot/not-so-negamarmot
+  name: The Negamarmot (Not-So-Negamarmot)
+  credit: insomn_art
+  url: ./assets/art/not-so-negamarmot.png
