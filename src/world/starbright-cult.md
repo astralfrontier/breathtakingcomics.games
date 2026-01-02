@@ -31,6 +31,13 @@ The psychic influence the masks can exert puts prosecution of individual cultist
 Nevertheless, the cult as a whole is shown as harmful.
 Whoever or whatever "Starbright" really is, they must be found and stopped for good.
 
+The Starbright Cult is for...
+
+- Stories about messy and complex problems, where the day can't just be saved by punching a villain in the face
+- Stories about ordinary human desires and the moral hazards of wishing for something, regardless of the cost to get it
+- Offering a temptation to heroes: if you could have anything you wanted, what would you do with that?
+  What if your family or loved ones turn to the cult for what _they_ want?
+
 ## Variation: Access to Alien Tech
 
 - As written, the most significant alien tech involved is the masks themselves. This itself is powerful -
