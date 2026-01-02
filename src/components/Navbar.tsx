@@ -12,18 +12,19 @@ function Navbar() {
   return (
     <>
       <header className="container">
-        <nav className={styles.responsive}>
+        <div className={styles.burger}>
+          <button className={visible ? 'contrast' : ''} onClick={toggleVisible}>&#8801;</button>
+        </div>
+
+        <nav className={`${styles.responsive} ${visible ? styles.visible : styles.invisible}`}>
           <ul>
-            <li className={styles.burger}>
-              <button onClick={toggleVisible}>&#8801;</button>
-            </li>
             <li>
               <a href="/">
                 <strong>Breathtaking Comics</strong>
               </a>
             </li>
           </ul>
-          <ul className={visible ? styles.visible : styles.invisible}>
+          <ul>
             <li>
               <a href="/rules/eic-edition">EIC Edition</a>
             </li>
