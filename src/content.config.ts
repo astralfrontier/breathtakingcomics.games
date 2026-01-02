@@ -30,7 +30,7 @@ const traitShape = z.object({
 })
 
 const world = defineCollection({
-  loader: glob({pattern: "**/*.(md|mdx)", base: "./src/world"}),
+  loader: glob({pattern: ["**/*.(md|mdx)", "!**/_*.(md|mdx)"], base: "./src/world"}),
   schema: z.object({
     name: z.string(),
     path: z.string(),
