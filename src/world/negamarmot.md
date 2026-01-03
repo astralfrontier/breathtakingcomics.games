@@ -22,11 +22,14 @@ The Negamarmot is the pet of some multiversal conqueror defeated in the past by 
 Unfortunately it got away during the initial incident, and has shown up unexpectedly since then.
 
 The creature doesn't seem particularly aggressive. But it's still a headache for superheroes, for two reasons.
-The Negamarmot can and will eat anything. Anything. And it will vomit up anything, from anywhere.
+First, the Negamarmot can and will eat anything. Anything.
+And it will vomit up anything, from anywhere.
 Scientists theorize that it has a two-way wormhole in its gullet, but aren't sure where it connects to.
 Indeed, some researchers take the existence of the Negamarmot as a personal affront against them from a malicious cosmos.
+Second, it's capable of radically changing its own size, from a tiny animal to a building-sized monster.
+This size change definitely impacts the size of what it produces and consumes.
 
-Its only apparent motives are to examine interesting things - and it can change size radically to do so -
+Its only apparent motives are to examine interesting things,
 and to eat or vomit up random things at intervals.
 There's no telling where things go, and worse, no rhyme or reason as to where it pulls things from.
 Apparently it derives sustenance from things moving through the wormhole interface.

@@ -29,9 +29,7 @@ Captain Burger is for...
 
 # Panels
 
-You're working part-time at Captain Burger. Describe the kind of food you make and the clientele you serve.
-
-Pick one:
+You're working part-time at Captain Burger. Describe the kind of food you make and the clientele you serve. Then pick one:
 
 - You managed to defuse an altercation, and now members of a local gang think they owe you one
 - You're sure one of the customers you served was either a villain in disguise, or a henchman you recognize, and you might be able to find them again

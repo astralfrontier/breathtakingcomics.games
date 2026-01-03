@@ -28,15 +28,18 @@ When telling stories about these things, you should push those stories toward th
 
 ### Director: Craig Costigan
 
-Costigan fought in two World Wars as a patriotic soldier, empowered by a mystical elixir he drank as a young man.
-He retired to take up a leadership position when the agency was founding, realizing the potential for abuse it represented.
+Costigan fought in two World Wars as a patriotic soldier,
+thanks to the physical power and longevity granted him by a mystical elixir.
+When A.C.T.I.O.N. was founded, he realized the potential for abuse it represented.
+He couldn't trust anyone else to keep it safe, and so used his heroic record to get himself appointed as director.
+
 Today, he does his absolute best to keep the agency as honest as it can be, while still making the hard choices his role requires.
 He is intensely distrustful of others, but ultimately he is a force for good.
 
 Pole Stars:
 
-- Cold War is Hell
-- Someone has to do this job, and I can only trust myself to do it
+- War is Hell
+- Trust is earned
 - Weary super-soldier voiced by Ed Asner
 
 ### Science Specialist: Professor Pulsar
@@ -77,3 +80,12 @@ Pole Stars:
 - A.C.T.I.O.N. agents have an interest in some high-tech dingus which may clash with what the heroes want
 - A villain in A.C.T.I.O.N. custody escaped, and the agency asks for help
 - The agency has answers to the heroes' problem, but their aid won't come cheap
+
+# Panels
+
+Something is happening that's not out of the ordinary - whether daily activities from mundane life, or a super-battle in the skies.
+A figure in sunglasses and a suit steps out from behind concealment, places one finger to a radio receiver in one ear, listens, and nods...
+
+The heroes are negotiating with a villain in a fragile moment of peace.
+Cut to someone looking through the scope of a sniper rifle, their finger on the trigger,
+a voice giving them orders through a radio earpiece.

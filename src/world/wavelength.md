@@ -39,3 +39,8 @@ to dangerous (crossbreeding powered superhumans with hypothetical reptoid races)
 - Research a superhuman mystery on the forums
 - Track down a prolific poster whose expertise can help the current situation
 - Deal with the fallout of somebody posting about the heroes (whether it's true or false)
+
+# Panels
+
+The heroes are reading a provocative comment or important revelation on the forums. Who could have posted that?
+We cut to a computer, showing the person who posted it. Who do we see? Why are they not what we expected?
