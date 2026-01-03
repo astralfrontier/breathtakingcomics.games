@@ -1,5 +1,17 @@
 import { useCallback, useState } from "react";
 
+/**
+ * Example usage:
+ * 
+ * import Collapsible from "@/components/Collapsible.tsx"
+ * 
+ * <Collapsible client:load title="Content">
+ * 
+ * Hidden content, click on the title to reveral it.
+ * 
+ * </Collapsible>
+ */
+
 interface CollapsibleProps {
   title: string;
   defaultsToOpen?: boolean;
