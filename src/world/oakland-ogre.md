@@ -39,17 +39,23 @@ intimidation and arson for greedy real-estate tycoons, and simple henching for e
 He doesn't want money or revenge.
 He wants what his strength alone can't give him: to be _noticed_.
 
-# Drives (for heroes)
+# Drives
 
 - Stop the Oakland Ogre's current heist
 - Get the Oakland Ogre to divulge his current boss's scheme
 - Keep the Oakland Ogre from destroying something important by accident
 
-# Moves
+# Panels
 
-- Smash something!
-- Make a boast you can't back up
-- Try something bold and screw it up destructively
+Angrily, the Oakland Ogre brings down a thickly muscular fist to smash someone that's offended him!
+
+The Oakland Ogre stands tall and utters a boast, probably mangling any words over two syllables long.
+Nobody is impressed, but he finishes with a smugly satisfied look on his face.
+
+The Oakland Ogre remembers something he saw in a movie or on television, and tries it!
+This could be picking up and throwing a police car, smashing walls to bring down a building,
+or anything else big and bold.
+Of course it's wildly destructive.
 
 # Variations
 

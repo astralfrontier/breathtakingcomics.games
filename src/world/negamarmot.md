@@ -38,14 +38,22 @@ The Negamarmot is at least partially composed of exotic matter of some kind.
 This seems to be the cause of its ability to change size.
 It is also remarkably resilient, and able to ignore most conventional weapons.
 
-# Drives (for heroes)
+# Drives
 
 - Drive the Negamarmot away, for now
 - Deal with something the Negamarmot vomited up
 - Prevent a powerful villain from taking control of the Negamarmot
 
-# Moves
+# Panels
 
-- Consume something important or expensive
-- Regurgitate something completely random
-- Cause chaos in its wake
+The Negamarmot has made its way to the heart of the museum.
+It blinks, curiously, then swallows the chief exhibit in a single quick gulp.
+
+The Negamarmot, currently the size of a small office building,
+hurks up a half-destroyed alien starship.
+It's still slimy from passage through the creature's gut.
+And what's that high-pitched whine that's getting louder and louder?
+
+The Negamarmot is entranced by the smell of chicken tendies,
+and is currently smashing its way through parking garages
+and overpasses to get to the source.

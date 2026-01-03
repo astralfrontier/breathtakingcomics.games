@@ -35,7 +35,7 @@ Universal Consulting is for...
 - Mixing the supernatural and espionage genres, which can be a fruitful and interesting mixture
 - Giving high-tech or mundane-but-skilled characters a challenge outside their normal skill set
 
-# Drives (for heroes)
+# Drives
 
 - Go up against Universal Consulting during one of their shadier jobs
 - Retrieve an item or captive in Universal Consulting's custody

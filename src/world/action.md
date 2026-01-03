@@ -75,7 +75,7 @@ Pole Stars:
 - Ambiguous loyalties
 - Moral compromises for the greater good
 
-# Drives (for heroes)
+# Drives
 
 - A.C.T.I.O.N. agents have an interest in some high-tech dingus which may clash with what the heroes want
 - A villain in A.C.T.I.O.N. custody escaped, and the agency asks for help

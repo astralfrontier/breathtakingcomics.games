@@ -43,17 +43,22 @@ and has been known to mentor junior villains.
 His latest trainee, a pyrokinetic once known by her moniker of "Hot Mess",
 has gone to therapy and graduated to the name "Firebrand".
 
-# Drives (for heroes)
+# Drives
 
 - Stop Mr. Big from breaking a captive villain out of confinement
 - Thwart an attack on a government facility
 - Keep Mr. Big from causing a civil disturbance
 
-# Moves
+# Panels
 
-- Unleash a vast arsenal of shrunken weapons and gizmos
-- Make tactical size-shifts to escape notice or break through bonds and barriers
-- Bring in allies and accomplices who owe him one
+Mr. Big grabs hold of a miniaturized item from among his "tattoos", revealing it as a weapon, tool, or vehicle.
+This could also be a steel wall, pile of rocks, or some other barrier.
+
+Mr. Big alternates between ordinary human and inches-high heights in order to dodge attacks,
+escape bonds such as handcuffs, or get through difficult terrain such as a collapsed building.
+
+Suddenly, several of Mr. Big's allies and students appear on the scene - dropping in from the air,
+materializing, and so on according to their individual powers. Mr. Big just smirks.
 
 # Variations
 

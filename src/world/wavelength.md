@@ -34,7 +34,7 @@ to dangerous (crossbreeding powered superhumans with hypothetical reptoid races)
 
 **Historical events**: everything from Stonehenge and the Egyptian pyramids to the sinking of the Spanish Armada has been attributed to superhumans.
 
-# Drives (for heroes)
+# Drives
 
 - Research a superhuman mystery on the forums
 - Track down a prolific poster whose expertise can help the current situation

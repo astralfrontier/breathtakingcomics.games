@@ -64,11 +64,16 @@ Her mind is spread across the duplicates, allowing her to instantly know what an
 - Restore order to a chaotic city
 - Save lives, one at a time
 
-# Moves
+# Panels
 
-- Reveal a new gadget, fighting style, or scientific skill
-- Disappear and reappear without explanation
-- Push through challenges with superhuman fortitude
+The Fractal drops into a new fighting stance never before seen, or unveils a newly invented gadgets, and puts it to immediate and expert use.
+
+The Fractal, a few paces ahead of her enemies, races into a room and slams the door behind her.
+As the bad guys barge in, they find the room empty. Where did she go?
+
+Other heroes saw the Fractal take a nasty beating last night.
+This morning she's rattling off a synthesis of three different scientific disciplines like nothing happened.
+Can she be hurt? Does she ever sleep?
 
 # Variations
 

@@ -34,17 +34,24 @@ Her one weakness, it seems, is the superhero known as the Fractal - a person jus
 This trait is the one thing Stitches herself couldn't manage.
 The feeling of inferiority it set up makes her the Fractal's avowed nemesis.
 
-# Drives (for heroes)
+# Drives
 
 - Stop Stitches' latest chaotic caper
-- Keep a VIP safe from Stitches
-- Find and disarm bombs Stitches planted around the area
+- Rescue Stitches' latest potential victims
+- Find and disarm traps or bombs Stitches planted around an area
 
-# Moves
+# Panels
 
-- Unveil a scheme requiring a dozen skills to unravel
-- Do something dangerously off-the-wall
-- Horrify onlookers by violating human norms
+An expert is analyzing the real scope of Stitches' latest scheme, including traps and contingencies the heroes have discovered.
+They wearily mutter, "it'd take a dozen specialized skills to neutralize all this."
+
+Suddenly, Stitches pulls the pins on the grenades she's carrying, and begins juggling them.
+Are they going to go off? Does she know? Does she care? Will she throw them?
+They could go anywhere...
+
+Stitches threatens to do something that horrifies onlookers.
+This could involve harm to the body or some similar violation.
+Worse, she seems to have come equipped with the tools to do the task.
 
 # Variations
 

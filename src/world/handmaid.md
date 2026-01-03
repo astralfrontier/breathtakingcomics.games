@@ -25,7 +25,6 @@ Handmaid has one gimmick, but she's really good at it. She builds robot hands.
 The hands are clearly robotic.
 They have four fingers and a thumb, articulated like a human's hand.
 Individual hands can come with variations, such as video cameras, hooks for snapping on cables, and so on.
-They're able to move independently by using their fingers as legs, and can throw each other around.
 Some individual hands might express some rudimentary personality, as their AI becomes more specialized over time.
 
 Handmaid's goal is to prove herself to someone more senior in the villain community.
@@ -34,17 +33,25 @@ Her biggest limitation right now is herself.
 She either can't or won't invent anything new, preferring to develop newer and better iterations of her one creation.
 She's otherwise a cheerful, energetic young woman who knows who and what she wants to be, and is out to go make it happen.
 
-# Drives (for heroes)
+# Drives
 
 - Stop Handmaid from commiting a solo caper
 - Make Handmaid look bad in front of a big villain
 - Recover something her handbots stole
 
-# Moves
+# Panels
 
-- Swarm the area with an army of handbots
-- Reveal a handbot anywhere the heroes don't want or expect it
-- Escape the scene with a helping hand
+Suddenly, a particular area is swarmed by an army of handbots!
+Some hands are grabbing and throwing others forward.
+Others are scuttling on their fingers, using them like legs.
+
+The heroes are doing pretty well.
+Suddenly, there's an emergency siren, and we cut to a handbot having just pulled a lever
+that triggers a dangerous condition (like starting up the factory).
+
+The heroes seem to have Handmaid corner.
+Suddenly, a bunch of hands descend on cables, held by other hands,
+and lift her away to safety.
 
 # Variations
 

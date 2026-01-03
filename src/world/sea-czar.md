@@ -45,17 +45,28 @@ and it remains to be seen how far he'll go to enforce his will on the surface.
 He can tap into underwater cables, giving him access to vast amounts of Internet traffic, including financial data.
 Blowing up a dam or causing a tsunami can instantly flip control over some area from surface-dwellers to him and his fishy minions.
 
-# Drives (for heroes)
+# Drives
 
 - Respond to Sea-Czar's invasion of a major city
 - Rescue a ship or submarine from Sea-Czar's clutches
 - Thwart Sea-Czar's attempted theft of an important chemical or device
 
-# Moves
+# Panels
 
-- Command all the creatures of the sea as his soldiers
-- Wield mysterious water-shaping technology to control the battlefield
-- Use his chimeric physiology to excel at physical tasks
+Spheres of water over just over the city.
+Inside them are all manner of sea creatures, all multicolored, sporting fins, tentacles, and far too many eyes.
+They're emerging to terrorize the citizens of the city, or drag them into the water spheres.
+On the crest of a tidal wave that's poised to drown the city but is held back by mysterious forces,
+Sea-Czar is standing with arms folded.
+He has the poise of an army general overseeing his forces.
+
+Sea-Czar, or his minions and lieutenants, wield mysterious technological artifacts
+which create walls and weapons out of liquid water.
+
+A hero tries to engage Sea-Czar in hand-to-hand.
+The villain can use a squid's camouflage and ink, a deep-sea fish's toxins,
+an electric eel's shocks, and a dolphin's echolocation
+to outmaneuver the hapless hero.
 
 # Variations
 

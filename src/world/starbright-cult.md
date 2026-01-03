@@ -53,7 +53,7 @@ The Starbright Cult is for...
   In this case, the cult might have had a hand in history.
   It's an alien invasion that _succeeded_, on its own terms, and has to be stopped.
 
-# Drives (for heroes)
+# Drives
 
 - Stop the cult from committing a major crime
 - Rescue an important person from the cult's clutches

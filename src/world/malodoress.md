@@ -3,7 +3,7 @@ name: Malodoress
 path: villains
 tier: City
 description: An evil gaseous Captain Planet
-inspiration: The Mist, Inque, Hexxus
+inspiration: The Mist, Inque, Hexxus, Metamorpho
 motivation: Poison the world with delicious chemicals
 origin: Varies
 role: Controller
@@ -35,17 +35,20 @@ The one consistent thread in her attacks is her hatred for polluters.
 People who freely leak chemicals into the environment, or loosen regulations allowing harmful pollution, will always face her wrath.
 Even if she's okay harming human beings, apparently she draws the line at harming the Earth.
 
-# Drives (for heroes)
+# Drives
 
 - Stop Malodoress from unleashing a toxic attack on the city
 - Safeguard a key location or object from being corrupted by chemical attack
 - Protect a polluter from Malodoress' wrath in the hope they'll change their ways
 
-# Moves
+# Panels
 
-- Switch effortlessly from solid to gaseous forms
-- Expand, spread, and transform at will
-- Wield dangerous, volatile chemicals as weapons and tools
+Malodoress effortlessly transforms from a solid humanoid shape into a cloud of gas, which lifts itself into the air.
+
+Malodoress' gaseous form suddenly expands through the area, creating a choking stench or an all-concealing shroud.
+
+Malodoress slaps her hands together, each holding some ingredient of a volatile or dangerous chemical.
+When the two halves come together, the resulting chemical causes explosive chaos!
 
 # Variations
 
