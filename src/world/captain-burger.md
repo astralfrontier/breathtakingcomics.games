@@ -26,3 +26,15 @@ Captain Burger is for...
 - Keep Captain Burger from being destroyed by the current crisis
 - Meet friends at Captain Burger and relax
 - Survive your first Captain Burger experience
+
+# Panels
+
+You're working part-time at Captain Burger. Describe the kind of food you make and the clientele you serve.
+
+Pick one:
+
+- You managed to defuse an altercation, and now members of a local gang think they owe you one
+- You're sure one of the customers you served was either a villain in disguise, or a henchman you recognize, and you might be able to find them again
+- A nearby incident drove a bunch of scared civilians into the Shack, but you helped keep order, and a local hero heard about your deed
+- Someone's family or love interest (yours or someone else you know) buys something, and when you caught a glimpse of their phone, you saw something you didn't expect
+- You hear that a favorite hangout for folks your age is due to close down soon, or is under threat somehow
