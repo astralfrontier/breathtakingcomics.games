@@ -1,3 +1,4 @@
-/hero/*       /world/:splat
-/support/*    /world/:splat
-/villain/*    /world/:splat
+/support/clarion-heights-academy-and-miller-mountain-corrections    /world/clarion-heights/
+/heroes/*     /world/:splat/
+/support/*    /world/:splat/
+/villains/*   /world/:splat/
