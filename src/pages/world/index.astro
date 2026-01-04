@@ -1,12 +1,12 @@
 ---
+import World from "@/components/World.astro"
 import WorldList from "@/components/WorldList.astro";
+import WorldListShort from "@/components/WorldListShort.astro";
 import SiteLayout from "@/layouts/SiteLayout.astro";
 import { getCollection } from "astro:content";
 
-async function worldByPath(pathName: string) {
-  const collection = await getCollection("world", ({ data }) => data.path.startsWith(pathName));
-  // Sort elements by name, skipping "the" as a prefix
-  return collection.sort((a, b) => {
+const worldEntries = (await getCollection("world"))
+  .sort((a, b) => {
     const na = a.data.name.toLowerCase().replace(/^the +/, '');
     const nb = b.data.name.toLowerCase().replace(/^the +/, '');
     if (na < nb) {
@@ -17,29 +17,27 @@ async function worldByPath(pathName: string) {
     }
     return 0;
   })
-}
 
-const heroes = await worldByPath("heroes");
-const villains = await worldByPath("villains");
-const organizations = await worldByPath("organizations");
-const settings = await worldByPath("settings");
+function byPath(path: string) {
+  return worldEntries.filter(entry => entry.data.path == path);
+}
 ---
 
 <SiteLayout frontmatter={{ title: "The Breathtaking World", description: "People, places, and groups you can use in your own Breathtaking Comics or other superhero games" }}>
-  <h1>Heroes</h1>
-  <WorldList elements={heroes} />
-
   <div class="grid">
     <div>
-      <h1>Villains</h1>
-      <WorldList elements={villains} />
+      <h1>Heroes</h1>
+      <WorldList elements={byPath("heroes")} />
+
+      <h1>Organizations</h1>
+      <WorldList elements={byPath("organizations")} />
     </div>
     <div>
-      <h1>Organizations</h1>
-      <WorldList elements={organizations} />
+      <h1>Villains</h1>
+      <WorldList elements={byPath("villains")} />
     </div>
   </div>
 
   <h1>Settings</h1>
-  <WorldList elements={settings} />
+  <WorldList elements={byPath("settings")} />
 </SiteLayout>

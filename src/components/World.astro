@@ -1,11 +1,11 @@
 ---
 import { getEntry } from 'astro:content';
 
-const { id } = Astro.props;
+const { id, title } = Astro.props;
 const entry = (await getEntry("world", id || ''))
 
 if (!entry) {
   throw new Error(`No World entry with id ${id}`)
 }
 ---
-<a href={`/world/${entry.id}`}>{entry.data.name}</a>
+<a href={`/world/${entry.id}`}>{title ?? entry.data.name}</a>
