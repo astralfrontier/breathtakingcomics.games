@@ -42,5 +42,5 @@ to dangerous (crossbreeding powered superhumans with hypothetical reptoid races)
 
 # Panels
 
-The heroes are reading a provocative comment or important revelation on the forums. Who could have posted that?
+The heroes are reading a provocative comment or important revelation on the forums.
 We cut to a computer, showing the person who posted it. Who do we see? Why are they not what we expected?
