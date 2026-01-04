@@ -1,0 +1,102 @@
+---
+name: TAO
+path: heroes
+description: A heroic fusion of two mortal enemies
+tier: City
+inspiration: Firestorm
+motivation: Bring order out of chaos
+traits:
+  position:
+    value: The Powerhouse
+    hooks:
+      - The situation demands delicacy, not power
+      - Your internal conflict spills out and you get too rowdy
+      - You push others toward aggression
+  past:
+    value: Enemies United
+    hooks:
+      - The fusion can't agree on how to solve a difficult problem
+      - Someone from one fusion member's life is endangered
+      - You must compromise or sacrifice a thing one fusion member values
+  personality:
+    value: Reluctant Hero
+    hooks:
+      - You neglect small problems to tackle a bigger danger
+      - You express hostility through a quip or cutting remark
+      - You alienate a teammate or ally who wants to depend on you
+  powers:
+    value: Cosmic Energy Manipulation
+    hooks:
+      - Your energy goes out of control or becomes volatile
+      - Other energies on the scene interact strangely with yours
+      - Your energy somehow empowers a villain
+  problems:
+    value: Of Two Minds
+    hooks:
+      - One personality's feelings or interests dominate the fusion
+      - You made progress using one member's approach, and now realize you need to reverse course
+      - Something or someone makes you doubt the rightness of your current path
+---
+
+# TAO
+
+The hero known as TAO is seemingly an individual.
+In reality, they're a fusion of two ordinary people: popular district attorney Amy Chen and powerful crime lord Ken Miyamoto.
+
+Chen was confronting Miyamoto in an abandoned office, just above a laboratory where -
+unbeknownst to either of them - a rogue scientist was performing a dangerous experiment.
+The machinery blew up, bathing the pair in mysterious energies.
+When they came to, they discovered they had been combined into a single body.
+The fusion was a glowing humanoid entity, with a powerful physique and the ability to emit and absorb energy.
+
+The duo could mentally communicate with each other.
+At first they feared the combination was permanent.
+Several hours later, they emerged from the combination,
+naked, staring fearfully at each other.
+What did it mean? What was to happen next?
+
+They learned that the combination wasn't a one-time deal the hard way.
+When a future confrontation took place,
+the stress of the situation forced them into a fusion.
+This time, they were able to separate of their own volition once things had calmed down.
+
+Now, cop and criminal have come to a delicate understanding.
+They are, as Chen put it, "total absolute opposites",
+and from that, Miyamoto dubbed the fusion, "TAO".
+But both want a city at peace, just for different reasons.
+When a big enough threat emergies, they put away their differences and fight for that city.
+
+# Drives
+
+- Some critical danger threatens the city
+- A villain appears, that both Miyamoto and Chen want taken down
+- An energy source needs TAO to suppress or absorb it
+
+# Panels
+
+Two people look angrily at each other, but nod in pained mutual understanding.
+They clasp hands, fingers interlacing, until a bright light shines and TAO emerges!
+
+TAO flies through the sky, leaving a trail of radiant energy behind.
+They fling energy blasts at distant targets, absorbing attacks in return.
+
+TAO stands defiantly as a shield, blocking civilians or other heroes
+from some incredible eruption - a nuclear power plant's radiation, a kaiju's breath attack, or something similar.
+
+# Variations
+
+## Animosity
+
+- Chen and Miyamoto are professional enemies: one wants to arrest the other, the other doesn't want to be arrested.
+- They might have a past that mixed the professional and personal.
+  Did Miyamoto hurt one of Chen's friends or family? Did Chen arrest or hurt one of Miyamoto's?
+- Alternatively, the animosity might be imposed from outside.
+  Does Miyamoto have a rival crime lord that wants him taken down, and helps Chen, for example?
+
+## Working Relationship
+
+- Both members of the fusion have agreed to work together when the circumstances call for it.
+  The assumption is that they both want the city intact and at peace for their own purposes.
+- Have they forged some other kind of working relationship? For example, do they have someone they both value and want to protect?
+- Does the closeness of the fusion create an opportunity for
+  other kinds of relationships (grudging rivalry, friendship, or even romance) to emerge?
