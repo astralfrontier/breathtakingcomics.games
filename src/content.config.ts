@@ -49,7 +49,8 @@ const world = defineCollection({
       powers: traitShape,
       problems: traitShape,
     }).optional(),
-    dialogue: z.array(z.string()).optional()
+    dialogue: z.array(z.string()).optional(),
+    art: z.array(z.string()).optional()
   })
 })
 
