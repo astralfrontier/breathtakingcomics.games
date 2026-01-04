@@ -4,7 +4,7 @@ import { getEntry } from 'astro:content';
 import styles from "./Art.module.scss";
 
 const { id } = Astro.props;
-const entry = (await getEntry("art", id || ''))
+const entry = await getEntry("art", id || '')
 ---
 {entry &&
 <div class={styles.art}>
