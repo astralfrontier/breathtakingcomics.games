@@ -1,8 +1,7 @@
 ---
 import { getCollection, getEntry, render } from 'astro:content';
 import SiteLayout from "@/layouts/SiteLayout.astro"
-import HeroStats from "@/components/HeroStats"
-import VillainStats from "@/components/VillainStats"
+import CharacterBlock, { shouldShowCharacterBlock } from "@/components/CharacterBlock"
 import Art from '@/components/Art.astro';
 
 export async function getStaticPaths() {
@@ -31,20 +30,16 @@ if (entry.data.art) {
 
 const { Content } = await render(entry);
 ---
-<SiteLayout frontmatter={{"title": entry.data.name, "description": entry.data.description, "art_id": entry.id}}>
+<SiteLayout frontmatter={{...entry.data, "title": entry.data.name, "description": entry.data.description, "art_id": entry.id}}>
   <div class="grid">
     <div>
       <Art id={entry.id} />
       <Content />
     </div>
-    {entry.id.startsWith("heroes") &&
+    {
+      (shouldShowCharacterBlock({frontmatter: entry.data})) &&
       <div>
-        <HeroStats frontmatter={entry.data} />
-      </div>
-    }
-    {entry.id.startsWith("villains") &&
-      <div>
-        <VillainStats frontmatter={entry.data} />
+        <CharacterBlock frontmatter={entry.data} />
       </div>
     }
   </div>

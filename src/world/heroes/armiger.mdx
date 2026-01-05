@@ -4,37 +4,12 @@ description: A modern knight wielding a fragment of Excalibur
 tier: City
 inspiration: Adonis Creed, Thor, Green Lantern
 motivation: Uphold honor and justice as a king-in-waiting
-traits:
-  position:
-    value: The Frontliner
-    hooks:
-      - You blow up the team's more peaceful options
-      - You escalate the violence of a situation
-      - Your solution is aggression
-  past:
-    value: The Unwitting King
-    hooks:
-      - Inexperience causes you to make mistakes
-      - Honor demands you make a hard choice
-      - You misjudge your own chances
-  personality:
-    value: Born Hero
-    hooks:
-      - You leap into battle without a plan
-      - You make a declaration you can't back up
-      - Someone older and wiser distrusts your youthful exuberance
-  powers:
-    value: Wielder of Excalibur
-    hooks:
-      - You depend too much on the sword over your own strength
-      - Your courage falters, and the sword won't help
-      - You almost - almost - acted dishonorably
-  problems:
-    value: The Contender
-    hooks:
-      - You need to test yourself against a rival or enemy
-      - You let yourself get baited
-      - You brag about your exploits
+dialogue:
+  - Every combat starts with a question. What am I up against? You answer that question with light sparring,
+    taking the other fellow's measure, and you hold your own cards close to the vest.
+  - Nobody here is gonna get hurt. Not today. I swear.
+  - The sword doesn't solve my problems. The sword puts me in the problem's weight class. I still gotta win the match.
+  - That the best ya got, ya ugly bellend? Come at me!
 ---
 
 # Armiger
@@ -125,6 +100,40 @@ to deliver a blow outside the enemy's field of vision.
 > 'The king and the land are one'. The land isn't subservient. The king isn't either. They're just united. You get it?"
 
 import Collapsible from "@/components/Collapsible.tsx"
+
+<Collapsible client:load title="Breathtaking Comics RPG">
+
+**Position**: The Frontliner
+
+- You blow up the team's more peaceful options
+- You escalate the violence of a situation
+- Your solution is aggression
+
+**Past**: The Unwitting King
+
+- Inexperience causes you to make mistakes
+- Honor demands you make a hard choice
+- You misjudge your own chances
+
+**Personality**: Born Hero
+
+- You leap into battle without a plan
+- You make a declaration you can't back up
+- Someone older and wiser distrusts your youthful exuberance
+
+**Powers**: Wielder of Excalibur
+
+- You depend too much on the sword over your own strength
+- Your courage falters, and the sword won't help
+- You almost - almost - acted dishonorably
+
+**Problems**: The Contender
+
+- You need to test yourself against a rival or enemy
+- You let yourself get baited
+- You brag about your exploits
+
+</Collapsible>
 
 <Collapsible client:load title="Masks: a New Generation (Legacy playbook)">
 

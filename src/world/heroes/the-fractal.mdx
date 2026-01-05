@@ -4,37 +4,11 @@ description: A polymath vigilante with well-hidden duplication powers
 tier: City
 inspiration: Batman (DC Comics)
 motivation: Strike fear into the hearts of the wicked
-traits:
-  position:
-    value: Cold-Hearted Mastermind
-    hooks:
-      - You give an order that ends badly
-      - You give an order that nobody follows
-      - You miss a critical detail
-  past:
-    value: Student of Everything
-    hooks:
-      - A villain received your training, but not your morals
-      - A rival wants to test themselves against you
-      - Someone failed to achieve what you did, and took a darker path to power
-  personality:
-    value: Aloof Asshole
-    hooks:
-      - You failed to tell somebody an important detail
-      - You make a teammate or ally feel rejected
-      - You thought you could handle it alone, but you were wrong
-  powers:
-    value: Lifetimes of Crimefighting Training
-    hooks:
-      - Your mortal body or fallible gadget gives out at a bad time
-      - You can't do it without the right device
-      - You can't get out of this without revealing your secret power
-  problems:
-    value: Secretive
-    hooks:
-      - Someone's fear or mistrust of you spoils your attempts to help
-      - Your actions reinforce or justify the thing that keeps you isolated
-      - An enemy or situation puts you in the spotlight
+dialogue:
+  - Middle Eastern military explosives, modified by private military contractors. Of course I can disarm it.
+  - Don't bother asking. I've already put my plan into action.
+  - I appreciate your professionalism. This is why I tolerate working with you.
+  - No... No. I can't go 'relax' with your team. I have... obligations. Sorry.
 ---
 
 # The Fractal
@@ -90,3 +64,39 @@ Can she be hurt? Does she ever sleep?
 
 - The Fractal will go up against some heavy hitters, sooner or later. Do they have an adversarial relationship, built on hate and disgust? Or is she trying to help them, and how receptive are they to help?
 - A hero's rogues often learn their secrets, sooner or later. What would her rogues do with hers - try to out her, or keep quiet about what they know, for a day of reckoning?
+
+import Collapsible from "@/components/Collapsible.tsx"
+
+<Collapsible client:load title="Breathtaking Comics RPG">
+
+**Position**: Cold-Hearted Mastermind
+
+- You give an order that ends badly
+- You give an order that nobody follows
+- You miss a critical detail
+
+**Past**: Student of Everything
+
+- A villain received your training, but not your morals
+- A rival wants to test themselves against you
+- Someone failed to achieve what you did, and took a darker path to power
+
+**Personality**: Aloof Asshole
+
+- You failed to tell somebody an important detail
+- You make a teammate or ally feel rejected
+- You thought you could handle it alone, but you were wrong
+
+**Powers**: Lifetimes of Crimefighting Training
+
+- Your mortal body or fallible gadget gives out at a bad time
+- You can't do it without the right device
+- You can't get out of this without revealing your secret power
+
+**Problems**: Secretive
+
+- Someone's fear or mistrust of you spoils your attempts to help
+- Your actions reinforce or justify the thing that keeps you isolated
+- An enemy or situation puts you in the spotlight
+
+</Collapsible>

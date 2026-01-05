@@ -4,37 +4,11 @@ description: A heroic fusion of two mortal enemies
 tier: City
 inspiration: Firestorm
 motivation: Bring order out of chaos
-traits:
-  position:
-    value: The Powerhouse
-    hooks:
-      - The situation demands delicacy, not power
-      - Your internal conflict spills out and you get too rowdy
-      - You push others toward aggression
-  past:
-    value: Enemies United
-    hooks:
-      - The fusion can't agree on how to solve a difficult problem
-      - Someone from one fusion member's life is endangered
-      - You must compromise or sacrifice a thing one fusion member values
-  personality:
-    value: Reluctant Hero
-    hooks:
-      - You neglect small problems to tackle a bigger danger
-      - You express hostility through a quip or cutting remark
-      - You alienate a teammate or ally who wants to depend on you
-  powers:
-    value: Cosmic Energy Manipulation
-    hooks:
-      - Your energy goes out of control or becomes volatile
-      - Other energies on the scene interact strangely with yours
-      - Your energy somehow empowers a villain
-  problems:
-    value: Of Two Minds
-    hooks:
-      - One personality's feelings or interests dominate the fusion
-      - You made progress using one member's approach, and now realize you need to reverse course
-      - Something or someone makes you doubt the rightness of your current path
+dialogue:
+  - We've got to rescue - but the monster - no, it can wait, there are citizens in need
+  - We have to stop you, before you destroy the city!
+  - If we can endure working together, we can endure this!
+  - When we get out of this, we are so arresting us
 ---
 
 # TAO
@@ -99,3 +73,39 @@ from some incredible eruption - a nuclear power plant's radiation, a kaiju's bre
 - Have they forged some other kind of working relationship? For example, do they have someone they both value and want to protect?
 - Does the closeness of the fusion create an opportunity for
   other kinds of relationships (grudging rivalry, friendship, or even romance) to emerge?
+
+import Collapsible from "@/components/Collapsible.tsx"
+
+<Collapsible client:load title="Breathtaking Comics RPG">
+
+**Position**: The Powerhouse
+
+- The situation demands delicacy, not power
+- Your internal conflict spills out and you get too rowdy
+- You push others toward aggression
+
+**Past**: Enemies United
+
+- The fusion can't agree on how to solve a difficult problem
+- Someone from one fusion member's life is endangered
+- You must compromise or sacrifice a thing one fusion member values
+
+**Personality**: Of Two Minds
+
+- You neglect small problems to tackle a bigger danger
+- You express hostility through a quip or cutting remark
+- You alienate a teammate or ally who wants to depend on you
+
+**Powers**: Cosmic Energy Manipulation
+
+- Your energy goes out of control or becomes volatile
+- Other energies on the scene interact strangely with yours
+- Your energy somehow empowers a villain
+
+**Problems**: Compromises and Conflicts
+
+- One personality's feelings or interests dominate the fusion
+- You made progress using one member's approach, and now realize you need to reverse course
+- Something or someone makes you doubt the rightness of your current path
+
+</Collapsible>

@@ -1,12 +1,25 @@
 import FrontmatterBlock from "@/components/FrontmatterBlock.tsx"
-import styles from "./VillainStats.module.scss";
 
-interface VillainStatsProps {
+import styles from "./CharacterBlock.module.scss";
+
+interface CharacterBlockProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   frontmatter: { [key: string]: any };
 }
 
-export default function VillainStats(props: VillainStatsProps) {
+// Return true if the entry has any character-relevant attributes
+export function shouldShowCharacterBlock(props: CharacterBlockProps): boolean {
+  const { frontmatter } = props;
+
+  return (
+    frontmatter.tier ||
+    frontmatter.inspiration ||
+    frontmatter.motivation ||
+    frontmatter.dialgue
+  ) ? true : false;
+}
+
+export default function CharacterBlock(props: CharacterBlockProps) {
   const { frontmatter } = props;
 
   return (
