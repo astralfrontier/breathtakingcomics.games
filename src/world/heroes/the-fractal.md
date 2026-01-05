@@ -1,6 +1,5 @@
 ---
 name: The Fractal
-path: heroes
 description: A polymath vigilante with well-hidden duplication powers
 tier: City
 inspiration: Batman (DC Comics)

@@ -1,6 +1,5 @@
 ---
 name: Sea-Czar
-path: villains
 description: Emperor of Earth's Oceans
 tier: National
 inspiration: Aquaman

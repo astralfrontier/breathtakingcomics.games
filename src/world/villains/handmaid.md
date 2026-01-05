@@ -1,6 +1,5 @@
 ---
 name: Handmaid
-path: villains
 tier: Street
 description: A gimmick inventor looking to be a villain's new lieutenant
 inspiration: Doctor Octopus

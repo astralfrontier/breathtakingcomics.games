@@ -1,6 +1,5 @@
 ---
 name: Universal Consulting
-path: organizations
 description: >
   A small team of problem solvers inspired by classic Universal movie creatures, who skirt the law in the pursuit of the real monsters
 ---

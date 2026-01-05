@@ -1,6 +1,5 @@
 ---
 name: Zeta City
-path: settings
 description: >
   The galactic invaders' mothership crash-landed on Earth.
   A generation later, scientists, superheroes, and brave civilians live in the city built out of its remains.

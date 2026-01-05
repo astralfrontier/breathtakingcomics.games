@@ -1,6 +1,5 @@
 ---
 name: Captain Burger
-path: organizations
 description: A typical hangout for heroes of all kinds
 ---
 

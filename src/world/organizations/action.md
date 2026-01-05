@@ -1,6 +1,5 @@
 ---
 name: A.C.T.I.O.N.
-path: organizations
 description: >
   A secretive body dedicated to tracking international superhuman threats.
   Its agents are empowered to keep the public safe, but at what cost?

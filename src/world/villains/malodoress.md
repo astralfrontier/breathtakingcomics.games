@@ -1,6 +1,5 @@
 ---
 name: Malodoress
-path: villains
 tier: City
 description: An evil gaseous Captain Planet
 inspiration: The Mist, Inque, Hexxus, Metamorpho

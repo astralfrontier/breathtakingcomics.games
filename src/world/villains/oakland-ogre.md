@@ -1,6 +1,5 @@
 ---
 name: The Oakland Ogre
-path: villains
 description: A two-bit thug trying to be a 5-dollar villain
 tier: Street
 motivation: To be welcomed into the big leagues

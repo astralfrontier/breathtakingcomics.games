@@ -33,7 +33,6 @@ const world = defineCollection({
   loader: glob({pattern: ["**/*.(md|mdx)", "!**/_*.(md|mdx)"], base: "./src/world"}),
   schema: z.object({
     name: z.string(),
-    path: z.string(),
     description: z.string().optional(),
     inspiration: z.string().optional(),
     motivation: z.string().optional(),

@@ -16,8 +16,14 @@ const worldEntries = (await getCollection("world"))
     return 0;
   })
 
+// For a given path like "a/b/c", return "a/b"
+function prefix(path: string) {
+  const i = path.lastIndexOf("/");
+  return (i > -1) ? path.substring(0, i) : path;
+}
+
 function byPath(path: string) {
-  return worldEntries.filter(entry => entry.data.path == path);
+  return worldEntries.filter(entry => prefix(entry.id) == path);
 }
 ---
 

@@ -1,6 +1,5 @@
 ---
 name: The Starbright Cult
-path: organizations
 description: A mystery religion founded by an alien mastermind
 ---
 

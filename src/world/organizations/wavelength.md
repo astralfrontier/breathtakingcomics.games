@@ -1,6 +1,5 @@
 ---
 name: Wavelength
-path: organizations
 description: An Internet forum dedicated to superhero conspiracy theories
 ---
 

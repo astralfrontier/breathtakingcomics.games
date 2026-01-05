@@ -1,6 +1,5 @@
 ---
 name: TAO
-path: heroes
 description: A heroic fusion of two mortal enemies
 tier: City
 inspiration: Firestorm

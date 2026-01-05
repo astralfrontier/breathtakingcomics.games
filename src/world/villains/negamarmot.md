@@ -1,6 +1,5 @@
 ---
 name: The Negamarmot
-path: villains
 tier: City
 description: A giant alien animal on the loose
 inspiration: The Kaiju from "Superman"
