@@ -1,0 +1,39 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import SiteLayout from "@/layouts/SiteLayout.astro"
+import World from "@/components/World.astro"
+
+function finalPathPortion(path: string) {
+  const finalSlash = path.lastIndexOf("/");
+  return finalSlash == -1 ? path : path.substring(finalSlash + 1);
+}
+
+export async function getStaticPaths() {
+  // For some mysterious reason, this has to be inlined here
+  function finalPathPortion(path: string) {
+    const finalSlash = path.lastIndexOf("/");
+    return finalSlash == -1 ? path : path.substring(finalSlash + 1);
+  }
+  const entries = await getCollection("world");
+  return entries.map(entry => ({
+    params: {
+      id: finalPathPortion(entry.id)
+    }
+  }))
+}
+
+const { id } = Astro.params;
+const entryCandidates = await getCollection("world", (entry) => finalPathPortion(entry.id) == id);
+
+if (entryCandidates.length != 1) {
+  throw new Error(`Failed to find only one candidate for ID ${id}`);
+}
+
+const entry = entryCandidates[0];
+---
+<SiteLayout frontmatter={{...entry.data, "title": entry.data.name, "description": entry.data.description}}>
+  <div>
+    This entry has moved! Go here:
+    <World id={entry.id} />
+  </div>
+</SiteLayout>
