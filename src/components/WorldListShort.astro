@@ -1,4 +1,6 @@
 ---
+import World from "@/components/World.astro"
+
 const elements = Astro.props.elements
 ---
 <span>
@@ -6,9 +8,7 @@ const elements = Astro.props.elements
     {elements.map((entry: { id: any; data: { name: string, description?: string | undefined } }, i: number) => 
       <>
         {i > 0 ? ' | ' : ''}
-        <a href={`/world/${entry.id}`}>
-          {entry.data.name}
-        </a>
+        <World id={entry.id} />
       </>
     )}
   </strong>

@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 }
 
 const { id } = Astro.params;
-const entry = (await getEntry("world", id || ''))
+const entry = await getEntry("world", id || '')
 
 if (!entry) {
   throw new Error(`Could not find item '${id}' in world collection`)
@@ -37,12 +37,12 @@ const { Content } = await render(entry);
       <Art id={entry.id} />
       <Content />
     </div>
-    {entry.data.path.startsWith("heroes") &&
+    {entry.id.startsWith("heroes") &&
       <div>
         <HeroStats frontmatter={entry.data} />
       </div>
     }
-    {entry.data.path.startsWith("villains") &&
+    {entry.id.startsWith("villains") &&
       <div>
         <VillainStats frontmatter={entry.data} />
       </div>
