@@ -7,7 +7,15 @@ const art = defineCollection({
   schema: ({ image }) => z.object({
     name: z.string(),
     credit: z.string(),
-    url: image()
+    image: image(),
+    url: z.string().url().optional()
+  })
+})
+
+const artists = defineCollection({
+  loader: file("./src/artists.yaml"),
+  schema: ({ image }) => z.object({
+    url: z.string().url()
   })
 })
 
@@ -53,4 +61,4 @@ const world = defineCollection({
   })
 })
 
-export const collections = { art, traits, world };
+export const collections = { art, artists, traits, world };

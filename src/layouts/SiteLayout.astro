@@ -22,7 +22,7 @@ let image_alt = undefined
 if (art_id) {
   const entry = (await getEntry("art", art_id || ''))
   if (entry) {
-    image = entry.data.url.src
+    image = entry.data.image.src
     if (Astro.site) {
       image = new URL(image, Astro.site).href
     }

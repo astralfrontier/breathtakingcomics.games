@@ -1,15 +1,34 @@
 ---
 import { Image } from "astro:assets";
 import { getEntry } from 'astro:content';
+
 import styles from "./Art.module.scss";
 
 const { id } = Astro.props;
 const entry = await getEntry("art", id || '')
+let artist_url = undefined
+if (entry) {
+  const artist = await getEntry("artists", entry.data.credit);
+  if (artist) {
+    artist_url = artist.data.url;
+  }
+}
 ---
 {entry &&
 <div class={styles.art}>
-  <Image src={entry.data.url} alt={`${entry.data.name} by ${entry.data.credit}`} />
+  <Image src={entry.data.image} alt={`${entry.data.name} by ${entry.data.credit}`} />
   <br />
-  <strong>{entry.data.name}</strong> by <strong>{entry.data.credit}</strong>
+  {entry.data.url ?
+  <a href={entry.data.url} target="_blank">{entry.data.name}</a>
+  :
+  <strong>{entry.data.name}</strong>
+  }
+   by
+  {artist_url ? 
+  <a href={artist_url} target="_blank">{entry.data.credit}</a>
+  :
+  <strong>{entry.data.credit}</strong>
+  }
+  
 </div>
 }
