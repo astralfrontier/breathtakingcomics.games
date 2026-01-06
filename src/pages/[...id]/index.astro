@@ -21,7 +21,7 @@ if (!entry) {
 }
 
 let artEntries = []
-if (entry.data.art) {
+if (entry.data.art !== undefined) {
   artEntries = await getCollection("art", (art) => entry.data.art!.includes(art.id))
 } else {
   const prefix = `${id}/`
