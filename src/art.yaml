@@ -22,3 +22,7 @@
   name: The Negamarmot (Not-So-Negamarmot)
   credit: insomn_art
   image: ./assets/art/not-so-negamarmot.png
+- id: villains/seven-wonders/glom
+  name: Glom
+  credit: insomn_art
+  image: ./assets/art/glom.jpg
