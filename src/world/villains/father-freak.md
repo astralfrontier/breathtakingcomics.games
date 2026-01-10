@@ -1,14 +1,14 @@
 ---
 name: Father Freak
-description: A twisted guardian for the dispossessed
+description: A monstrous guardian for the dispossessed
 tier: City
-inspiration: None
+inspiration: Spawn
 motivation: To play out a twisted reflection of a church pastor's duties
 dialogue:
   - Pray! Pray! No god will save you from my wrath!
   - I care only about my flock. Your life means nothing to me. Flee, or perish.
   - If you were really a hero, my people wouldn't need someone like me.
-  - This body is my punishment. I will use my power to become yours.
+  - This body is my punishment. I will use its power to become yours.
 ---
 
 # Father Freak
