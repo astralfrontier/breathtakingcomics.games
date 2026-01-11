@@ -14,7 +14,7 @@ const art = defineCollection({
 
 const artists = defineCollection({
   loader: file("./src/artists.yaml"),
-  schema: ({ image }) => z.object({
+  schema: z.object({
     url: z.string().url()
   })
 })
