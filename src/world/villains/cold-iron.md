@@ -1,0 +1,109 @@
+---
+name: Cold Iron
+tier: City
+description: A possessed anthropologist piloting a suit of magical powered armor
+inspiration: Iron Man
+motivation: To free herself of a cthonic entity's control
+dialogue:
+  - This is for the greater good!
+  - "'The Kindly Ones'. The people of old dared not call them by their true names."
+  - Listen, I've never cast this particular spell before, but if you don't back off, I'm going to have to try it on you
+  - Your doom will be beautiful
+---
+
+# Cold Iron
+
+Dr. Glenys Price was a notable anthropologist and archaeologist.
+She went on several digs, hoping to prove that the "fair folk" - the Tylwyth Teg - were an ancient race of real beings.
+While on a dig in the Mirolda gouffre near the Alps, one of the deepest cave systems in the world,
+she and her team discovered a cache of sophisticated and ancient armor and weapons.
+Dr. Price was ecstatic. This was just what her theory had predicted.
+
+One of the workers accidentally opened a box the team had recovered from the cache.
+A very powerful and very evil spirit, the Allochthonus, had been imprisoned there.
+Immediately it possessed Dr. Price's body.
+The scientist maintained control of her own mind long enough to strap on one of the suits of armor.
+If the stories were true, iron should be a deterrent to such creatures.
+She was right.
+Unfortunately, it wouldn't be enough.
+
+For the next few weeks, Dr. Price worked feverishly to understand her condition.
+Allochthonus had to be exorcised, then returned to its prison.
+The magical ur-science of the ancient Tylwyth Teg eluded her understanding, and the constant headaches weren't helping.
+She needed more - more relics to study, more objects of power to hold back the entity, more books to read.
+
+The armor's technology included shields and wings of hard light,
+a "light lance" that could be used for close or ranged combat, and other abilities.
+Its arcane senses could detect traps both mystic and mundane.
+She didn't *have* to ask. "Just take what you need," a voice in her mind said.
+"You can return the relics when you are done. If the Allochthonus escapes, it will be a danger to the entire world. You'd be doing the right thing".
+Never guessing that the voice was not her own, she committed the first of many thefts and harmed the first of many people.
+
+Today, Glenys Price is a changed woman.
+The Allochthonus' corruption of her mind is almost complete.
+Under its spell, she steals magical artifacts and books of sorcerous learning.
+She has enhanced her armor with both runic sigils and stolen super-science.
+The world knows her as "Cold Iron", a heartless and obsessed super-criminal.
+Occasionally she has moments of lucidity and regret, but without aid, she is very close to falling completely.
+And should she ever be taken out of the suit without proper safeguards,
+the Allochthonus will escape and bring terror to the world again.
+
+# Drives
+
+- Keep a magical relic or sorcerer's library safe from Cold Iron
+- Prevent Cold Iron from enacting a dangerous magical rite
+- Help Dr. Price keep control over the Allochthonus
+
+# Panels
+
+A figure descends from the sky, on wings like a butterfly's.
+It is graceful and beautiful, enchanting in every sense.
+A compelling voice echoes from the armored figure: "withdraw or die. What I seek, I will have."
+
+Sparkles of light accompany energy blasts emanating from Cold Iron's lance.
+An enemy attacks, only to be parried by shields of light emanating from her forearms.
+She draws a slim, elegant blade and readies it.
+
+The armor's faceplate has opened, and Dr. Price looks out at the heroes.
+Half of her face is in light, showing human anger and regret.
+The other half of her face is shadowed, and the eye glows with magical might and cunning cruelty.
+
+# Variations
+
+## Folkloric Origins
+
+- The Tylwyth Teg are a specific mythological entity, hailing from Wales or Ireland.
+- Any mythology with a similar group of powerful and mysterious beings could be responsible for the armor.
+  In this case, the villain's name (which alludes to a specific bit of Fair Folk lore) might change,
+  and how her armor and powers manifest will definitely be different.
+
+# Notes
+
+The Tylwyth Teg armor stands nearly six feet tall.
+It is self-adjusting and will fit itself to the wearer's body automatically.
+Wings of light emerge from the back and legs to allow steering while in flight.
+Similar projections emit from the forearms to create solid shields to protect the wearer.
+A long lance-shaped weapon is mounted on the back.
+It can swivel up to become a shoulder-mounted weapon on either side, or detach and be wielded in one or two hands.
+
+It is white with colored accents, which glow when the suit's powers come into play.
+Under normal operation, they would glow forest-green.
+When the Allochthonus' influence over Dr. Price is strongest, the green becomes a bloody red hue.
+If Dr. Price's will becomes dominant, the color changes to a dark blue.
+
+Out of the armor, Dr. Price stands 5'7".
+She has long brunette hair, olive skin, and dark blue eyes.
+She is a trained scientist and retains her intellect and curiosity, even as the Allochthonus has dominated her will and twisted her morals.
+
+Deep down, she knows what has happened to her, and she fights with every ounce of strength.
+As Cold Iron, she will not kill but will cause harm, and has no compunction about inflicting property damage.
+
+Cold Iron's combat tactics will be straightforward.
+Her armor transforms her into a Fair Folk warrior of legend, and she will fight accordingly.
+She has no patience or knack for stealth, preferring the direct approach.
+That doesn't mean she's predictable - she's formidably intelligent, and should always have a backup plan, surprise, or distraction ready.
+
+If Cold Iron is ever removed from her armor without other sorcerous safeguards,
+the spirit inside her can escape - perhaps by possessing someone else.
+It has grown strong by feeding on her soul, and will definitely pose a far greater danger than Cold Iron herself.
+Freeing her from the Allochthonus is possible, but should be difficult, and will require the aid of a master mystic or powerful creature of magic.
