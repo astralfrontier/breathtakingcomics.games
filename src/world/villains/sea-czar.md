@@ -1,6 +1,6 @@
 ---
 name: Sea-Czar
-description: Emperor of Earth's Oceans
+description: The Emperor of Earth's oceans
 tier: National
 inspiration: Aquaman
 motivation: To terrorize the surface world

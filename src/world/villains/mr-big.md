@@ -1,6 +1,6 @@
 ---
 name: Mr. Big
-description: Size-shifting Grand Old Man of Villainy
+description: The size-shifting Grand Old Man of Villainy
 tier: National
 inspiration: Hank Pym in his "Dr. Pym" persona
 motivation: To live life however he sees fit

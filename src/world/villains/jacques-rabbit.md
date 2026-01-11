@@ -1,7 +1,7 @@
 ---
 name: Jacques Rabbit
 tier: City
-description: Belgian human-rabbit hybrid supersoldier
+description: A Belgian human-rabbit hybrid supersoldier
 inspiration: Batroc the Leaper, Captain America
 motivation: To build a reputation as a dependable mercenary
 dialogue:
