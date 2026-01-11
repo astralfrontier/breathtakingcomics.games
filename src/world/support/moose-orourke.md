@@ -1,6 +1,9 @@
 ---
 name: Moose O'Rourke
 description: A humanoid moose who's a private investigator
+tier: Street
+inspiration: Sam Spade
+motivation: To set things right at the edge of the law
 dialogue:
   - So many guns, so little coffee. You boys sure don't know how to get on a fellow's good side.
   - She was the sort of woman to give a man lip, and she did it in the most direct way possible
