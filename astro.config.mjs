@@ -5,6 +5,7 @@ import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import rehypeMdxToc from "rehype-mdx-toc";
 import rehypeSlug from "rehype-slug";
+import rehypeExternalLinks from "rehype-external-links";
 import react from '@astrojs/react';
 import astroBrokenLinksChecker from 'astro-broken-links-checker';
 
@@ -19,7 +20,17 @@ export default defineConfig({
   site: 'https://breathtakingcomics.games',
   integrations: [
     mdx({
-      rehypePlugins: [rehypeSlug, rehypeMdxToc]
+      rehypePlugins: [
+        rehypeSlug,
+        rehypeMdxToc, 
+        [
+          rehypeExternalLinks,
+          {
+            target: "\_blank",
+            rel: ["noopener", "noreferrer", "external"],
+          },
+        ],
+      ]
     }),
     react(),
     astroBrokenLinksChecker({
