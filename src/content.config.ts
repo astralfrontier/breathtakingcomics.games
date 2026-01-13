@@ -1,4 +1,4 @@
-import { defineCollection } from 'astro:content';
+import { defineCollection, reference } from 'astro:content';
 import { file, glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
@@ -6,7 +6,7 @@ const art = defineCollection({
   loader: file("./src/art.yaml"),
   schema: ({ image }) => z.object({
     name: z.string(),
-    credit: z.string(),
+    artist: reference('artists'),
     image: image(),
     url: z.string().url().optional()
   })
@@ -15,7 +15,8 @@ const art = defineCollection({
 const artists = defineCollection({
   loader: file("./src/artists.yaml"),
   schema: z.object({
-    url: z.string().url()
+    name: z.string(),
+    url: z.string().url().optional()
   })
 })
 

@@ -6,17 +6,21 @@ import styles from "./Art.module.scss";
 
 const { id } = Astro.props;
 const entry = await getEntry("art", id || '')
+let artist_name = undefined
 let artist_url = undefined
 if (entry) {
-  const artist = await getEntry("artists", entry.data.credit);
+  const artist = await getEntry("artists", entry.data.artist.id);
   if (artist) {
+    artist_name = artist.data.name;
     artist_url = artist.data.url;
+  } else {
+    artist_name = entry.data.artist.id;
   }
 }
 ---
 {entry &&
 <div class={styles.art}>
-  <Image src={entry.data.image} alt={`${entry.data.name} by ${entry.data.credit}`} />
+  <Image src={entry.data.image} alt={`${entry.data.name} by ${artist_name}`} />
   <br />
   {entry.data.url ?
   <a href={entry.data.url} target="_blank">{entry.data.name}</a>
@@ -25,10 +29,9 @@ if (entry) {
   }
    by
   {artist_url ? 
-  <a href={artist_url} target="_blank">{entry.data.credit}</a>
+  <a href={artist_url} target="_blank">{artist_name}</a>
   :
-  <strong>{entry.data.credit}</strong>
+  <strong>{artist_name}</strong>
   }
-  
 </div>
 }
