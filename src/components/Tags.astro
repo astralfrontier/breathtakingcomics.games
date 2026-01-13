@@ -3,10 +3,10 @@ import styles from "./Tags.module.scss";
 
 const { tags } = Astro.props;
 ---
-<div>
+<p>
   {tags.map((tag: any) => 
     <>
       <span class={styles.tag}>{tag.data.name}</span>
     </>
   )}
-</div>
+</p>
