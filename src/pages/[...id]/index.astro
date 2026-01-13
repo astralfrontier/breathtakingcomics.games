@@ -1,8 +1,12 @@
 ---
 import { getCollection, getEntry, render } from 'astro:content';
+
 import SiteLayout from "@/layouts/SiteLayout.astro"
-import CharacterBlock, { shouldShowCharacterBlock } from "@/components/CharacterBlock"
 import Art from '@/components/Art.astro';
+import ArtSidebar from '@/components/ArtSidebar.astro';
+import Tags from '@/components/Tags.astro';
+
+import { getEntries } from 'astro:content';
 
 export async function getStaticPaths() {
   const entries = await getCollection("world");
@@ -20,10 +24,13 @@ if (!entry) {
   throw new Error(`Could not find item '${id}' in world collection`)
 }
 
+const tags: any[] = await getEntries(entry.data.tags);
+
 let artEntries = []
 if (entry.data.art !== undefined) {
-  artEntries = await getCollection("art", (art) => entry.data.art!.includes(art.id))
+  artEntries = await getEntries(entry.data.art);
 } else {
+  // Dynamically look for art based on ID
   const prefix = `${id}/`
   artEntries = await getCollection("art", (art) => art.id.startsWith(prefix))
 }
@@ -31,18 +38,14 @@ if (entry.data.art !== undefined) {
 const { Content } = await render(entry);
 ---
 <SiteLayout frontmatter={{...entry.data, "title": entry.data.name, "description": entry.data.description, "art_id": entry.id}}>
-  <div class="grid">
-    <div>
-      <Art id={entry.id} />
-      <Content />
-    </div>
-    {
-      (shouldShowCharacterBlock({frontmatter: entry.data})) &&
-      <div>
-        <CharacterBlock frontmatter={entry.data} />
-      </div>
-    }
-  </div>
+  <ArtSidebar>
+    <Art id={entry.id} />
+  </ArtSidebar>
+
+  <Tags tags={tags} />
+
+  <Content />
+
   {artEntries.length > 0 &&
     <div class="grid">
       {artEntries.map(artEntry => <Art id={artEntry.id} />)}
