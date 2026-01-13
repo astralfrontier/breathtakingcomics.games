@@ -5,6 +5,7 @@ description: >
   Its agents are empowered to keep the public safe, but at what cost?
 tags:
   - global
+  - espionage
 ---
 
 # A.C.T.I.O.N.
@@ -15,19 +16,36 @@ They deal with viral bioweapons, genetically engineered monsters, captured alien
 
 Temptation is ever-present, whether it's wealth and power or a chance at revenge. And not everybody the Agents go after is what they seem.
 
+# Using A.C.T.I.O.N.
+
 A.C.T.I.O.N. is for...
 
 - Globe-trotting espionage scenarios
 - Dirty deeds done for the greater good
 - Stories about loyalty, betrayal, and secrets
 
+## Plots
+
+- A.C.T.I.O.N. agents have an interest in some high-tech dingus which may clash with what the heroes want
+- A villain in A.C.T.I.O.N. custody escaped, and the agency asks for help
+- The agency has answers to the heroes' problem, but their aid won't come cheap
+
+## Comic Book Panels
+
+Something is happening that's not out of the ordinary - whether daily activities from mundane life, or a super-battle in the skies.
+A figure in sunglasses and a suit steps out from behind concealment, places one finger to a radio receiver in one ear, listens, and nods...
+
+The heroes are negotiating with a villain in a fragile moment of peace.
+Cut to someone looking through the scope of a sniper rifle, their finger on the trigger,
+a voice giving them orders through a radio earpiece.
+
+# Major Figures
+
 Characters and locations often have **Pole Stars**.
 These indicate the driving forces - what motivates a character, what uniquely defines a place, and so on.
 When telling stories about these things, you should push those stories toward the indicated pole stars.
 
-## Major Figures
-
-### Director: Craig Costigan
+## Director: Craig Costigan
 
 Costigan fought in two World Wars as a patriotic soldier,
 thanks to the physical power and longevity granted him by a mystical elixir.
@@ -43,7 +61,7 @@ Pole Stars:
 - Trust is earned
 - Weary super-soldier voiced by Ed Asner
 
-### Science Specialist: Professor Pulsar
+## Science Specialist: Professor Pulsar
 
 A researcher assigned to A.C.T.I.O.N.'s Department 42, the weird-tech division.
 Interns are assigned to keep her under control and aimed at approved research.
@@ -54,7 +72,7 @@ Pole Stars:
 - "Discoveries drive science, researchers are replaceable"
 - "I have to see it in the field!"
 
-### Senior Agent: Chris Forge
+## Senior Agent: Chris Forge
 
 A take-no-prisoners veteran spy now working for A.C.T.I.O.N. as a handler for field agents.
 Chris has no patience for sloppy tradecraft, and seems to have a history with everyone in "the great game".
@@ -65,7 +83,7 @@ Pole Stars:
 - Gadgets are a trap - you can only trust yourself
 - Hidden heart of gold? Don't make me laugh
 
-### Infiltrator: Frank Chapman
+## Infiltrator: Frank Chapman
 
 A deep-cover specialist, often working as henchmen for supervillains to give A.C.T.I.O.N. valuable intel.
 He can be gone for days, weeks, or even months on a job, and he sometimes make comments that strike others as suspect.
@@ -75,18 +93,3 @@ Pole Stars:
 - "Don't ask how I got that"
 - Ambiguous loyalties
 - Moral compromises for the greater good
-
-# Drives
-
-- A.C.T.I.O.N. agents have an interest in some high-tech dingus which may clash with what the heroes want
-- A villain in A.C.T.I.O.N. custody escaped, and the agency asks for help
-- The agency has answers to the heroes' problem, but their aid won't come cheap
-
-# Panels
-
-Something is happening that's not out of the ordinary - whether daily activities from mundane life, or a super-battle in the skies.
-A figure in sunglasses and a suit steps out from behind concealment, places one finger to a radio receiver in one ear, listens, and nods...
-
-The heroes are negotiating with a villain in a fragile moment of peace.
-Cut to someone looking through the scope of a sniper rifle, their finger on the trigger,
-a voice giving them orders through a radio earpiece.

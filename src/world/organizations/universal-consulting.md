@@ -4,9 +4,12 @@ description: >
   A small team of problem solvers inspired by classic Universal movie creatures, who skirt the law in the pursuit of the real monsters
 tags:
   - city
+  - espionage
 ---
 
 # Universal Consulting
+
+<em>{frontmatter.description}</em>
 
 The Universal Consulting team is a close-knit group of supernatural creatures, who use their skills for their own purpose.
 Each is modeled on a classic Universal Pictures creature, and the team structure closely follows that of the television show "Leverage".
@@ -30,13 +33,15 @@ forcing them to stay a step ahead of enemies in both the daytime and night.
 - The Thief: **Griff Whalen**, an invisible human.
   An accomplished cat burglar and second-story man who is permanently invisible thanks to a serum.
 
+# Using Universal Consulting
+
 Universal Consulting is for...
 
 - Bringing in classic monsters in a modern context
 - Mixing the supernatural and espionage genres, which can be a fruitful and interesting mixture
 - Giving high-tech or mundane-but-skilled characters a challenge outside their normal skill set
 
-# Drives
+## Plots
 
 - Go up against Universal Consulting during one of their shadier jobs
 - Retrieve an item or captive in Universal Consulting's custody

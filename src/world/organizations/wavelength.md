@@ -7,6 +7,8 @@ tags:
 
 # Wavelength
 
+<em>{frontmatter.description}</em>
+
 Wavelength is an online forum dedicated to "exploring the outer limits of superhuman existence".
 Its members are (or claim to be) researchers into superhuman powers and events.
 It publishes studies of superhuman powers, spreads rumors and information about possible superhuman involvement in current events,
@@ -35,13 +37,17 @@ to dangerous (crossbreeding powered superhumans with hypothetical reptoid races)
 
 **Historical events**: everything from Stonehenge and the Egyptian pyramids to the sinking of the Spanish Armada has been attributed to superhumans.
 
-# Drives
+# Using Wavelength
+
+Wavelength is the ultimate cesspit of kooky theories and wild speculation... but buried in there are nuggets of truth.
+
+## Plots
 
 - Research a superhuman mystery on the forums
 - Track down a prolific poster whose expertise can help the current situation
 - Deal with the fallout of somebody posting about the heroes (whether it's true or false)
 
-# Panels
+## Comic Book Panels
 
 The heroes are reading a provocative comment or important revelation on the forums.
 We cut to a computer, showing the person who posted it. Who do we see? Why are they not what we expected?
