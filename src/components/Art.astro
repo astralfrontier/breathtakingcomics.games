@@ -9,7 +9,7 @@ const entry = await getEntry("art", id || '')
 let artist_name = undefined
 let artist_url = undefined
 if (entry) {
-  const artist = await getEntry("artists", entry.data.artist.id);
+  const artist = await getEntry(entry.data.artist);
   if (artist) {
     artist_name = artist.data.name;
     artist_url = artist.data.url;
