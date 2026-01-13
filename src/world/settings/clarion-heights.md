@@ -6,6 +6,7 @@ description: >
   Will this foster empathy and community between the heroes and villains of tomorrow, or only cause deeper divisions?
 tags:
   - city
+  - teen
 ---
 
 # Clarion Heights Academy and Miller Mountain Corrections
@@ -17,12 +18,6 @@ The other was a reform school and penitentiary for juvenile delinquents whose po
 Not everyone at hero school is good, and not everyone in corrections is bad.
 Rivalries, teen crushes, and misunderstandings are all to be expected, both within each school's students and between the two.
 Will this experiment yield a better future, or will it just reinforce the hero-villain divide?
-
-The twin schools are for...
-
-- Exciting and awkward interactions between teenage characters
-- The combination of astounding powers and mundane school life
-- Stories about coming of age, understanding emotions and the self, and authority vs. individuality
 
 ## History
 
@@ -76,6 +71,25 @@ Second, to keep the Clarion and Miller Mountain kids from seeing the others as a
 If and when rivalries form, ideally they'll be between individual teams,
 rather than the schools at large.
 
+# Using Clarion Heights & Miller Mountain
+
+The twin schools are for...
+
+- Exciting and awkward interactions between teenage characters
+- The combination of astounding powers and mundane school life
+- Stories about coming of age, understanding emotions and the self, and authority vs. individuality
+
+Characters and locations often have **Pole Stars**.
+These indicate the driving forces - what motivates a character, what uniquely defines a place, and so on.
+When telling stories about these things, you should push those stories toward the indicated pole stars.
+
+## Major Figures
+
+The schools play host to talented teachers, former heroes and villains,
+ex-military types, and other people with the skills and dedication to manage their charges.
+Competence and professionalism are expected at all times, of everyone.
+It doesn't matter if you've saved the world a dozen times; if you cross a line as a teacher, the school will send you packing.
+
 ## Locations
 
 Both schools come with classrooms, a gymnasium, a cafeteria, and other features of a modern school.
@@ -102,6 +116,11 @@ Both schools will schedule joint events on the Green.
 Some rough-housing is tolerated, but teachers will intervene if serious violence seems likely to break out.
 Teams who come up with their own heraldry or pennants are allowed to exhibit them on the Green.
 
+Pole Stars:
+
+- Rivalry disguised as competition
+- A modern version of knights jousting for love and glory
+
 ### The Caves
 
 A network of natural caves run through the mountainous area.
@@ -112,9 +131,7 @@ Students come to the caves for a variety of reasons:
 exploration, trysts, or other forms of personal rebellion.
 Showing a new student the route to the caves is considered a rite of passage.
 
-## Major Figures
+Pole Stars:
 
-The schools play host to talented teachers, former heroes and villains,
-ex-military types, and other people with the skills and dedication to manage their charges.
-Competence and professionalism are expected at all times, of everyone.
-It doesn't matter if you've saved the world a dozen times; if you cross a line as a teacher, the school will send you packing.
+- A place to let off steam and feel free
+- Secret alliances and forbidden friendships

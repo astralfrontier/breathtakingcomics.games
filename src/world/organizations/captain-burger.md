@@ -3,6 +3,7 @@ name: Captain Burger
 description: A typical hangout for heroes of all kinds
 tags:
   - city
+  - teen
 ---
 
 # Captain Burger
