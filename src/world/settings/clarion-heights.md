@@ -4,6 +4,8 @@ description: >
   Two institutions, one a prep school for budding superheroes, the other a correctional facility for powered juvenile delinquents.
   The schools are built close to each other, and the students of both often interact.
   Will this foster empathy and community between the heroes and villains of tomorrow, or only cause deeper divisions?
+tags:
+  - city
 ---
 
 # Clarion Heights Academy and Miller Mountain Corrections

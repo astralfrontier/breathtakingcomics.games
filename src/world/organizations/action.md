@@ -3,6 +3,8 @@ name: A.C.T.I.O.N.
 description: >
   A secretive body dedicated to tracking international superhuman threats.
   Its agents are empowered to keep the public safe, but at what cost?
+tags:
+  - global
 ---
 
 # A.C.T.I.O.N.

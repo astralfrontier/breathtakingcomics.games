@@ -1,6 +1,8 @@
 ---
 name: Wavelength
 description: An Internet forum dedicated to superhero conspiracy theories
+tags:
+  - city
 ---
 
 # Wavelength

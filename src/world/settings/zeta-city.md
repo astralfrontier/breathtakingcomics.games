@@ -4,6 +4,8 @@ description: >
   The galactic invaders' mothership crash-landed on Earth.
   A generation later, scientists, superheroes, and brave civilians live in the city built out of its remains.
   Zeta City could revolutionize the world - but it still harbors dangerous secrets.
+tags:
+  - city
 ---
 
 # Zeta City

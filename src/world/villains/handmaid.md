@@ -1,6 +1,8 @@
 ---
 name: Handmaid
-tier: Street
+tags:
+  - street
+  - tech
 description: A gimmick inventor looking to be a villain's new lieutenant
 inspiration: Doctor Octopus
 motivation: Get hired by a veteran villain

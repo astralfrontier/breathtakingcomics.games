@@ -1,7 +1,9 @@
 ---
 name: Father Freak
 description: A monstrous guardian for the dispossessed
-tier: City
+tags:
+  - city
+  - mutant
 inspiration: Spawn
 motivation: To play out a twisted reflection of a church pastor's duties
 dialogue:

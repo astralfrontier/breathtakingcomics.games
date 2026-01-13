@@ -12,7 +12,6 @@ export function shouldShowCharacterBlock(props: CharacterBlockProps): boolean {
   const { frontmatter } = props;
 
   return (
-    frontmatter.tier ||
     frontmatter.inspiration ||
     frontmatter.motivation ||
     frontmatter.dialgue
@@ -27,7 +26,6 @@ export default function CharacterBlock(props: CharacterBlockProps) {
       <article>
         <p>
           <FrontmatterBlock label="Pitch" value={frontmatter.description} />
-          <FrontmatterBlock label="Tier" value={frontmatter.tier} />
           <FrontmatterBlock label="Inspiration" value={frontmatter.inspiration} />
           <FrontmatterBlock label="Motivation" value={frontmatter.motivation} />
         </p>

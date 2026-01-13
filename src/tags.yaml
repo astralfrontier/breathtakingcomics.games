@@ -1,0 +1,26 @@
+- id: street
+  name: Street-tier Power Level
+- id: city
+  name: City-tier Power Level
+- id: national
+  name: National-tier Power Level
+- id: global
+  name: Global-tier Power Level
+- id: cosmic
+  name: Cosmic-tier Power Level
+- id: tech
+  name: Technology Theme
+- id: mystic
+  name: Mystic Theme
+- id: alien
+  name: Alien Theme
+- id: mutant
+  name: Mutant Theme
+- id: experiment
+  name: Experiment Theme
+- id: psychic
+  name: Psychic Theme
+- id: masks
+  name: Masks sheet
+- id: scrpg
+  name: Sentinels Comics sheet

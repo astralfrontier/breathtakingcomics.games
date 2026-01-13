@@ -33,6 +33,13 @@ const traits = defineCollection({
   })
 });
 
+const tags = defineCollection({
+  loader: file("./src/tags.yaml"),
+  schema: z.object({
+    name: z.string()
+  })
+})
+
 const traitShape = z.object({
   value: z.string(),
   hooks: z.array(z.string())
@@ -42,14 +49,10 @@ const world = defineCollection({
   loader: glob({pattern: ["**/*.(md|mdx)", "!**/_*.(md|mdx)"], base: "./src/world"}),
   schema: z.object({
     name: z.string(),
+    tags: z.array(reference("tags")),
     description: z.string().optional(),
     inspiration: z.string().optional(),
     motivation: z.string().optional(),
-    origin: z.string().optional(),
-    role: z.string().optional(),
-    abilities: z.string().optional(),
-    struggles: z.string().optional(),
-    tier: z.string().optional(),
     traits: z.object({
       position: traitShape,
       past: traitShape,

@@ -1,6 +1,8 @@
 ---
 name: The Starbright Cult
 description: A mystery religion founded by an alien mastermind
+tags:
+  - national
 ---
 
 # The Starbright Cult

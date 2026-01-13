@@ -1,7 +1,8 @@
 ---
 name: Sea-Czar
 description: The Emperor of Earth's oceans
-tier: National
+tags:
+  - national
 inspiration: Aquaman
 motivation: To terrorize the surface world
 origin: Super-Scientific Genetic Engineering

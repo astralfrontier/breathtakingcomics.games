@@ -1,6 +1,8 @@
 ---
 name: Jacques Rabbit
-tier: City
+tags:
+  - city
+  - experiment
 description: A Belgian human-rabbit hybrid supersoldier
 inspiration: Batroc the Leaper, Captain America
 motivation: To build a reputation as a dependable mercenary

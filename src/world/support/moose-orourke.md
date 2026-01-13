@@ -1,7 +1,9 @@
 ---
 name: Moose O'Rourke
 description: A humanoid moose who's a private investigator
-tier: Street
+tags:
+  - street
+  - mutant
 inspiration: Sam Spade
 motivation: To set things right at the edge of the law
 dialogue:

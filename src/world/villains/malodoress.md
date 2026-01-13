@@ -1,6 +1,7 @@
 ---
 name: Malodoress
-tier: City
+tags:
+  - city
 description: An evil gaseous Captain Planet
 inspiration: The Mist, Inque, Hexxus, Metamorpho
 motivation: Poison the world with delicious chemicals

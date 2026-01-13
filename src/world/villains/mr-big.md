@@ -1,7 +1,8 @@
 ---
 name: Mr. Big
 description: The size-shifting Grand Old Man of Villainy
-tier: National
+tags:
+  - national
 inspiration: Hank Pym in his "Dr. Pym" persona
 motivation: To live life however he sees fit
 origin: Mutation

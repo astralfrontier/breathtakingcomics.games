@@ -1,6 +1,8 @@
 ---
 name: The Negamarmot
-tier: City
+tags:
+  - city
+  - alien
 description: A giant alien animal on the loose
 inspiration: The Kaiju from "Superman"
 motivation: To exist in this weird, wonderful world

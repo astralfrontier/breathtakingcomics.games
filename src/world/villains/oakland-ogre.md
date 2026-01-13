@@ -1,7 +1,9 @@
 ---
 name: The Oakland Ogre
 description: A two-bit thug trying to be a 5-dollar villain
-tier: Street
+tags:
+  - street
+  - mutant
 motivation: To be welcomed into the big leagues
 origin: Mutation
 role: Dim Muscle

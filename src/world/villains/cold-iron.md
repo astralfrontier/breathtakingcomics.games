@@ -1,6 +1,8 @@
 ---
 name: Cold Iron
-tier: City
+tags:
+  - city
+  - mystic
 description: A possessed anthropologist piloting a suit of magical powered armor
 inspiration: Iron Man
 motivation: To free herself of a cthonic entity's control
