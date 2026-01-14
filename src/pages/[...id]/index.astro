@@ -38,11 +38,11 @@ if (entry.data.art !== undefined) {
 const { Content } = await render(entry);
 ---
 <SiteLayout frontmatter={{...entry.data, "title": entry.data.name, "description": entry.data.description, "art_id": entry.id}}>
+  <Tags tags={tags} />
+
   <ArtSidebar>
     <Art id={entry.id} />
   </ArtSidebar>
-
-  <Tags tags={tags} />
 
   <Content />
 

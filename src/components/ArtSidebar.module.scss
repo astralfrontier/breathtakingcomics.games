@@ -1,0 +1,14 @@
+$img-width: 560px;
+$float-breakpoint: 1024px;
+
+.artsidebar {
+  width: $img-width;
+  max-width: 100%;
+}
+
+@media (min-width: $float-breakpoint) {
+  .artsidebar {
+    float: right;
+    margin-left: 1rem;
+  }
+}
