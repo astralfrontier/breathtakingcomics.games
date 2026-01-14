@@ -1,0 +1,25 @@
+---
+import World from "@/components/World.astro"
+import { getEntries } from "astro:content";
+
+const { entry } = Astro.props;
+
+if (!entry) {
+  throw new Error('Entry not provided');
+}
+
+const members: any[] = (entry.data.members?.map((member: any) => member.id)) ?? [];
+---
+{members.length > 0 && 
+  <>
+    <br />
+    <small>
+      {members.map((member, i) => 
+        <>
+          {i > 0 && ' | '}
+          <World id={member} />  
+        </>
+      )}
+    </small>
+  </>
+}

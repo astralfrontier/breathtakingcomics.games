@@ -1,5 +1,6 @@
 ---
 import World from "@/components/World.astro"
+import WorldListMembers from "./WorldListMembers.astro";
 
 const elements = Astro.props.elements
 ---
@@ -7,5 +8,6 @@ const elements = Astro.props.elements
   <p>
     <strong><World id={entry.id} /></strong><br />
     {entry.data.description || 'No description'}
+    <WorldListMembers entry={entry} />
   </p>
 )}
