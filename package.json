@@ -20,6 +20,7 @@
     "astro-broken-links-checker": "github:imazen/astro-broken-link-checker",
     "astro-compressor": "^1.2.0",
     "astro-purgecss": "^5.3.0",
+    "js-yaml": "^4.1.1",
     "purgecss": "^7.0.2",
     "ramda": "^0.32.0",
     "react": "^19.2.3",
@@ -30,6 +31,7 @@
     "sass": "^1.97.1"
   },
   "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
     "@types/ramda": "^0.31.1"
   }
 }

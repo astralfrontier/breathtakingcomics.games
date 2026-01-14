@@ -1,28 +1,33 @@
-- id: heroes/armiger
-  name: Weekend Training
-  artist: insomn_art
-  image: ./assets/art/weekend_training.png
-- id: heroes/armiger/grail_knights
-  name: Grail Knights
-  artist: insomn_art
-  image: ./assets/art/grail_knights.png
-- id: heroes/armiger/jaycee
-  name: Jaycee
-  artist: insomn_art
-  image: ./assets/art/jaycee.png
-- id: villains/negamarmot
-  name: The Negamarmot
-  artist: insomn_art
-  image: ./assets/art/negamarmot.png
-- id: villains/negamarmot/original
-  name: The Negamarmot (Original)
-  artist: insomn_art
-  image: ./assets/art/negamarmot-original.png
-- id: villains/negamarmot/not-so-negamarmot
-  name: The Negamarmot (Not-So-Negamarmot)
-  artist: insomn_art
-  image: ./assets/art/not-so-negamarmot.png
-- id: villains/seven-wonders/glom
-  name: Glom
-  artist: insomn_art
-  image: ./assets/art/glom.jpg
+artists:
+  - id: insomn_art
+    name: Mike Williams
+    url: https://boardgamegeek.com/thread/2399833/insomns-menagerie-of-the-multiverse
+images:
+  - id: heroes/armiger
+    name: Weekend Training
+    artist: insomn_art
+    image: ./assets/art/weekend_training.png
+  - id: heroes/armiger/grail_knights
+    name: Grail Knights
+    artist: insomn_art
+    image: ./assets/art/grail_knights.png
+  - id: heroes/armiger/jaycee
+    name: Jaycee
+    artist: insomn_art
+    image: ./assets/art/jaycee.png
+  - id: villains/negamarmot
+    name: The Negamarmot
+    artist: insomn_art
+    image: ./assets/art/negamarmot.png
+  - id: villains/negamarmot/original
+    name: The Negamarmot (Original)
+    artist: insomn_art
+    image: ./assets/art/negamarmot-original.png
+  - id: villains/negamarmot/not-so-negamarmot
+    name: The Negamarmot (Not-So-Negamarmot)
+    artist: insomn_art
+    image: ./assets/art/not-so-negamarmot.png
+  - id: villains/seven-wonders/glom
+    name: Glom
+    artist: insomn_art
+    image: ./assets/art/glom.jpg

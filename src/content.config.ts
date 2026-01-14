@@ -1,9 +1,10 @@
 import { defineCollection, reference } from 'astro:content';
 import { file, glob } from 'astro/loaders';
+import yaml from 'js-yaml';
 import { z } from 'astro/zod';
 
 const art = defineCollection({
-  loader: file("./src/art.yaml"),
+  loader: file("./src/art.yaml", { parser: (text) => (yaml.load(text) as any).images }),
   schema: ({ image }) => z.object({
     name: z.string(),
     artist: reference('artists'),
@@ -13,7 +14,7 @@ const art = defineCollection({
 })
 
 const artists = defineCollection({
-  loader: file("./src/artists.yaml"),
+  loader: file("./src/art.yaml", { parser: (text) => (yaml.load(text) as any).artists }),
   schema: z.object({
     name: z.string(),
     url: z.string().url().optional()
