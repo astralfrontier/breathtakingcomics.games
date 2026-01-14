@@ -26,7 +26,10 @@ if (art_id) {
     if (Astro.site) {
       image = new URL(image, Astro.site).href
     }
-    image_alt = `${entry.data.name} by ${entry.data.credit}`
+    const artist = await getEntry(entry.data.artist);
+    if (artist) {
+      image_alt = `${entry.data.name} by ${artist.data.name}`
+    }
   }
 }
 ---
