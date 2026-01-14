@@ -6,7 +6,11 @@ const { tags } = Astro.props;
 <p>
   {tags.map((tag: any) => 
     <>
-      <span class={styles.tag}>{tag.data.name}</span>
+      <span class={styles.tag}>
+        <a href={`/tags/${tag.id}`} class="secondary">
+          {tag.data.name}
+        </a>
+      </span>
     </>
   )}
 </p>

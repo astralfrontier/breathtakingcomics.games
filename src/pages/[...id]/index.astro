@@ -1,12 +1,10 @@
 ---
-import { getCollection, getEntry, render } from 'astro:content';
+import { getCollection, getEntry, getEntries, render } from 'astro:content';
 
 import SiteLayout from "@/layouts/SiteLayout.astro"
 import Art from '@/components/Art.astro';
 import ArtSidebar from '@/components/ArtSidebar.astro';
 import Tags from '@/components/Tags.astro';
-
-import { getEntries } from 'astro:content';
 
 export async function getStaticPaths() {
   const entries = await getCollection("world");
