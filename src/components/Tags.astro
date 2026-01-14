@@ -1,16 +1,16 @@
 ---
-import styles from "./Tags.module.scss";
-
 const { tags } = Astro.props;
 ---
+{(tags && tags.length > 0) ?
 <p>
-  {tags.map((tag: any) => 
+  {tags.map((tag: any, i: number) => 
     <>
-      <span class={styles.tag}>
-        <a href={`/tags/${tag.id}`} class="secondary">
-          {tag.data.name}
-        </a>
-      </span>
+      {i > 0 ? ', ' : ''}
+      <a href={`/tags/${tag.id}`}>
+        {tag.data.name}
+      </a>
     </>
   )}
 </p>
+: <></>
+}
