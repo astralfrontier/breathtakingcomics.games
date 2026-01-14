@@ -5,7 +5,6 @@ description: >
   The schools are built close to each other, and the students of both often interact.
   Will this foster empathy and community between the heroes and villains of tomorrow, or only cause deeper divisions?
 tags:
-  - city
   - teen
 ---
 
