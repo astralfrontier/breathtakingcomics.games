@@ -2,7 +2,10 @@ artists:
   - id: insomn_art
     name: Mike Williams
     url: https://boardgamegeek.com/thread/2399833/insomns-menagerie-of-the-multiverse
+
 images:
+
+  # Armiger
   - id: heroes/armiger
     name: Weekend Training
     artist: insomn_art
@@ -15,6 +18,14 @@ images:
     name: Jaycee
     artist: insomn_art
     image: ./assets/art/jaycee.png
+
+  # Glom
+  - id: villains/seven-wonders/glom
+    name: Glom
+    artist: insomn_art
+    image: ./assets/art/glom.jpg
+
+  # Negamarmot
   - id: villains/negamarmot
     name: The Negamarmot
     artist: insomn_art
@@ -27,7 +38,3 @@ images:
     name: The Negamarmot (Not-So-Negamarmot)
     artist: insomn_art
     image: ./assets/art/not-so-negamarmot.png
-  - id: villains/seven-wonders/glom
-    name: Glom
-    artist: insomn_art
-    image: ./assets/art/glom.jpg
