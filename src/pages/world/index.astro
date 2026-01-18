@@ -1,20 +1,10 @@
 ---
 import WorldList from "@/components/WorldList.astro";
 import SiteLayout from "@/layouts/SiteLayout.astro";
+import { sortByName } from "@/utils";
 import { getCollection } from "astro:content";
 
-const worldEntries = (await getCollection("world"))
-  .sort((a, b) => {
-    const na = a.data.name.toLowerCase().replace(/^the +/, '');
-    const nb = b.data.name.toLowerCase().replace(/^the +/, '');
-    if (na < nb) {
-      return -1;
-    }
-    if (na > nb) {
-      return 1;
-    }
-    return 0;
-  })
+const worldEntries = (await getCollection("world")).sort(sortByName)
 
 // For a given path like "a/b/c", return "a/b"
 function prefix(path: string) {

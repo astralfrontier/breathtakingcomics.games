@@ -3,6 +3,7 @@ import { getCollection, getEntry } from 'astro:content';
 
 import SiteLayout from "@/layouts/SiteLayout.astro";
 import WorldList from "@/components/WorldList.astro";
+import { sortByName } from '@/utils';
 
 export async function getStaticPaths() {
   const entries = await getCollection("tags");
@@ -20,18 +21,9 @@ if (!entry) {
   throw new Error(`Could not find item '${tag}' in tags collection`)
 }
 
-const worldEntries = (await getCollection("world", ({data}) => data.tags.map(tag => tag.id).includes(entry.id)))
-  .sort((a, b) => {
-    const na = a.data.name.toLowerCase().replace(/^the +/, '');
-    const nb = b.data.name.toLowerCase().replace(/^the +/, '');
-    if (na < nb) {
-      return -1;
-    }
-    if (na > nb) {
-      return 1;
-    }
-    return 0;
-  })
+const worldEntries = (await getCollection("world",
+  ({data}) => data.tags.map(tag => tag.id).includes(entry.id)))
+  .sort(sortByName)
 
 ---
 <SiteLayout frontmatter={{...entry.data, "title": entry.data.name, "description": `Pages tagged as '${entry.id}''`}}>
