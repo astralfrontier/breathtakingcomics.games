@@ -1,4 +1,6 @@
 ---
+import { tooltipText } from "@/utils";
+
 const { tags } = Astro.props;
 ---
 {(tags && tags.length > 0) ?
@@ -6,7 +8,7 @@ const { tags } = Astro.props;
   {tags.map((tag: any, i: number) => 
     <>
       {i > 0 ? ', ' : ''}
-      <a href={`/tags/${tag.id}`}>
+      <a href={`/tags/${tag.id}`} data-tooltip={tooltipText(tag.data.description)}>
         {tag.data.name}
       </a>
     </>

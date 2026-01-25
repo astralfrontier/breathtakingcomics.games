@@ -16,3 +16,13 @@ export function sortByName(a: any, b: any) {
   }
   return 0;
 }
+
+export function tooltipText(description: string | undefined, maxLength: number = 80) {
+  if (!description) {
+    return description;
+  } else if (description.length > maxLength) {
+    return `${description.substring(0, maxLength)}...`
+  } else {
+    return description;
+  }
+}

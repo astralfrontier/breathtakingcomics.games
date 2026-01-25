@@ -1,39 +1,56 @@
 # Power Level tags. These are mostly for heroes & villains, but could be applied to other stuff.
 - id: street
   name: Street-tier Power Level
+  description: Characters or organizations that can operate within a particular neighborhood or otherwise limited area.
 - id: city
   name: City-tier Power Level
+  description: Characters or organizations that can threaten, defend, or otherwise operate across an entire city.
 - id: national
   name: National-tier Power Level
+  description: Characters or organizations that can threaten, defend, or otherwise operate across a whole country.
 - id: global
   name: Global-tier Power Level
+  description: Characters or organizations that can threaten, defend, or otherwise operate worldwide.
 - id: cosmic
   name: Cosmic-tier Power Level
+  description: Characters or organizations that can threaten, defend, or otherwise operate in interstellar space, entire alternate dimensions, and so on.
 
 # Power Theme tags. These aren't strictly about a hero or villain's power source, but more about what they're generally about.
 - id: tech
   name: Technology Theme
+  description: High-tech science (nanotech, hard light, robotics), weird science (steampunk, biotech, alien science, magitech, etc.), and so on.
 - id: mystic
   name: Mystic Theme
+  description: Magic, spirits, the supernatural, the occult.
 - id: alien
   name: Alien Theme
+  description: Extraterrestrials, but also underwater civilizations, people from other dimensions or invisible worlds, and other nonhuman people.
 - id: mutant
   name: Mutant Theme
+  description: Characters born with an innate power or ability of some kind.
 - id: experiment
   name: Experiment Theme
+  description: Characters who received powers from science experiments, deliberate alteration, or freak accidents.
 - id: psychic
   name: Psychic Theme
+  description: Characters with telepathy, telekinesis, and other powers of the mind.
 - id: vigilante
   name: Vigilante Theme
+  description: Characters who work at the edge of the law as crimefighters.
 - id: espionage
   name: Espionage Theme
+  description: Characters who work as spies, secret agents, and so on.
 - id: teen
   name: Teenage Heroes
+  description: Characters who aren't fully recognized as adults.
 
 # Which of these characters have sheets for what systems?
 - id: bcrpg
   name: Breathtaking Comics sheet
+  description: "Characters with a Breathtaking Comics RPG character sheet"
 - id: masks
   name: Masks sheet
+  description: "Characters with a Masks: a New Generation character sheet"
 - id: scrpg
   name: Sentinels Comics sheet
+  description: "Characters with a Sentinels Comics RPG character sheet"

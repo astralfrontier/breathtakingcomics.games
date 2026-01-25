@@ -1,4 +1,5 @@
 ---
+import { tooltipText } from '@/utils';
 import { getEntry } from 'astro:content';
 
 const { id, title } = Astro.props;
@@ -8,4 +9,4 @@ if (!entry) {
   throw new Error(`No World entry with id ${id}`)
 }
 ---
-<a href={`/${entry.id}`}>{title ?? entry.data.name}</a>
+<a href={`/${entry.id}`} data-tooltip={tooltipText(entry.data.description)}>{title ?? entry.data.name}</a>

@@ -28,5 +28,6 @@ const worldEntries = (await getCollection("world",
 ---
 <SiteLayout frontmatter={{...entry.data, "title": entry.data.name, "description": `Pages tagged as '${entry.id}''`}}>
   <h1>{entry.data.name}</h1>
+  <p>{entry.data.description}</p>
   <WorldList elements={worldEntries} />
 </SiteLayout>
