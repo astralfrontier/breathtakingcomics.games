@@ -3,7 +3,7 @@
 $use-comic-box: true;
 $use-dynamic-first-letter: true;
 $color-comic-box-interior:  #ffc43a;
-$color-comic-box-exterior: black;
+$color-comic-box-exterior: #000; //black;
 $color-dynamic-first-letter: red;
 
 h1 {
@@ -12,6 +12,7 @@ h1 {
     padding: 4px;
     background: $color-comic-box-interior;
     box-shadow: 5px 5px $color-comic-box-exterior;
+    color: $color-comic-box-exterior;
   }
   font-family: var(--font-bangers);
 }
