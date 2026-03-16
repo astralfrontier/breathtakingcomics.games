@@ -1,6 +1,6 @@
 // @ts-check
 import yaml from '@rollup/plugin-yaml';
-import { defineConfig } from 'astro/config';
+import { defineConfig, fontProviders } from 'astro/config';
 
 import mdx from '@astrojs/mdx';
 import rehypeMdxToc from "rehype-mdx-toc";
@@ -40,6 +40,18 @@ export default defineConfig({
     purgecss(),
     playformCompress(),
     compressor()
+  ],
+  fonts: [
+    {
+      provider: fontProviders.google(),
+      name: "Acme",
+      cssVariable: "--font-acme"
+    },
+    {
+      provider: fontProviders.google(),
+      name: "Bangers",
+      cssVariable: "--font-bangers"
+    }
   ],
   vite: {
     plugins: [yaml()]
