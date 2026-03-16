@@ -38,6 +38,8 @@ const { Content } = await render(entry);
 <SiteLayout frontmatter={{...entry.data, "title": entry.data.name, "description": entry.data.description, "art_id": entry.id}}>
   <Tags tags={tags} />
 
+  <h1>{entry.data.name}</h1>
+
   <ArtSidebar>
     <Art id={entry.id} />
   </ArtSidebar>

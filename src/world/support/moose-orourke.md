@@ -6,8 +6,6 @@ tags:
   - mutant
 ---
 
-# Moose O'Rourke
-
 > "This case had more angles than my client had curves"
 
 Moose O'Rourke stands on the high side of six-feet-something.
