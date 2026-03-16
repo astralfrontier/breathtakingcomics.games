@@ -10,6 +10,7 @@ interface Props {
   frontmatter: Frontmatter;
 }
 
+import { Font } from "astro:assets";
 import { getEntry } from 'astro:content';
 import CcBy from '@/components/CcBy';
 import Navbar from '@/components/Navbar';
@@ -45,6 +46,8 @@ if (art_id) {
     {image_alt != undefined && <meta property="og:image:alt" content={image_alt}>}
     <link rel="icon" type="image/png" href="/favicon.png">
     <title>{title} | Breathtaking Comics</title>
+    <Font cssVariable="--font-acme" preload />
+    <Font cssVariable="--font-bangers" preload />
   </head>
   <body>
     <Navbar client:load />

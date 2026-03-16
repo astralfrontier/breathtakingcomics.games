@@ -1,1 +1,30 @@
 @use "@picocss/pico";
+
+$use-comic-box: true;
+$use-dynamic-first-letter: true;
+$color-comic-box-interior:  #ffc43a;
+$color-comic-box-exterior: black;
+$color-dynamic-first-letter: red;
+
+h1 {
+  @if $use-comic-box {
+    border: 2px solid $color-comic-box-exterior;
+    padding: 4px;
+    background: $color-comic-box-interior;
+    box-shadow: 5px 5px $color-comic-box-exterior;
+  }
+  font-family: var(--font-bangers);
+}
+
+@if $use-dynamic-first-letter {
+  h1::first-letter {
+    font-size: 56px;
+    color: $color-dynamic-first-letter;
+    text-shadow: -2px -2px 0 $color-comic-box-exterior, 2px -2px 0 $color-comic-box-exterior, -2px 2px 0 $color-comic-box-exterior, 2px 2px 0 $color-comic-box-exterior;
+  }
+}
+
+h2 {
+  font-family: var(--font-acme);
+  font-style: italic;
+}
