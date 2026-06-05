@@ -11,7 +11,7 @@ const art = defineCollection({
     name: z.string(),
     artist: reference('artists'),
     image: image(),
-    url: z.string().url().optional()
+    url: z.url().optional()
   })
 })
 
@@ -19,7 +19,7 @@ const artists = defineCollection({
   loader: file("./src/art.yaml", { parser: artYamlParser("artists") }),
   schema: z.object({
     name: z.string(),
-    url: z.string().url().optional()
+    url: z.url().optional()
   })
 })
 
