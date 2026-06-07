@@ -34,7 +34,7 @@
         };
         devShell = pkgs.mkShell {
           name = packagename;
-          packages = builddeps ++ [ pkgs.vscodium ];
+          packages = builddeps ++ [ pkgs.vscodium pkgs.netlify-cli ];
         };
       }
     );
