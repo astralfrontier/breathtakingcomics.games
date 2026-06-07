@@ -6,10 +6,11 @@ import Toc from "./Toc";
 export interface TocWrapperProps {
   children?: React.ReactNode;
   toc: TocItem[];
+  maxDepth?: number;
 }
 
 export default function TocWrapper(props: TocWrapperProps) {
-  const { toc } = props;
+  const { toc, maxDepth } = props;
 
   return (
     <div className={styles.grid}>
@@ -17,7 +18,7 @@ export default function TocWrapper(props: TocWrapperProps) {
         {props.children}
       </div>
       <div className={styles.gridtoc}>
-        <Toc toc={props.toc} />
+        <Toc toc={props.toc} maxDepth={maxDepth} />
       </div>
     </div>
   );
