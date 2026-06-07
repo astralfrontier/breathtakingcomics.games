@@ -23,6 +23,11 @@ export default function Toc(props: TocProps) {
             </li>
           ))}
         </ul>
+        {toc.length > 0 &&
+          <ul>
+            <li><a href={toc[0].href}>Top</a></li>
+          </ul>
+        }
       </nav>
     </aside>
   );

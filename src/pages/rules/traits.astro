@@ -1,28 +1,38 @@
 ---
-import { type TocItem } from "rehype-mdx-toc"
-import SiteLayout from "@/layouts/SiteLayout.astro"
-import TocWrapper from "@/components/TocWrapper"
-import { groupBy, prop } from "ramda"
-import traitData from "@/traits"
-const groupedTraits = groupBy(prop("type"), traitData)
-const types = [""]
+import { type TocItem } from "rehype-mdx-toc";
+import SiteLayout from "@/layouts/SiteLayout.astro";
+import TocWrapper from "@/components/TocWrapper";
+import { groupBy, prop } from "ramda";
+import traitData from "@/traits";
+const groupedTraits = groupBy(prop("type"), traitData);
+const traitTypes = Object.keys(groupedTraits);
+
+function capitalize(s: string): string {
+  if (!s || s.length == 0) {
+    return '';
+  } else if (s.length == 1) {
+    return s.toUpperCase();
+  } else {
+    return `${s[0].toUpperCase()}${s.slice(1)}`
+  }
+}
 
 function buildTocFromTraits(): TocItem[] {
   const elements: TocItem[] = [];
 
-  ["Position", "Past", "Personality", "Powers", "Problems"].forEach(
+  traitTypes.forEach(
     (traitType) => {
-      const slug = `${traitType.toLowerCase()}-traits`
+      const slug = `${traitType}-traits`;
       elements.push({
         depth: 1,
-        value: traitType,
+        value: capitalize(traitType),
         numbering: [],
         id: slug,
         href: `#${slug}`,
       });
 
-      groupedTraits[traitType.toLowerCase()]!.forEach((element) => {
-        const slug = `${element.id}-trait`
+      groupedTraits[traitType]!.forEach((element) => {
+        const slug = `${element.id}-trait`;
         elements.push({
           depth: 2,
           value: element.name,
@@ -31,50 +41,70 @@ function buildTocFromTraits(): TocItem[] {
           href: `#${slug}`,
         });
       });
-    }
+    },
   );
 
   return elements;
 }
 ---
-<SiteLayout frontmatter={{"title": "Sample Traits", description: "A list of sample traits for Breathtaking Comics hero characters"}}>
+
+<SiteLayout
+  frontmatter={{
+    title: "Sample Traits",
+    description:
+      "A list of sample traits for Breathtaking Comics hero characters",
+  }}
+>
   <p>
     All of the traits here are examples. You can create your own original
     traits, or adapt the ones you find here.
   </p>
 
   <TocWrapper toc={buildTocFromTraits()}>
-    {["Position", "Past", "Personality", "Powers", "Problems"].map(
-      (traitType) => (
-        <>
-          <h1 id={`${traitType.toLowerCase()}-traits`}>{traitType} Traits</h1>
-          {groupedTraits[traitType.toLowerCase()]!.map((trait) => (
+    {
+      traitTypes.map(
+        (traitType) => {
+          const traitsInGroup = groupedTraits[traitType] || [];
+          return (
             <>
-              <h2 id={`${trait.id}-trait`}>{trait.name}</h2>
-              <p>&quot;{trait.catchphrase}&quot;</p>
-              <p>Examples:</p>
-              <ul>
-                {trait.examples.map((example) => (
-                  <li>{example.replaceAll("**", "")}</li>
-                ))}
-              </ul>
-              <p>{trait.description}</p>
-              <p>Sample Hooks:</p>
-              <ul>
-                {trait.hooks.map((hook) => (
-                  <li>{hook}</li>
-                ))}
-              </ul>
-              <p>Sample Drives:</p>
-              <ul>
-                {trait.drives.map((drive) => (
-                  <li>{drive}</li>
-                ))}
-              </ul>
+              <h1 id={`${traitType}-traits`}>
+                {capitalize(traitType)} Traits
+              </h1>
+              <p>
+                To pick a random value for this trait, roll a die:
+              </p>
+              <ol>
+                {traitsInGroup.map(trait => <li><a href={`#${trait.id}-trait`}>{trait.name}</a></li>)}
+              </ol>
+              {traitsInGroup.map((trait) => (
+                <>
+                  <h2 id={`${trait.id}-trait`}>{trait.name}</h2>
+                  <p>&quot;{trait.catchphrase}&quot;</p>
+                  <p>Examples:</p>
+                  <ul>
+                    {trait.examples.map((example) => (
+                      <li>{example.replaceAll("**", "")}</li>
+                    ))}
+                  </ul>
+                  <p>{trait.description}</p>
+                  <p>Sample Hooks:</p>
+                  <ul>
+                    {trait.hooks.map((hook) => (
+                      <li>{hook}</li>
+                    ))}
+                  </ul>
+                  <p>Sample Drives:</p>
+                  <ul>
+                    {trait.drives.map((drive) => (
+                      <li>{drive}</li>
+                    ))}
+                  </ul>
+                </>
+              ))}
             </>
-          ))}
-        </>
+          );
+        },
       )
-    )}
+    }
   </TocWrapper>
 </SiteLayout>
