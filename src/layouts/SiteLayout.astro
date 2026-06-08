@@ -16,6 +16,8 @@ import CcBy from '@/components/CcBy';
 import Navbar from '@/components/Navbar';
 import '@/layouts/SiteLayout.scss'
 
+const SITE_NAME = 'Breathtaking Comics';
+
 const { title = "No Title", description = "No Description", license = "cc-by-40", art_id } = Astro.props.frontmatter;
 
 let image = undefined
@@ -41,11 +43,11 @@ if (art_id) {
     <meta name="description" content={description}>
     <meta property="og:title" content={title}>
     <meta property="og:description" content={description}>
-    <meta property="og:site_name" content="Breathtaking Comics">
+    <meta property="og:site_name" content={SITE_NAME}>
     {image != undefined && <meta property="og:image" content={image}>}
     {image_alt != undefined && <meta property="og:image:alt" content={image_alt}>}
     <link rel="icon" type="image/png" href="/favicon.png">
-    <title>{title} | Breathtaking Comics</title>
+    <title>{title} | {SITE_NAME}</title>
     <Font cssVariable="--font-acme" preload />
     <Font cssVariable="--font-bangers" preload />
   </head>
