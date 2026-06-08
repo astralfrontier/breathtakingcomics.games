@@ -3,10 +3,10 @@ layout: "@/layouts/SiteLayout.astro"
 title: EIC Edition Rules
 description: The rules for the Breathtaking Comics tabletop RPG, written in-character
 ---
-import TocWrapper from "@/components/TocWrapper"
-import RandomCharacterTool from "@/components/RandomCharacterTool"
-import RandomRollTool from "@/components/RandomRollTool"
-import DriveTool from "@/components/DriveTool"
+import TocWrapper from "@/components/TocWrapper.tsx"
+import RandomCharacterTool from "@/components/RandomCharacterTool.tsx"
+import RandomRollTool from "@/components/RandomRollTool.tsx"
+import DriveTool from "@/components/DriveTool.tsx"
 
 <TocWrapper toc={toc}>
 
@@ -115,13 +115,14 @@ You might be tempted to write generic milquetoast Hooks like "the character mess
 No - no no no! Heroes don't simply _fail_.
 They're inadequate, they're under- or over-confident, they were sabotaged, they're cursed, whatever.
 Something bad happened and we want the hero to learn from it, get stronger because of it, reach out to others to overcome it.
-Whenever you can, write Hooks that are about a _struggle_ or a _relationship_.
+
+Whenever you can, **write Hooks that are about a _struggle_ or a _relationship_.**
 Hooks don't have to be about something that the character did at all.
 Hooks can be how others react to the character.
 It's not Mishmash's fault that his body constantly transforms into weird scary shapes,
 but he still struggles with how people see him as a result.
 
-By the way, it doesn't have to be your character who triggers a Hook.
+It doesn't have to be your character who triggers a Hook.
 Sergeant Stronghold has a Hook like "Someone faces discrimination or stereotyping".
 He doesn't have to do that himself for the Hook to trigger.
 It just has to happen while he's on the scene.
