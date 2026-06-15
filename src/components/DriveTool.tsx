@@ -82,14 +82,14 @@ function DriveTool() {
   return (
     <article>
       <p>
+        <strong>
+          {driveState.struck ? <del>{driveState.name}</del> : driveState.name}
+        </strong>{": "}
         {driveState.statusIsGreen ? (
           <>GREEN (&#x1F7E2;)</>
         ) : (
           <>RED (&#x1F534;)</>
-        )}{" "}
-        <strong>
-          {driveState.struck ? <del>{driveState.name}</del> : driveState.name}
-        </strong>
+        )}
         <br />
         <small>Current status: {driveState.excuse}</small>
       </p>
