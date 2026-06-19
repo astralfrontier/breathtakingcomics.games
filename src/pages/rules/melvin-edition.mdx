@@ -3,9 +3,10 @@ layout: "@/layouts/SiteLayout.astro"
 title: Melvin Edition Rules
 description: The rules for the Breathtaking Comics tabletop RPG, written as a compact reference document
 ---
-import RandomCharacterTool from "@/components/RandomCharacterTool"
-import RandomRollTool from "@/components/RandomRollTool"
-import DriveTool from "@/components/DriveTool"
+import RandomCharacterTool from "@/components/RandomCharacterTool.tsx"
+import RandomRollTool from "@/components/RandomRollTool.tsx"
+import DriveTool from "@/components/DriveTool.tsx"
+import PageAndPanelTool from "@/components/PageAndPanelTool.tsx"
 
 This game is about telling comic-book superhero stories. Every player speaks with equal authority.
 You can look to individual players for leadership, but no one player can overrule the others.
@@ -80,9 +81,11 @@ Drives are either in Red (bad) or Green (good) state. Drives change state as a r
 
 <RandomRollTool client:only="react" />
 
-When a Drive flips color, explain what happened and why this was the result. If you have to flip a Drive but can't, create a new Drive.
+When a Drive flips color, explain what happened and why this was the result.
+If you have to flip a Drive but can't, create a new Drive.
 
-The group can strike a Drive, locking in its current state for the scene. Strike a Drive when the group feels like the issue is settled, or if the Drive is no longer interesting.
+The group can strike a Drive, locking in its current state for the scene.
+Strike a Drive when the group feels like the issue is settled, or if the Drive is no longer interesting.
 
 Anyone can add a new Drive at any time. One Drive can evolve into another new Drive if appropriate.
 
@@ -100,22 +103,22 @@ When a Drive changes state, take notes on what happened.
 6. The group plays through one or more Page of action, each with that many Panels
 7. Each Panel has one hero making a Test to shift Drives
 8. Adjust the status of one or more Drives depending on the Test result
-9. If this is your first roll on the page, step down the Trait die
-10. If any Hooks were narrated, step up Trait dice if appropriate
+9. If any Hooks were narrated, step up Trait dice if appropriate
+10. Once you
 11. At the end of Pages 1-3, move a single Drive to Red; at the end of Pages 4 and on, select one Drive and strike it
 12. The scene ends when about half of all Drives have been struck, or by group consensus
+
+<PageAndPanelTool client:only="react" />
 
 ## Challenge Scenes
 
 1. Write a single Drive for the overall nature of the challenge
 2. Each player contributes a single extra Drive
-3. Pick a number of Panels to play through, from 4 (hard) to 6 (medium) to 8 (easy)
+3. Play through one Panel per hero
 4. Each Panel has one hero making a Test to shift Drives
 5. Adjust the status of one or more Drives depending on the Test result
-6. If this is your first roll on the page, step down the Trait die
-7. If any Hooks were narrated, step up Trait dice if appropriate
-8. No hero may make a second Test until every hero has made a first
-9. The scene ends when every Panel has been played through
+6. If any Hooks were narrated, step up Trait dice if appropriate
+7. The scene ends when every Panel has been played through
 
 ## Open Scenes
 

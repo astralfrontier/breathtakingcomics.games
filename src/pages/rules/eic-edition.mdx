@@ -7,6 +7,7 @@ import TocWrapper from "@/components/TocWrapper.tsx"
 import RandomCharacterTool from "@/components/RandomCharacterTool.tsx"
 import RandomRollTool from "@/components/RandomRollTool.tsx"
 import DriveTool from "@/components/DriveTool.tsx"
+import PageAndPanelTool from "@/components/PageAndPanelTool.tsx"
 
 <TocWrapper toc={toc}>
 
@@ -285,9 +286,6 @@ Come up with a new complication that emerges from this horror show of a scene.
 You don't get any similar grace with Green, by the way.
 If everything's going perfectly, that's its own reward.
 
-Also, don't forget!
-If this is your first roll on the Page, step down the Trait die, and stop stepping at d4.
-
 Tests are how we develop the Drives in a scene.
 The Drive itself is still there, but the circumstances can change.
 If the Drive is "reporter girlfriend endangered", she could be endangered by a lot of things.
@@ -384,21 +382,35 @@ Page one, Panel one. Pick a hero to tackle a problem, and go!
 
 Crisis Scenes have some strict rules about Pages and Panels.
 
-First: every hero character can make a Test in only one Panel per Page.
-Every hero gets their own Panel to do this.
-You can place hero Panels in any order you like, but keep track.
-No hero should be dominating the Panels on a given Page.
+First: You have one Panel for every hero.
+In that one Panel, you roll a Test to see how things go.
+The Test is the hero's action, but also a villain's response, or a chaotic situation getting more so,
+so a bad roll doesn't mean "you failed", it means "things are bad".
 
-If the number of heroes doesn't match the number of Panels, somebody's gonna go multiple times.
-If you have _more_ heroes than Panels for some reason, some heroes might not appear on a page at all.
-The ironclad rule, though, is that a hero doesn't get a second Panel until everyone else has gotten their first, and so on.
-Share the spotlight.
-
-Second: every Panel should ideally have a Test of some kind.
 Crisis scenes are supposed to move fast, they're supposed to be tense, we're supposed to be on the edge of our seats!
+This is why we have a Test on every Panel.
+Things should always be changing.
 
-Third: you have a grace period.
-For the first three Pages, at the end of each Page, you flip one Green Drive to Red.
+When every hero appeared a Panel, start again.
+Everyone went, so everyone gets to go again in new fresh Panels.
+You don't have to go in the same order as last time, either.
+You could go Hero 1 - 2 - 3 and then immediately go Hero 3 - 1 - 2.
+
+Heroes can _appear_ in other Panels, sure.
+You can write them as helping out, whatever the hell "aura farming" is, and so on.
+But they don't affect the Test for that Panel.
+
+Second: When you're rolling a Test, don't repeatedly use the same Trait on the same Page.
+This is more of a strong suggestion than a real rule,
+but do your best to uphold it.
+
+Third: Pages.
+Once a Panel gets resolved, and it's the last Panel for a given Page, it's time for a bit of housekeeping.
+Every hero who took an action steps down the die for one of the Traits they rolled on that Page.
+If you rolled Personality and Powers in two different Panels, pick one of those Traits.
+
+Every time you turn a Page, things will get worse for the scene.
+At the end of your first three Pages, you flip one Green Drive to Red.
 Every Page after that, at the end of the Page, you strike a Drive.
 
 Why? Explain why!
@@ -408,6 +420,14 @@ Chaos on the scene.
 Miami Ninja!
 The point of this rule is to put pressure on the scene.
 Better get your Drives in order, folks, because you know the ax is going to fall on one of them.
+
+For example, you declared there's 4 Panels per Page, and you've got 3 heroes.
+The heroes decide to go in this order: 1 - 3 - 2.
+In the fourth Panel, any of them can go first, so 3 goes.
+But you've reached four Panels, so you're turning a Page.
+Everyone steps down a Trait die, and a Drive either gets flipped to Red, or struck.
+
+<PageAndPanelTool client:only="react" />
 
 ## Filling Crisis Panels
 
@@ -466,12 +486,8 @@ The point of these extra Drives is to give every hero a thing to do.
 ## Playing a Challenge
 
 Challenges play out on one Page.
-How tense is the situation? How urgent?
-The more urgent, the fewer Panels you have to work with.
-A really dire situation takes four Panels to resolve, a moderate challenge should be six, and a more easy-going challenge (like the date) can be done in eight Panels.
-
-One hero makes a Test per Panel.
-No hero can make a second Test until everyone has made their first Test.
+There's one Panel per hero, and each hero makes a Test on their Panel.
+Simple.
 
 ## Filling Challenge Panels
 
@@ -819,20 +835,17 @@ Naturally they're going to rush in and save those people first.
 Which hero? Who cares, but we'll say they're using their Powers trait. I'll roll a d8 for Powers.
 They get a 5, which lets them move a Drive to Green.
 Obviously that's going to be the "Civilians in Danger" Drive.
-That Powers d8 now goes down to a d6.
 
 Next Panel, next hero.
 They're going to attack the monster.
 They roll a d8 Trait - let's say Personality, they're aggressive - and get 2.
 They decide the Giant Monster Rampage isn't going well, and it breathes fire over downtown.
-That Drive goes Red. That Personality d8 also drops to a d6.
+That Drive goes Red.
 
 Third panel, third hero.
 They want to rescue the teammate from the barbecue.
 They'll roll their Position Trait - a d8 - and get a three.
 Giant Monster Rampage goes Green because they're distracting the beast, but we'll say the fire and chaos presents an obstacle for the civilian rescue.
-Sure enough, that Position d8 drops to a d6.
-Doesn't matter how well you roll, the Trait die always steps down.
 
 Say one of these heroes had a traumatic experience with fire, and now seeing the creature's fiery breath sets that off.
 If that was a Hook, this would let them bump up a trait die.
@@ -843,6 +856,7 @@ If there were only three heroes, everyone gets another whack at the situation.
 The Page ends when we've had six Panels.
 When that happens, we pick a Drive to go Red as a group, then explain why.
 For our example we'll say the Villain is getting away with it, because nobody interfered with them.
+We also have our heroes step down the Trait dice they used.
 
 The Drive notes should look like this:
 
