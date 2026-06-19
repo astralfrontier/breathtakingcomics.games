@@ -1,8 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { randomElement } from "@/traits";
 
-import styles from "./PageAndPanelTool.module.scss"
-
 interface Panel {
   text: React.ReactNode,
   isPage: boolean;
@@ -116,7 +114,7 @@ function PageAndPanelTool() {
       <p>
         Click a Player button to take action. Click + or - to change player count.
       </p>
-      <p className={styles.grid}>
+      <p className={'pnpgrid'}>
         <div>
           <button onClick={removePlayerCallback} disabled={playersActed.length < 2}>-</button>{' '}
           {currentPanel < panelsPerPage && playersActed.map((didPlayerAct, i) => 
@@ -143,7 +141,7 @@ function PageAndPanelTool() {
       </p>
       <div className="grid">
         {panelStack.map((panel, i) => 
-          <div className={panel.isPage ? styles.page : styles.panel}>
+          <div className={panel.isPage ? 'pnppage' : 'pnppanel'}>
             {panel.text}{i == currentPanel ? ' *' : ''}
           </div>
         )}
