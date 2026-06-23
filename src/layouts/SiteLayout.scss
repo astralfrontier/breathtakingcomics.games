@@ -5,6 +5,7 @@ $use-dynamic-first-letter: true;
 $color-comic-box-interior:  #ffc43a;
 $color-comic-box-exterior: #000; //black;
 $color-dynamic-first-letter: red;
+$toc-breakpoint: 768px;
 
 h1 {
   @if $use-comic-box {
@@ -30,9 +31,12 @@ h2 {
   font-style: italic;
 }
 
-.pnpgrid {
-    display: grid;
-    grid-template-columns: 66% 34%;
+
+@media (min-width: $toc-breakpoint) {
+  .pnpgrid {
+      display: grid;
+      grid-template-columns: 66% 34%;
+  }
 }
 
 .pnppage {

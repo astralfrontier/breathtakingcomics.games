@@ -112,7 +112,7 @@ function PageAndPanelTool() {
   return (
     <article>
       <p>
-        Click a Player button to take action. Click + or - to change player count.
+        Click a Hero button to take action. Click + or - to change player count.
       </p>
       <p className={'pnpgrid'}>
         <div>
